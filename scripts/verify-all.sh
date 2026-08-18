@@ -2,7 +2,7 @@
 set -e
 declare -A ARTICLES=(
   [aflreviews]="/previews/collingwood-v-brisbane-lions-round-24-preview"
-  [ufcreview]="/previews/ufc-330-full-card-breakdown"
+  [ufcreview]="/results/ufc-330-results-makhachev-breaks-record"
   [puntersreview]="/previews/memsie-stakes-day-preview-caulfield"
   [sportinformation]="/explainers/afl-finals-system-explained"
   [punterstory]="/big-wins/the-day-the-tab-went-quiet"

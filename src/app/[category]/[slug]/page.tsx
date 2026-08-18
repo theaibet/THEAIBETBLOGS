@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getArticleBySlug, getArticles, getRelatedArticles } from "@/lib/content";
 import { getSite } from "@/config/site";
-import { articleJsonLd, articleUrl, breadcrumbJsonLd } from "@/lib/seo";
+import { articleJsonLd, articleUrl, breadcrumbJsonLd, faqJsonLd } from "@/lib/seo";
 import { JsonLd } from "@/components/JsonLd";
 import { TheAIbetCta } from "@/components/TheAIbetCta";
 import { ArtImage, ImageCredit } from "@/components/ArtImage";
@@ -143,6 +143,21 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
             </>
           );
         })()}
+
+        {article.faq && article.faq.length > 0 && (
+          <section aria-label="Frequently asked questions" className="mt-10 rounded-brand border border-edge bg-surface p-6">
+            <JsonLd data={faqJsonLd(article.faq)} />
+            <h2 className="font-heading text-xl">Quick answers</h2>
+            <dl className="mt-4 space-y-4">
+              {article.faq.map((f) => (
+                <div key={f.q} className="border-b border-edge pb-4 last:border-0 last:pb-0">
+                  <dt className="font-semibold">{f.q}</dt>
+                  <dd className="mt-1.5 text-sm leading-relaxed text-muted">{f.a}</dd>
+                </div>
+              ))}
+            </dl>
+          </section>
+        )}
 
         <TheAIbetCta article={article} />
 

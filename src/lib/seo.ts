@@ -69,3 +69,16 @@ export function websiteJsonLd() {
     },
   };
 }
+
+/** FAQPage JSON-LD for articles with FAQ blocks (AEO: answer-engine surfacing) */
+export function faqJsonLd(faq: { q: string; a: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faq.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  };
+}

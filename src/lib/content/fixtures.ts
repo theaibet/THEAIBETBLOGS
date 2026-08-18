@@ -106,6 +106,10 @@ const FIXTURES: Record<SiteKey, Article[]> = {
       theaibetPath: "/afl",
       theaibetCtaLabel: "See the AI model's probability, confidence and edge for Collingwood v Brisbane",
       masterStoryId: "MS-2026-0818-COLL-BRIS-R24",
+      faq: [
+        { q: "When do Collingwood play Brisbane in Round 24?", a: "Friday night, August 21, 2026 at 7:40pm AEST at the MCG." },
+        { q: "Who is injured for Collingwood in Round 24?", a: "Isaac Quaynor (glute) is out but expected back for finals; Jeremy Howe, Brayden Maynard and Steele Sidebottom will be assessed at training, per the club's official injury update." },
+      ],
     },
     {
       id: "afl-102",
@@ -227,63 +231,68 @@ const FIXTURES: Record<SiteKey, Article[]> = {
   ufcreview: [
     {
       id: "ufc-001",
-      slug: "ufc-330-full-card-breakdown",
-      title: "UFC 330 Full Card Breakdown: Every Fight, Every Angle",
+      slug: "ufc-330-results-makhachev-breaks-record",
+      title: "UFC 330 Results: Makhachev Breaks the All-Time Win-Streak Record in Philadelphia",
       excerpt:
-        "Main card and prelims dissected — styles, stats, paths to victory and where the value might be hiding.",
+        "Islam Makhachev outpointed Ian Machado Garry for a record 17th straight UFC win, Mackenzie Dern defended her belt \u2014 and Edson Barboza left his gloves in the cage.",
       bodyHtml:
         p(
-          "UFC 330 is one of the deepest cards of the year on paper, with a title fight headlining, two ranked contenders' bouts underneath, and a prelim slate stacked with debuting prospects.",
-          "This breakdown walks the card in order, focusing on the style dynamics that decide fights rather than name value."
+          "UFC 330 at Philadelphia's Xfinity Mobile Arena on August 15 delivered history: welterweight champion Islam Makhachev held off a determined Ian Machado Garry by unanimous decision (49\u201346, 49\u201346, 48\u201347) to set a new record for the most consecutive victories inside the Octagon \u2014 17 straight.",
+          "Machado Garry made rounds competitive and took one on a judge's card, but Makhachev's control in the championship rounds settled a fight that confirms his claim among the sport's all-time greats."
         ) +
-        h2("The main event") +
+        h2("Dern's first defence") +
         p(
-          "The headliner is a classic pressure-versus-counter matchup. The champion walks opponents down behind a high-output jab and mixes takedown threats off feints; the challenger is a low-volume, high-accuracy counter striker who needs space to operate.",
-          "Cage position is everything here. When the challenger's back touches the fence, output historically drops and the round slips away. The champion's corner knows it; expect relentless cutting of the cage from the first bell."
+          "In the co-main, women's strawweight champion Mackenzie Dern turned back Gillian Robertson by identical scores of 49\u201346, 49\u201346 and 48\u201347 \u2014 the first successful defence of her title.",
+          "Further down the card, Jalin Turner needed just 39 seconds for a first-round knockout of Kau\u00EA Fernandes \u2014 back-to-back first-round stoppages \u2014 and Dustin Stoltzfus submitted Mansur Abdul-Malik with a rear-naked choke at 4:25 of the second."
         ) +
-        h2("Where the card gets interesting") +
+        h2("The end of an era") +
         p(
-          "The co-main features a grappler with elite control time against a striker whose takedown defence numbers look good until you notice the level of wrestling he's faced. Statistical profiles built against weak grapplers are the market's most common blind spot.",
-          "On the prelims, watch the short-notice replacement bout: weight-cut quality and camp length are worth more than any highlight reel in those spots."
+          "The night's most emotional moment belonged to Esteban Ribovics' second-round TKO of Edson Barboza \u2014 after which the Brazilian veteran took off his gloves and laid them in the centre of the cage, closing a 16-year UFC career.",
+          "Attention now turns to Sacramento, where Anthony Hernandez and Gregory Rodrigues headline this weekend's Fight Night."
         ),
+      categorySlug: "results",
+      tags: ["UFC 330", "Islam Makhachev", "Mackenzie Dern", "Results", "Philadelphia"],
+      author: AUTHORS.danaOkafor,
+      publishedAt: "2026-08-16T14:00:00Z",
+      updatedAt: "2026-08-16T14:00:00Z",
       featuredImage: {
         url: "/photos/ufc-champion-belts.jpg",
-        alt: "A UFC champion roars with both title belts",
+        alt: "Islam Makhachev roars with his championship gold after a record-breaking win",
         width: 1248,
         height: 1288,
         credit: "Supplied",
         license: "user-supplied",
         source: "publisher-upload",
       },
-      categorySlug: "previews",
-      tags: ["UFC 330", "Card Breakdown", "Main Event"],
-      author: AUTHORS.danaOkafor,
-      publishedAt: "2026-08-17T10:00:00Z",
-      updatedAt: "2026-08-17T10:00:00Z",
-      theaibetPath: "/ufc/ufc-330",
-      theaibetCtaLabel: "View the AI model analysis for every UFC 330 fight",
-      masterStoryId: "MS-2026-0817-UFC330",
+      theaibetPath: "/ufc",
+      theaibetCtaLabel: "See how TheAIbet's models scored UFC 330",
+      masterStoryId: "MS-2026-0816-UFC330-RESULTS",
+      faq: [
+        { q: "Who won the UFC 330 main event?", a: "Islam Makhachev beat Ian Machado Garry by unanimous decision (49\u201346, 49\u201346, 48\u201347) to retain the welterweight title." },
+        { q: "What record did Islam Makhachev break at UFC 330?", a: "His 17th consecutive UFC victory \u2014 a new record for most consecutive wins inside the Octagon." },
+        { q: "Did Mackenzie Dern win at UFC 330?", a: "Yes \u2014 she beat Gillian Robertson by unanimous decision for the first defence of her women's strawweight title." },
+        { q: "Why did Edson Barboza leave his gloves in the cage?", a: "After his TKO loss to Esteban Ribovics, Barboza laid his gloves in the centre of the Octagon to signal his retirement, ending a 16-year UFC career." },
+      ],
     },
     {
       id: "ufc-002",
-      slug: "model-vs-market-where-the-numbers-disagree-ufc-330",
-      title: "Model vs Market: Where the Numbers Disagree on UFC 330",
+      slug: "model-vs-market-what-ufc-330-taught-us",
+      title: "Model vs Market: What UFC 330 Taught Us About Fight Pricing",
       excerpt:
         "Quantitative fight models and the betting market agree on most of UFC 330 — but not all of it.",
       bodyHtml:
         p(
-          "Most fights on a card, model probability and market-implied probability land within a few points of each other. The interesting fights are the ones where they don't.",
-          "On UFC 330, three bouts show a meaningful gap between statistical models and the current market — and each gap has a different cause."
+          "Most fights on a card, model probability and market-implied probability land within a few points of each other. UFC 330 in Philadelphia was a night where the consensus mostly held \u2014 and where the exceptions were instructive.",
+          "Both champions retained: Islam Makhachev's unanimous decision over Ian Machado Garry (49\u201346 twice, 48\u201347) and Mackenzie Dern's identical-scorecard defence against Gillian Robertson were the outcomes models and markets broadly expected. Favourites winning title fights on points is the quiet norm of championship MMA."
         ) +
-        h2("Three kinds of disagreement") +
+        h2("Where the surprises lived") +
         p(
-          "The first gap is a name-value fade: the market prices a popular veteran above what declining output and absorbed strikes justify. Models are ruthless about age curves; casual money is not.",
-          "The second is an information gap — a camp change and a move up in weight that the market has priced heavily but models treat as neutral until fight-night data exists.",
-          "The third is the classic grappling blind spot: takedown-heavy fighters are systematically underpriced against strikers with untested defensive wrestling, because knockouts are memorable and control time is not."
+          "The volatility, as usual, was underneath. Jalin Turner's 39-second knockout of Kau\u00EA Fernandes is exactly the kind of outcome that round-by-round models struggle to price \u2014 finishing variance compresses a fight's information to a single exchange.",
+          "And Esteban Ribovics stopping Edson Barboza inside two rounds \u2014 followed by the veteran retiring in the cage \u2014 is a reminder that age curves eventually break sharply, not gradually. Models are ruthless about late-thirties strikers; sentiment is not."
         ) +
-        h2("How to read the gaps") +
+        h2("The takeaway") +
         p(
-          "A gap is not automatically value. It is a flag to look closer: sometimes the market knows something the data doesn't, and sometimes it's the reverse. The discipline is in telling those situations apart."
+          "Championship rounds reward control and consistency \u2014 the qualities models measure best. Prelims reward chaos. The discipline is knowing which regime you're pricing before the cage door shuts."
         ),
       categorySlug: "model-vs-market",
       tags: ["Model vs Market", "UFC 330", "Analytics"],
@@ -330,37 +339,38 @@ const FIXTURES: Record<SiteKey, Article[]> = {
     },
     {
       id: "ufc-004",
-      slug: "prospect-watch-five-fighters-to-track-2026",
-      title: "Prospect Watch: Five Fighters to Track for the Rest of 2026",
+      slug: "ufc-fight-night-hernandez-vs-rodrigues-preview",
+      title: "UFC Sacramento Preview: Hernandez v Rodrigues Headlines at Golden 1 Center",
       excerpt:
-        "Five under-the-radar fighters whose underlying numbers say they're better than their rankings.",
+        "Anthony Hernandez (15-3, 1NC) meets Gregory Rodrigues (19-6) in a middleweight main event this weekend \u2014 both with something to prove.",
       bodyHtml:
         p(
-          "Rankings lag reality. By the time a fighter is ranked, the market has adjusted and the value is gone. The edge is identifying fighters whose statistical profiles outrun their profiles.",
-          "This list is built from underlying metrics — strike differential, control time against credentialled grapplers, defensive round-over-round improvement — rather than finishes, which are noisy."
+          "The Octagon rolls into Sacramento this weekend, with a middleweight main event at Golden 1 Center on Saturday, August 22 (Sunday AEST): Anthony Hernandez against Gregory Rodrigues.",
+          "Hernandez, 32, a Californian fighting close to home in Dunnigan country, brings a 15-3 (1 NC) record \u2014 but arrives off a third-round loss to Sean Strickland at UFC Houston in February that ended an eight-fight winning streak."
         ) +
-        h2("What we look for") +
+        h2("The stakes") +
         p(
-          "Three signals matter most: output that holds or rises in round three, defensive metrics improving fight-over-fight, and performance against step-up competition rather than padded records.",
-          "Fighters who tick all three tend to beat the number the first two or three times they face ranked opposition — the window before the market catches up."
+          "Rodrigues, the 34-year-old Brazilian at 19-6, is hunting a fourth consecutive victory after his first-round knockout of Brunno Ferreira at UFC 326 in March. A win over a ranked name like Hernandez would push him toward the middleweight title conversation.",
+          "For Hernandez, it's about proving Houston was a detour, not a decline. Grappling-heavy pressure against Rodrigues' one-punch power is the classic stylistic fault line."
+        ) +
+        h2("The supporting card") +
+        p(
+          "Reported matchups include Serghei Spivac against Vitor Petrino at heavyweight, Carli Judice versus Jeisla Chaves at flyweight, and Jackson McVey against Wesley Schultz at middleweight, with further bouts to be confirmed.",
+          "Coming seven days after Makhachev's record-breaking night at UFC 330, Sacramento keeps a big August rolling."
         ),
-      featuredImage: {
-        url: "/photos/fighter-training.jpg",
-        alt: "Camp testing: conditioning data now shapes every fighter\'s preparation",
-        width: 1236,
-        height: 1562,
-        credit: "Supplied",
-        license: "user-supplied",
-        source: "publisher-upload",
-      },
-      categorySlug: "fighters",
-      tags: ["Prospects", "Analytics", "Rankings"],
+      categorySlug: "previews",
+      tags: ["UFC Sacramento", "Anthony Hernandez", "Gregory Rodrigues", "Fight Night"],
       author: AUTHORS.danaOkafor,
-      publishedAt: "2026-08-10T07:30:00Z",
-      updatedAt: "2026-08-11T02:00:00Z",
+      publishedAt: "2026-08-18T09:00:00Z",
+      updatedAt: "2026-08-18T09:00:00Z",
       theaibetPath: "/ufc",
-      theaibetCtaLabel: "Track fighter analytics on TheAIbet",
-      masterStoryId: "MS-2026-0810-UFC-PROSPECTS",
+      theaibetCtaLabel: "See the AI fight analysis for Hernandez v Rodrigues",
+      masterStoryId: "MS-2026-0818-UFC-SACRAMENTO",
+      faq: [
+        { q: "When is UFC Fight Night: Hernandez vs Rodrigues?", a: "Saturday, August 22, 2026 in Sacramento (Sunday, August 23 AEST) at Golden 1 Center." },
+        { q: "What are the records of Hernandez and Rodrigues?", a: "Anthony Hernandez is 15-3 with 1 no-contest; Gregory Rodrigues is 19-6 and chasing a fourth straight win." },
+        { q: "What weight class is the main event?", a: "Middleweight." },
+      ],
     },
   ],
 
@@ -368,31 +378,37 @@ const FIXTURES: Record<SiteKey, Article[]> = {
     {
       id: "rac-001",
       slug: "memsie-stakes-day-preview-caulfield",
-      title: "Memsie Stakes Day Preview: The Spring Starts at Caulfield",
+      title: "Memsie Stakes 2026: The Spring's First Group 1 Arrives at Caulfield",
       excerpt:
-        "Race-by-race thinking for Caulfield's traditional spring opener — speed maps, form lines and where the value sits.",
+        "Saturday August 29, 1400 metres, $750,000 \u2014 and Sheza Alibi heads early markets from Cosmic Crusader and Jimmysstar.",
       bodyHtml:
         p(
-          "The Memsie is where spring reputations are made and autumn form goes to die. First-up specialists, weight-for-age pretenders and genuine Cox Plate contenders all collide, and the market has to price all three at once.",
-          "The overriding rule of Memsie day: respect fresh horses from stables that win first-up, and be suspicious of horses whose best form is buried three runs deep into a preparation."
+          "The spring starts properly on Saturday, August 29, when the Group 1 Memsie Stakes (1400m, $750,000) is run at Caulfield \u2014 the first Group 1 of the Melbourne spring season and the traditional launching pad for Cox Plate campaigns.",
+          "Thirty horses feature among early nominations, and the market has already taken shape: Sheza Alibi heads early quotes at $2.50, from Cosmic Crusader and Jimmysstar sharing the second line at $3.50, with Angel Capital at $5.00 and Beiwacht at $7.00."
         ) +
-        h2("The shape of the race") +
+        h2("The Memsie's meaning") +
         p(
-          "Early speed looks genuine this year, which changes everything for the closers. In recent renewals with honest tempo, horses settling worse than midfield have filled the placings; in falsely-run editions, on-pace horses have been untouchable.",
-          "The map suggests a truly-run race, which brings the swoopers right into calculations — provided the track isn't playing leader-biased, and Caulfield in late winter often is."
+          "The race's history says treat first-up form with respect: last year Treasurethe Moment took the 2025 edition, and Memsie winners regularly frank the form deep into October.",
+          "For punters, the eternal Memsie puzzle applies \u2014 proven weight-for-age horses resuming against in-form sprinter-milers at their peak. Fresh class against match fitness, at a track that can favour on-pacers in late winter."
         ) +
-        h2("The market read") +
+        h2("What to watch") +
         p(
-          "The favourite is short on class but first-up over an unsuitable trip; that's a horse to beat at the price rather than back. The value typically lives in the second line of the market — proven weight-for-age horses having their first run in a set-up race, where the stable's eye is on October."
+          "Final fields and barriers will sharpen the picture in the week of the race. Watch for market moves once gates are drawn \u2014 1400 metres at Caulfield is unforgiving from a wide draw \u2014 and for stables using the race as a set-up for October targets rather than a mission in itself."
         ),
       categorySlug: "previews",
-      tags: ["Memsie Stakes", "Caulfield", "Spring Carnival"],
+      tags: ["Memsie Stakes", "Caulfield", "Spring Carnival", "Group 1", "Sheza Alibi"],
       author: AUTHORS.tomBrennan,
-      publishedAt: "2026-08-17T20:00:00Z",
-      updatedAt: "2026-08-17T20:00:00Z",
+      publishedAt: "2026-08-18T07:00:00Z",
+      updatedAt: "2026-08-18T07:00:00Z",
       theaibetPath: "/racing",
-      theaibetCtaLabel: "See AI runner rankings and race analysis for Caulfield",
-      masterStoryId: "MS-2026-0817-MEMSIE",
+      theaibetCtaLabel: "See AI runner rankings for Memsie Stakes day",
+      masterStoryId: "MS-2026-0818-MEMSIE-2026",
+      faq: [
+        { q: "When is the 2026 Memsie Stakes?", a: "Saturday, August 29, 2026 at Caulfield Racecourse in Melbourne." },
+        { q: "What distance and prize money is the Memsie Stakes?", a: "It is a Group 1 run over 1400 metres, worth $750,000 \u2014 the first Group 1 of the Melbourne spring season." },
+        { q: "Who is favourite for the 2026 Memsie Stakes?", a: "In early markets Sheza Alibi headed quotes at $2.50, ahead of Cosmic Crusader and Jimmysstar at $3.50." },
+        { q: "Who won the Memsie Stakes in 2025?", a: "Treasurethe Moment." },
+      ],
     },
     {
       id: "rac-002",
@@ -425,37 +441,46 @@ const FIXTURES: Record<SiteKey, Article[]> = {
     },
     {
       id: "rac-003",
-      slug: "flemington-track-bias-report-winter-2026",
-      title: "Flemington Track Report: What the Winter Data Says About Bias",
+      slug: "how-track-bias-works-betting-education",
+      title: "Track Bias, Explained: How to Read a Racing Surface Like a Professional",
       excerpt:
-        "Rail position, sectional patterns and where you wanted to be at Flemington through the winter — with spring implications.",
+        "Rail positions, sectional times and the discipline of judging a bias while the meeting is still running.",
       bodyHtml:
         p(
-          "Track bias is the most misused term in racing, but it's real, measurable, and worth money when you're ahead of the market on it. This report covers the winter Flemington pattern with the rail movements and sectional data laid out.",
-          "The headline: with the rail out beyond six metres, on-pace runners in the straight-course races have performed above expectation, while the 2000-metre-plus races have consistently favoured horses ridden quietly and angled to the outside."
+          "Track bias is the most misused term in racing \u2014 and one of the most valuable concepts when it's read properly. A bias exists when position on the track, rather than horse quality, is systematically deciding results: leaders holding on when they shouldn't, or one part of the course playing faster than another.",
+          "Rail position is the first clue. When the rail moves out, ground that hasn't been raced on comes into play and on-pace runners often get an assist. When it's in the true position late in a carnival, worn ground can turn a track leader-biased or backmarker-friendly."
         ) +
         h2("Reading the sectionals") +
         p(
-          "Raw finishing positions lie. The tell is in closing sectionals relative to race averages: when horses running the fastest final 400 metres consistently fail to make ground, position on the track is beating quality of horse — the definition of bias.",
-          "Punters who adjust for this within a race meeting, not after it, are the ones who profit. By the time the bias is on social media, it's in the prices."
+          "Raw finishing positions lie. The tell is in closing sectionals relative to the day's average: when horses running the fastest final 400 metres consistently fail to make ground, position is beating quality \u2014 the definition of bias.",
+          "The professional discipline is judging it DURING the meeting, race by race, not declaring it afterwards. By the time a bias is being discussed on social media, it is already in the prices."
+        ) +
+        h2("How punters use it") +
+        p(
+          "Bias reading changes two decisions: how you bet late in the day at the same meeting, and how you treat the form afterwards. A horse beaten two lengths against a hostile bias may be the best horse in the race next start \u2014 and the market won't always remember why it was beaten.",
+          "That's where a black book earns its keep: not recording winners, but recording runs that were better than they looked."
         ),
+      categorySlug: "education",
+      tags: ["Track Bias", "Sectionals", "Betting Education", "Form"],
+      author: AUTHORS.tomBrennan,
+      publishedAt: "2026-08-15T21:00:00Z",
+      updatedAt: "2026-08-15T21:00:00Z",
       featuredImage: {
         url: "/photos/flemington-finish.jpg",
-        alt: "Two runners hit the line together at Flemington",
+        alt: "Two runners hit the line together in a driving finish",
         width: 1284,
         height: 644,
         credit: "Supplied",
         license: "user-supplied",
         source: "publisher-upload",
       },
-      categorySlug: "tracks",
-      tags: ["Flemington", "Track Bias", "Sectionals"],
-      author: AUTHORS.tomBrennan,
-      publishedAt: "2026-08-11T22:00:00Z",
-      updatedAt: "2026-08-12T04:00:00Z",
       theaibetPath: "/racing",
       theaibetCtaLabel: "See track and sectional analysis inside TheAIbet",
-      masterStoryId: "MS-2026-0811-FLEM-BIAS",
+      masterStoryId: "MS-2026-0815-BIAS-EDU",
+      faq: [
+        { q: "What is track bias in horse racing?", a: "A track bias exists when position on the track \u2014 such as racing on the rail or on the pace \u2014 systematically affects results more than horse ability." },
+        { q: "How do you identify track bias?", a: "Compare closing sectional times with finishing positions: when the fastest-closing horses consistently fail to make ground, the surface or tempo is favouring one position on the track." },
+      ],
     },
     {
       id: "rac-004",
@@ -545,6 +570,11 @@ const FIXTURES: Record<SiteKey, Article[]> = {
       theaibetPath: "/afl",
       theaibetCtaLabel: "See AI-modelled finals probabilities for the 2026 season",
       masterStoryId: "MS-2026-0815-AFL-EXPLAINER",
+      faq: [
+        { q: "How many teams make the AFL finals?", a: "Eight \u2014 the top eight teams on the ladder after the home-and-away season." },
+        { q: "What is the double chance in AFL finals?", a: "Teams finishing in the top four can lose their first final and stay alive; teams fifth to eighth are eliminated with any loss." },
+        { q: "Where is the AFL Grand Final played?", a: "Traditionally at the Melbourne Cricket Ground (MCG)." },
+      ],
     },
     {
       id: "spo-002",
@@ -583,6 +613,11 @@ const FIXTURES: Record<SiteKey, Article[]> = {
       theaibetPath: "/ufc",
       theaibetCtaLabel: "Explore UFC fight data and AI analysis",
       masterStoryId: "MS-2026-0813-UFC-SCORING",
+      faq: [
+        { q: "How is a UFC fight scored?", a: "Under the 10-point must system: the winner of each round receives 10 points and the loser 9 or fewer, judged primarily on effective striking and grappling." },
+        { q: "What is a 10-8 round in the UFC?", a: "A round of clear dominance \u2014 one fighter overwhelming the other in impact, duration or both." },
+        { q: "Do takedowns score points in UFC?", a: "Not by themselves \u2014 judges score what a fighter does with the position after the takedown." },
+      ],
     },
     {
       id: "spo-003",
@@ -621,6 +656,10 @@ const FIXTURES: Record<SiteKey, Article[]> = {
       theaibetPath: "/racing",
       theaibetCtaLabel: "See AI analysis for Australian feature racing",
       masterStoryId: "MS-2026-0810-CUP-HISTORY",
+      faq: [
+        { q: "When is the Melbourne Cup run?", a: "The first Tuesday of November each year, over 3200 metres at Flemington." },
+        { q: "Which horse won the most Melbourne Cups?", a: "Makybe Diva, with three consecutive wins from 2003 to 2005." },
+      ],
     },
     {
       id: "spo-004",
@@ -729,32 +768,42 @@ const FIXTURES: Record<SiteKey, Article[]> = {
     },
     {
       id: "sto-003",
-      slug: "interview-thirty-years-on-course-bookmaker",
-      title: "Thirty Years in the Ring: An On-Course Bookmaker Tells All",
+      slug: "the-8000-dollar-fairytale-spicy-martini",
+      title: "The $8,000 Fairytale: Why Australia Fell for Spicy Martini",
       excerpt:
-        "From bags of cash at Moonee Valley to betting apps and data feeds — a bookie on everything that's changed and the one thing that hasn't.",
+        "A bargain-bin mare, a young jockey's first Group 1, and a spring dream that runs straight at the best sprinter on the planet.",
       bodyHtml:
         p(
-          "He asked us not to use his name, then spent three hours telling stories that make anonymity pointless to anyone who stood in the Moonee Valley ring in the nineties. We'll call him M.",
-          "M's first day as a licensed bookmaker was a wet Wednesday in 1994. He lost eleven thousand dollars and drove home, he says, 'happier than I'd ever been in my life. I was in the game.'"
+          "Australian punting has always loved an underdog with a good story, and this winter it found a perfect one: a mare bought for $8,000 \u2014 the price of a used ute \u2014 who ran down a $3 million Stradbroke Handicap field at Eagle Farm in June.",
+          "Spicy Martini's win was a first Group 1 for young jockey Taylor Marshall, a career highlight for Gold Coast trainer Toby Edmonds, and the kind of result that makes every battler who's ever bought a cheap yearling believe again. Her earnings now top $2.7 million \u2014 more than three hundred times what she cost."
         ) +
-        h2("What changed") +
+        h2("The dream with a mountain in it") +
         p(
-          "'The phones killed the walk-up punter, the data killed the mug price, and the corporates killed the ring. In that order.' M says the modern on-course bookie survives on service and theatre: 'People bet with me for the same reason they buy records. It feels like something.'",
-          "The sharpest change, he says, is information symmetry. 'In 1995 I knew things the crowd didn't. Now the kid with the phone knows things I don't. The margin used to be knowledge. Now it's nerve.'"
+          "What makes the story bigger than one race is where it's pointed: The Everest at Randwick in October, the world's richest race on turf \u2014 and the domain of Ka Ying Rising, Hong Kong's champion, the world's top-ranked sprinter and the horse many are already calling the best they've seen.",
+          "\u201CHopefully this mare might attract an Everest slot, we'll see what happens,\u201D Edmonds said after the Stradbroke \u2014 the sound of a man trying not to dream too loudly."
         ) +
-        h2("What hasn't changed") +
+        h2("Why we barrack for her") +
         p(
-          "'Greed. Hope. The bloke who has one good Saturday in March and tells you about it in December.' He laughs. 'The technology is unrecognisable. The people are identical. That's why I'm still here.'"
+          "Racing's economics are brutal and its aristocracy is expensive. That's exactly why stories like this one carry a whole spring: because every so often, the sales-ring leftover turns out to be the best horse someone ever bought.",
+          "Whether or not a slot comes, and whether or not anything alive can beat Ka Ying Rising down the Randwick straight, Australia has its horse for the spring. She cost eight grand. That's the whole point."
         ),
-      categorySlug: "interviews",
-      tags: ["Interview", "Bookmaker", "Racing Culture"],
+      categorySlug: "moments",
+      tags: ["Spicy Martini", "The Everest", "Racing Culture", "Underdog"],
       author: AUTHORS.jackDoyle,
-      publishedAt: "2026-08-11T08:00:00Z",
-      updatedAt: "2026-08-11T08:00:00Z",
-      theaibetPath: "/",
-      theaibetCtaLabel: "See what the models say before the ring does",
-      masterStoryId: "MS-2026-0811-STORY-BOOKIE",
+      publishedAt: "2026-08-18T10:00:00Z",
+      updatedAt: "2026-08-18T10:00:00Z",
+      featuredImage: {
+        url: "/photos/jockey-celebration.jpg",
+        alt: "Taylor Marshall salutes after Spicy Martini's Stradbroke Handicap win",
+        width: 1154,
+        height: 1612,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
+      theaibetPath: "/racing",
+      theaibetCtaLabel: "See what the AI models make of the Everest picture",
+      masterStoryId: "MS-2026-0818-SPICY-STORY",
     },
     {
       id: "sto-004",

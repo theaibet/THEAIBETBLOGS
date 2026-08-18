@@ -55,4 +55,6 @@ export interface Article {
   theaibetCtaLabel?: string;
   /** Master story ID from the central newsroom (attribution + dedup) */
   masterStoryId?: string;
+  /** FAQ entries rendered on-page + emitted as FAQPage JSON-LD (AEO) */
+  faq?: { q: string; a: string }[];
 }
