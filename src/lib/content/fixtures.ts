@@ -294,6 +294,59 @@ const FIXTURES: Record<SiteKey, Article[]> = {
       theaibetCtaLabel: "Explore Fremantle's AI premiership probability",
       masterStoryId: "MS-2026-0816-FREO-NUMBERS",
     },
+    {
+      id: "afl-105",
+      slug: "round-24-afl-fixtures-full-guide",
+      title: "Round 24 at a Glance: Every AFL Fixture This Weekend",
+      excerpt:
+        "Nine games, three days, and a home-and-away season that's almost out of runway — the complete Round 24 fixture with venues and AEST times.",
+      bodyHtml:
+        p(
+          "The home-and-away season has one round left in it after this one, and Round 24 is stacked with finals implications from Thursday night through to Sunday evening in Perth.",
+          "Below is the complete round, venue by venue, with kickoff times converted to AEST."
+        ) +
+        h2("Thursday, August 20") +
+        p("St Kilda v Gold Coast Suns — Marvel Stadium, 7:30pm AEST.") +
+        h2("Friday, August 21") +
+        p(
+          "Collingwood v Brisbane Lions — MCG, 7:40pm AEST. Eighth hosts third with a double chance on the line for the Lions and a finals spot to defend for the Magpies — the round's headline game, previewed in full separately."
+        ) +
+        h2("Saturday, August 22") +
+        p(
+          "Carlton v Fremantle — Marvel Stadium, 1:15pm AEST. Melbourne v Western Bulldogs — MCG, 4:15pm AEST. Geelong v Richmond — GMHBA Stadium, 7:45pm AEST. Adelaide v GWS Giants — Adelaide Oval, 8:10pm AEST (7:40pm local)."
+        ) +
+        h2("Sunday, August 23") +
+        p(
+          "Essendon v Port Adelaide — Marvel Stadium, 12:20pm AEST. Sydney v North Melbourne — SCG, 3:20pm AEST. West Coast Eagles v Hawthorn — Optus Stadium, 7:50pm AEST (5:20pm local) to close out the round."
+        ) +
+        h2("Why it matters") +
+        p(
+          "Fremantle have the minor premiership sewn up, but almost everything else in the eight is live. Western Bulldogs, on 50 points, can put real pressure on eighth-placed Collingwood (52) with a win over Melbourne, while Adelaide, Geelong and Hawthorn are all within a game of each other in the 56–60-point cluster jammed around third to seventh.",
+          "One round after that, the ladder locks in for finals. This is the last weekend to move."
+        ),
+      featuredImage: {
+        url: "/photos/carlton-mark.jpg",
+        alt: "A Carlton player takes a strong overhead mark",
+        width: 1200,
+        height: 800,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
+      categorySlug: "previews",
+      tags: ["Round 24", "AFL Fixture", "Finals Race"],
+      author: AUTHORS.mitchHarlan,
+      publishedAt: "2026-08-18T08:00:00Z",
+      updatedAt: "2026-08-18T08:00:00Z",
+      theaibetPath: "/sports?sport=aussierules_afl",
+      theaibetCtaLabel: "See AI win probabilities for every Round 24 game",
+      masterStoryId: "MS-2026-0818-R24-FIXTURES",
+      faq: [
+        { q: "What time does Collingwood v Brisbane kick off in Round 24?", a: "Friday, August 21, 2026 at 7:40pm AEST at the MCG." },
+        { q: "How many games are in an AFL round?", a: "Nine — all 18 clubs play once per round during the home-and-away season." },
+        { q: "Has Fremantle secured the minor premiership?", a: "Yes — Fremantle's Round 23 position has them clear on top of the ladder with the minor premiership effectively locked in." },
+      ],
+    },
   ],
 
   ufcreview: [
@@ -447,6 +500,92 @@ const FIXTURES: Record<SiteKey, Article[]> = {
         { q: "When is UFC Fight Night: Hernandez vs Rodrigues?", a: "Saturday, August 22, 2026 in Sacramento (Sunday, August 23 AEST) at Golden 1 Center." },
         { q: "What are the records of Hernandez and Rodrigues?", a: "Anthony Hernandez is 15-3 with 1 no-contest; Gregory Rodrigues is 19-6 and chasing a fourth straight win." },
         { q: "What weight class is the main event?", a: "Middleweight." },
+      ],
+    },
+    {
+      id: "ufc-005",
+      slug: "ufc-331-van-pantoja-2-preview-the-rematch",
+      title: "UFC 331 Preview: Van v Pantoja 2 — The Rematch Nobody Wanted to End Like That",
+      excerpt:
+        "Alexandre Pantoja's arm snapped in round one at UFC 323. Five weeks later he's chasing the belt back off the 24-year-old who took it from him.",
+      bodyHtml:
+        p(
+          "Joshua Van is the flyweight champion because Alexandre Pantoja's elbow gave out. That's not a criticism of Van — he caught a kick, threw the counter, and Pantoja's arm broke on the way down — but it's the reason UFC 331, on September 20 (AEST) at Crypto.com Arena in Los Angeles, is a rematch instead of a coronation.",
+          "Referee Herb Dean waved it off in round one at UFC 323. Van, then 24, became the second-youngest champion in UFC history. Pantoja, 35 and building a case as one of the best flyweights ever, was left with nothing to say about a fight he was in the middle of losing anyway."
+        ) +
+        h2("What actually happened at UFC 323") +
+        p(
+          "Van caught a high kick early in round one, elevated Pantoja and put him on the mat. As Pantoja tried to post his arm to break the fall, it snapped at the elbow. The stoppage was immediate — Dean waved it off within seconds of the injury being visible.",
+          "It's the kind of ending that leaves everyone — winner included — wanting to see it run again on a clean night."
+        ) +
+        h2("The champion") +
+        p(
+          "Van, unbeaten and now the man everyone in the division is chasing, gets the chance to prove UFC 323 wasn't circumstance. A win here — a real, finished win — is the difference between a champion with an asterisk and a champion, full stop."
+        ) +
+        h2("The former champion") +
+        p(
+          "Pantoja held the belt through a string of defences before losing it to injury rather than to a finish or a judge's card, most recently submitting Kai Kara-France to retain the title. At 35, this is realistically his last run at reclaiming it, and he's made no secret of wanting the finish this time, not the freak ending."
+        ),
+      featuredImage: {
+        url: "/photos/ufc-champion-belts.jpg",
+        alt: "UFC championship belts on display",
+        width: 1200,
+        height: 800,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
+      categorySlug: "previews",
+      tags: ["UFC 331", "Joshua Van", "Alexandre Pantoja", "Flyweight Title"],
+      author: AUTHORS.danaOkafor,
+      publishedAt: "2026-08-18T10:00:00Z",
+      updatedAt: "2026-08-18T10:00:00Z",
+      theaibetPath: "/ufc",
+      theaibetCtaLabel: "See the AI model's title-fight probability for Van v Pantoja 2",
+      masterStoryId: "MS-2026-0818-UFC331-REMATCH",
+      faq: [
+        { q: "When is UFC 331: Van vs Pantoja 2?", a: "Saturday, September 19, 2026 US time (Sunday, September 20 AEST) at Crypto.com Arena, Los Angeles. It's a flyweight title fight." },
+        { q: "How did Joshua Van win the title in the first fight?", a: "By referee stoppage in round one at UFC 323, after Alexandre Pantoja suffered an elbow injury attempting to post his arm from a takedown." },
+        { q: "What is Alexandre Pantoja's title history?", a: "He held the flyweight title through multiple defences, including a submission win over Kai Kara-France, before losing the belt to injury against Van rather than by finish or decision." },
+      ],
+    },
+    {
+      id: "ufc-006",
+      slug: "ufc-paris-hooker-parnasse-preview",
+      title: "UFC Paris Preview: A Veteran's Worst Nightmare — a Hyped Debutant on Home Soil",
+      excerpt:
+        "Salahdine Parnasse walks into his UFC debut as a two-division champion elsewhere and the freshest thing in the lightweight division. Dan Hooker has seen this movie before — usually as the villain.",
+      bodyHtml:
+        p(
+          "UFC Paris, on September 6 (AEST) at Accor Arena, hands Dan Hooker one of the toughest possible welcomes for a hyped debutant: a main event, in the debutant's home country, in front of a crowd that's been waiting years for this signing.",
+          "Salahdine Parnasse, 28, was one of the best fighters outside the UFC for the better part of five years — a two-division champion at KSW in featherweight and lightweight — before signing with the promotion this year for a deal reportedly 20-30 times bigger than what he was offered in 2024. His stock has never been higher after a first-round knockout on the high-profile 'Rousey vs Carano' Netflix card earlier in 2026."
+        ) +
+        h2("The gatekeeper's role") +
+        p(
+          "Hooker, 36, is exactly the kind of durable, dangerous veteran the UFC puts in front of a hyped prospect to find out if the hype is real. He strung together three straight wins from 2022 to 2024 but has dropped his last two against top contenders — the form line of a fighter who can still hurt anyone but is no longer a lock against the division's best.",
+          "For the French crowd, an emphatic Parnasse debut win in the main event is the whole point of the card. For Hooker, spoiling that story in Paris would be one of the best wins of a long UFC career."
+        ),
+      featuredImage: {
+        url: "/photos/fighter-training.jpg",
+        alt: "A fighter shadow-boxes during a training session ahead of fight week",
+        width: 1200,
+        height: 800,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
+      categorySlug: "previews",
+      tags: ["UFC Paris", "Dan Hooker", "Salahdine Parnasse", "Lightweight"],
+      author: AUTHORS.danaOkafor,
+      publishedAt: "2026-08-18T10:15:00Z",
+      updatedAt: "2026-08-18T10:15:00Z",
+      theaibetPath: "/ufc",
+      theaibetCtaLabel: "See the AI model's read on Hooker v Parnasse",
+      masterStoryId: "MS-2026-0818-UFC-PARIS",
+      faq: [
+        { q: "When is UFC Paris: Hooker vs Parnasse?", a: "Saturday, September 5, 2026 local time (Sunday, September 6 AEST) at Accor Arena, Paris." },
+        { q: "Is this Salahdine Parnasse's UFC debut?", a: "Yes. He arrives as a former two-division (featherweight and lightweight) champion at KSW, one of the top promotions outside the UFC." },
+        { q: "What is Dan Hooker's recent form?", a: "He won three straight fights from 2022-2024 but has lost his last two against top-ranked lightweight contenders." },
       ],
     },
   ],
@@ -616,6 +755,88 @@ const FIXTURES: Record<SiteKey, Article[]> = {
       theaibetCtaLabel: "See TheAIbet's AI analysis of the Everest sprinters",
       masterStoryId: "MS-2026-0818-SPICY-MARTINI",
     },
+    {
+      id: "rac-005",
+      slug: "cosmic-crusader-pb-lawrence-stakes-win-memsie",
+      title: "Cosmic Crusader Keeps the Perfect Melbourne Record Rolling Into Memsie",
+      excerpt:
+        "The Andrea Leek-trained sprinter won the P.B. Lawrence Stakes at Caulfield on August 15 — and arrives at Memsie Stakes day unbeaten in Melbourne.",
+      bodyHtml:
+        p(
+          "Cosmic Crusader kept a perfect Melbourne record intact with victory in the P.B. Lawrence Stakes at Caulfield on Saturday, August 15 — the traditional Group 2 lead-up race and a genuine formline into the spring's first Group 1.",
+          "Trained by Andrea Leek, the win puts Cosmic Crusader into Memsie Stakes day on August 29 with unbeaten Melbourne form behind it — exactly the kind of formline this site flagged when the Memsie market first opened, with Cosmic Crusader sitting behind Sheza Alibi and alongside Jimmysstar in early quotes."
+        ) +
+        h2("Why it matters for Memsie") +
+        p(
+          "A P.B. Lawrence win doesn't guarantee a Group 1, but it's the standard modern lead-up for a Caulfield sprinter building into the first Saturday of the carnival. Cosmic Crusader now walks into Memsie as a formline that has to be respected rather than a name making up the numbers.",
+          "The market will move again once final fields and barriers are confirmed for Memsie Stakes day — worth watching closely given how tight the early quotes already were."
+        ),
+      featuredImage: {
+        url: "/photos/racing-close-finish.jpg",
+        alt: "A close finish between runners at a Melbourne track",
+        width: 1200,
+        height: 800,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
+      categorySlug: "news",
+      tags: ["Cosmic Crusader", "P.B. Lawrence Stakes", "Memsie Stakes", "Caulfield"],
+      author: AUTHORS.tomBrennan,
+      publishedAt: "2026-08-18T05:00:00Z",
+      updatedAt: "2026-08-18T05:00:00Z",
+      theaibetPath: "/horse-racing",
+      theaibetCtaLabel: "See AI runner rankings building into Memsie Stakes",
+      masterStoryId: "MS-2026-0818-COSMIC-CRUSADER",
+      faq: [
+        { q: "When did Cosmic Crusader win the P.B. Lawrence Stakes?", a: "Saturday, August 15, 2026, at Caulfield Racecourse." },
+        { q: "Who trains Cosmic Crusader?", a: "Andrea Leek." },
+        { q: "Is Cosmic Crusader running in the Memsie Stakes?", a: "Cosmic Crusader was among the early quotes for the August 29 Memsie Stakes when markets first opened, alongside Sheza Alibi and Jimmysstar — final fields are confirmed closer to raceday." },
+      ],
+    },
+    {
+      id: "rac-006",
+      slug: "spring-carnival-calendar-after-memsie-2026",
+      title: "After Memsie: What's Next on the Road to the Melbourne Cup",
+      excerpt:
+        "Memsie Stakes opens the carnival on August 29. Here's the real Group 1 calendar that follows it, through to Makybe Diva Stakes day on September 12.",
+      bodyHtml:
+        p(
+          "Memsie Stakes at Caulfield on August 29 is the traditional opening bell of the Melbourne Spring Carnival, but it's the start of a run of racing, not a one-off. Here's what's genuinely locked in on the calendar after it."
+        ) +
+        h2("Crown Makybe Diva Stakes Day — September 12, Flemington") +
+        p(
+          "Confirmed for Saturday, September 12: the Group 1 Crown Makybe Diva Stakes (1600m, $750,000) headlines a ten-race program at Flemington, alongside the Group 3 Lexus Archer Stakes (2500m) — whose winner earns a golden ticket straight into the $10 million Lexus Melbourne Cup.",
+          "It's the sprinter-into-miler pathway race the carnival's biggest names use to build toward The Everest and beyond, and it's the next confirmed marker after Memsie on the road to November."
+        ) +
+        h2("The shape of the carnival") +
+        p(
+          "Between Memsie and Makybe Diva day sits the usual mid-carnival build — Underwood Stakes and Caulfield's early September program among them — before the carnival's two biggest weeks arrive in October: Caulfield Guineas and Caulfield Cup, then Derby Day, Melbourne Cup Day (a Victorian public holiday, Tuesday November 3) and Stakes Day at Flemington.",
+          "Fields for the majority of these races won't firm up until closer to raceday — this is the real, confirmed skeleton of the calendar to build the next six weeks of coverage around."
+        ),
+      featuredImage: {
+        url: "/photos/racing-finish-roses.jpg",
+        alt: "Roses and ribbons at a Melbourne spring racing finish line",
+        width: 1200,
+        height: 800,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
+      categorySlug: "previews",
+      tags: ["Spring Carnival", "Makybe Diva Stakes", "Melbourne Cup", "Calendar"],
+      author: AUTHORS.tomBrennan,
+      publishedAt: "2026-08-18T05:30:00Z",
+      updatedAt: "2026-08-18T05:30:00Z",
+      theaibetPath: "/horse-racing",
+      theaibetCtaLabel: "Track the AI model through the spring carnival",
+      masterStoryId: "MS-2026-0818-SPRING-CALENDAR",
+      faq: [
+        { q: "When is Makybe Diva Stakes day 2026?", a: "Saturday, September 12, 2026 at Flemington." },
+        { q: "What is the Lexus Archer Stakes golden ticket?", a: "The winner of the Group 3 Lexus Archer Stakes on Makybe Diva Stakes day earns automatic entry into the $10 million Lexus Melbourne Cup." },
+        { q: "When is the Melbourne Cup in 2026?", a: "Tuesday, November 3, 2026 — a public holiday in Victoria." },
+      ],
+    },
   ],
 
   sportinformation: [
@@ -781,6 +1002,48 @@ const FIXTURES: Record<SiteKey, Article[]> = {
       theaibetCtaLabel: "Explore AI sports analysis on TheAIbet",
       masterStoryId: "MS-2026-0808-CODES",
     },
+    {
+      id: "spo-005",
+      slug: "nrl-2026-race-for-eighth-explained",
+      title: "NRL 2026: The Race for Eighth, Explained",
+      excerpt:
+        "Two competition points separate eighth from tenth with the regular season winding down — here's the ladder and what it means.",
+      bodyHtml:
+        p(
+          "The NRL finals system takes the top eight teams from 17 regular-season rounds of every club playing each other — and with the season entering its final stretch, the bottom of that eight is where the real tension sits.",
+          "As it stands, North Queensland hold eighth on 28 points from a 12-10 record. Two points back in ninth are Canterbury-Bankstown on 26 points (10-11), with Manly a further two points adrift in tenth on 24 (9-12)."
+        ) +
+        h2("The top of the table") +
+        p(
+          "Sydney Roosters lead the competition on 38 points (16-5), ahead of Penrith and New Zealand — both on 36 points (15-6) — with the Dolphins fourth on 34. Cronulla-Sutherland and Newcastle are locked together on 32 points, and South Sydney sit seventh on 30."
+        ) +
+        h2("How NRL finals work") +
+        p(
+          "Unlike the AFL's eight, the NRL runs a straight top-eight knockout system across four weeks, with the top four earning a double chance in week one. For the clubs clustered from seventh to tenth, every remaining round is effectively a finals eliminator already — a two-point gap with only a handful of rounds left is about as tight as it gets."
+        ),
+      featuredImage: {
+        url: "/photos/nrl-eels.jpg",
+        alt: "NRL players contest the ball near the sideline",
+        width: 1200,
+        height: 800,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
+      categorySlug: "nrl",
+      tags: ["NRL", "Ladder", "Finals Race"],
+      author: AUTHORS.priyaSharma,
+      publishedAt: "2026-08-18T04:00:00Z",
+      updatedAt: "2026-08-18T04:00:00Z",
+      theaibetPath: "/sports?sport=rugbyleague_nrl",
+      theaibetCtaLabel: "See live NRL odds and AI analysis on TheAIbet",
+      masterStoryId: "MS-2026-0818-NRL-EIGHTH",
+      faq: [
+        { q: "How many teams make the NRL finals?", a: "The top eight teams from the 17-round regular season, with the top four earning a double chance in the first week of finals." },
+        { q: "Who is currently eighth on the NRL ladder?", a: "North Queensland, on 28 points from a 12-10 record, as of mid-August 2026." },
+        { q: "How close is the fight for the last finals spot?", a: "Very — eighth-placed North Queensland (28 points) is separated from ninth-placed Canterbury-Bankstown (26 points) by just one win's worth of competition points." },
+      ],
+    },
   ],
 
   punterstory: [
@@ -920,6 +1183,50 @@ const FIXTURES: Record<SiteKey, Article[]> = {
       theaibetPath: "/",
       theaibetCtaLabel: "Modern form analysis, powered by AI",
       masterStoryId: "MS-2026-0808-STORY-QUADDIE",
+    },
+    {
+      id: "sto-005",
+      slug: "the-race-that-stops-a-nation",
+      title: "The Race That Stops a Nation: Why One Race Still Owns a Tuesday",
+      excerpt:
+        "It's a public holiday in Victoria, a slogan older than television, and — even in a fractured media age — still the one race the whole country half-watches.",
+      bodyHtml:
+        p(
+          "Tuesday, November 3, 2026. Offices in Victoria empty out, a three-minute race runs at Flemington, and somewhere between a third and a tenth of the country puts money on it depending on how you count. The Melbourne Cup has been called 'the race that stops a nation' for so long the phrase barely registers as a claim anymore — it's just what the day is called.",
+          "Melbourne Cup Day has been a public holiday in Victoria since long before most of the people taking it off could tell you why. It's the only sporting event in the country with its own day off attached — not the Grand Final, not State of Origin, just a horse race that runs for about three and a half minutes."
+        ) +
+        h2("The numbers behind the myth") +
+        p(
+          "A YouGov survey of Australian adults found roughly three in ten Australians planned to have some money on the Melbourne Cup that year — split fairly evenly between betting in person, betting online, and having a punt in an office sweep with colleagues. For context, the same survey found only around one in eight Australians bother betting on The Everest, the world's richest race on turf and a race with more total prizemoney.",
+          "That gap is the whole story of the Melbourne Cup's cultural weight. It was never really about the prizemoney or the field quality — plenty of Group 1s have bigger purses and deeper fields. It's about being the one day a year when people who couldn't name a jockey still know who won."
+        ) +
+        h2("Why it still works") +
+        p(
+          "Cynics have been predicting the Cup's cultural decline for years — shorter attention spans, animal welfare debates, a fractured media landscape that no longer delivers one national moment the way it used to. And yet the office sweep survives. The frock and the fascinator survive. The 3pm AEDT stoppage, in offices that have nothing to do with racing, survives.",
+          "Every other race on the calendar is judged by its field. The Cup is judged by whether the country still stops. So far, it still does."
+        ),
+      featuredImage: {
+        url: "/photos/racing-field.jpg",
+        alt: "A full field of runners rounds the home turn in a major Melbourne race",
+        width: 1200,
+        height: 800,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
+      categorySlug: "culture",
+      tags: ["Melbourne Cup", "Racing Culture", "Australian Punting"],
+      author: AUTHORS.jackDoyle,
+      publishedAt: "2026-08-18T09:00:00Z",
+      updatedAt: "2026-08-18T09:00:00Z",
+      theaibetPath: "/",
+      theaibetCtaLabel: "See how the AI models read the Cup field when it's announced",
+      masterStoryId: "MS-2026-0818-CUP-CULTURE",
+      faq: [
+        { q: "Is Melbourne Cup Day a public holiday?", a: "Yes — it's a public holiday in Victoria, held on the first Tuesday of November. In 2026 that's November 3." },
+        { q: "How many Australians bet on the Melbourne Cup?", a: "A YouGov survey found roughly three in ten Australian adults planned to bet on the Melbourne Cup in some form — in person, online, or in an office sweep." },
+        { q: "Where does the phrase 'the race that stops a nation' come from?", a: "It's a long-standing description of the Melbourne Cup's cultural reach — the one sporting event with enough national pull to be marked by a public holiday and widespread office sweeps, even among people who don't otherwise follow racing." },
+      ],
     },
   ],
 };
