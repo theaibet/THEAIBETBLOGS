@@ -177,6 +177,7 @@ function art(brandKey, slug, title) {
 // article slugs per brand (must match fixtures.ts) + a category-default set
 const ARTICLES = {
   aflreviews: [
+    "the-kids-are-coming-collingwood-september",
     "collingwood-v-brisbane-lions-round-24-preview",
     "round-23-review-two-draws-in-one-round",
     "afl-run-home-round-24-ladder-scenarios",

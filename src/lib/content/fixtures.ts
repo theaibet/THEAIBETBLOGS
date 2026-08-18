@@ -55,6 +55,74 @@ function h2(text: string): string {
 const FIXTURES: Record<SiteKey, Article[]> = {
   aflreviews: [
     {
+      id: "afl-100",
+      slug: "the-kids-are-coming-collingwood-september",
+      title: "The Kids Are Coming: Can Collingwood Make Some Noise in September?",
+      excerpt:
+        "Collingwood's injury list has been smashed \u2014 but Swadling, West and Hayes are arriving, and September is coming.",
+      bodyHtml:
+        p(
+          "Collingwood's injury list has been absolutely smashed this season, but somehow the Pies are still alive \u2014 and heading towards September with a group that suddenly looks very different.",
+          "And maybe that's the most exciting part."
+        ) +
+        h2("The injury list isn't pretty") +
+        p(
+          "Jeremy Howe is recovering from a fractured arm and is being assessed this week. Brayden Maynard is also pushing to return from his knee and hamstring issue, while Steele Sidebottom missed the Hawthorn game through illness and is another being assessed ahead of Brisbane.",
+          "Sidebottom's situation is a bit different. We know the end of an unbelievable AFL career is getting close, and every game from here means something. He's given Collingwood nearly everything over a career spanning almost two decades \u2014 373 games, two premierships and countless huge moments. If he's right, you want to see Steele running around in black and white for as long as this season lasts.",
+          "Patrick Lipinski is recovering from his calf and is listed as around a week away, which should have him right around the wildcard/finals period. Isaac Quaynor injured his glute against Hawthorn and will miss Brisbane, but the club expects him to be available for finals. Harry Perryman is a little further away with his hamstring \u2014 currently around two to three weeks.",
+          "Then there's the brutal part. Darcy Moore. Jamie Elliott. Reef McInnes. Oscar Steene. Tew Jiath. Their seasons are effectively done. For most clubs, losing that amount of experience and talent would probably finish the year. But something interesting is happening at Collingwood."
+        ) +
+        h2("The kids are starting to arrive") +
+        p(
+          "We've spent years talking about Nick and Josh Daicos when we talk about Collingwood's young talent. Now some different names are starting to emerge \u2014 and Sam Swadling might be the biggest surprise of the lot.",
+          "The 19-year-old produced a massive performance against Hawthorn \u2014 29 disposals, seven marks and 660 metres gained \u2014 and earned the Round 23 Rising Star nomination. But forget the stat sheet for a second. His spoil in the dying moments helped save the game. That's a young player, in his seventh AFL game, standing up when the pressure is at its highest.",
+          "Then you've got Will Hayes continuing to get opportunities. Charlie West is another one \u2014 he had just two touches the week before and could easily have gone back into his shell. Instead, against Hawthorn, he responded with two goals and genuinely made an impact.",
+          "You don't need young players dominating every week. You need them learning, responding and showing that when their moment comes, they're not afraid of it."
+        ) +
+        h2("And then there's the Hawthorn game") +
+        p(
+          "That 92\u201392 draw was wild. Collingwood led by 22 points at half-time. Hawthorn then turned the game around and got 21 points ahead early in the last. And somehow Collingwood came again.",
+          "That's probably the best and worst thing about this Pies side at the moment. When Collingwood switches on, the pressure, ball movement and intensity can still look as damaging as anyone in the competition. The problem is sustaining it.",
+          "At this point of the season, I'm not even asking for four perfect quarters. Give me two or three quarters of Collingwood playing its best football and I reckon they're capable of knocking over some very good sides."
+        ) +
+        h2("So how far can they actually go?") +
+        p(
+          "Collingwood's locked into the finals picture and September is coming. They're wounded. They're missing stars. They're relying on kids who probably weren't expected to carry this much responsibility this season. But sometimes that's exactly how a young player announces himself.",
+          "Get Howe and Maynard back. Get Quaynor and Lipinski right for finals. Give Sidebottom the chance to finish his career the way he deserves. And then let the kids play without fear.",
+          "Because we've already seen what this Collingwood side can do when everything clicks. The question isn't whether they have that level \u2014 we've seen it. The question is whether they can hold it long enough when September football arrives. And if they can? I wouldn't want to be the top-eight side that has to find out."
+        ),
+      categorySlug: "teams",
+      tags: ["Collingwood", "Sam Swadling", "Steele Sidebottom", "Finals", "Opinion"],
+      author: AUTHORS.mitchHarlan,
+      publishedAt: "2026-08-18T11:30:00Z",
+      updatedAt: "2026-08-18T11:30:00Z",
+      featuredImage: {
+        url: "/photos/afl-contest.jpg",
+        alt: "A Collingwood defender fights through a tackle \u2014 a wounded Pies side refusing to go away",
+        width: 1150,
+        height: 1562,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
+      inlineImage: {
+        url: "/photos/afl-marking-contest.jpg",
+        alt: "A pack flies in the Hawthorn game \u2014 the 92-all draw that showed both sides of Collingwood",
+        width: 1600,
+        height: 1090,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
+      theaibetPath: "/afl",
+      theaibetCtaLabel: "See the AI's September probabilities for Collingwood",
+      masterStoryId: "MS-2026-0818-PIES-KIDS",
+      faq: [
+        { q: "Who is Sam Swadling?", a: "A 19-year-old Collingwood youngster who earned the Round 23 Rising Star nomination with 29 disposals, seven marks and 660 metres gained in the 92-all draw against Hawthorn \u2014 his seventh AFL game." },
+        { q: "Which Collingwood players are out for the season?", a: "Darcy Moore, Jamie Elliott, Reef McInnes, Oscar Steene and Tew Jiath are effectively done for the year." },
+      ],
+    },
+    {
       id: "afl-101",
       slug: "collingwood-v-brisbane-lions-round-24-preview",
       title: "Collingwood v Brisbane Lions: The Round 24 Blockbuster at the MCG",
@@ -358,6 +426,15 @@ const FIXTURES: Record<SiteKey, Article[]> = {
           "Reported matchups include Serghei Spivac against Vitor Petrino at heavyweight, Carli Judice versus Jeisla Chaves at flyweight, and Jackson McVey against Wesley Schultz at middleweight, with further bouts to be confirmed.",
           "Coming seven days after Makhachev's record-breaking night at UFC 330, Sacramento keeps a big August rolling."
         ),
+      featuredImage: {
+        url: "/photos/ufc-cage-action.jpg",
+        alt: "Middleweights trade in close \u2014 the stakes rise in Sacramento",
+        width: 842,
+        height: 818,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
       categorySlug: "previews",
       tags: ["UFC Sacramento", "Anthony Hernandez", "Gregory Rodrigues", "Fight Night"],
       author: AUTHORS.danaOkafor,
@@ -395,6 +472,15 @@ const FIXTURES: Record<SiteKey, Article[]> = {
         p(
           "Final fields and barriers will sharpen the picture in the week of the race. Watch for market moves once gates are drawn \u2014 1400 metres at Caulfield is unforgiving from a wide draw \u2014 and for stables using the race as a set-up for October targets rather than a mission in itself."
         ),
+      featuredImage: {
+        url: "/photos/racing-field.jpg",
+        alt: "The field thunders down the straight \u2014 spring racing is back",
+        width: 1384,
+        height: 672,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
       categorySlug: "previews",
       tags: ["Memsie Stakes", "Caulfield", "Spring Carnival", "Group 1", "Sheza Alibi"],
       author: AUTHORS.tomBrennan,
@@ -678,10 +764,10 @@ const FIXTURES: Record<SiteKey, Article[]> = {
           "The AFL season runs 24 home-and-away rounds into an eight-team finals series; the NRL runs 27 rounds into its own top-eight format. Both grand finals are among the most-watched television events in Australia each year."
         ),
       featuredImage: {
-        url: "/photos/collingwood-run.jpg",
-        alt: "Australian rules football in full flight",
-        width: 1266,
-        height: 688,
+        url: "/photos/nrl-dragons.jpg",
+        alt: "Rugby league in full flight: a Dragons runner hits the line",
+        width: 872,
+        height: 968,
         credit: "Supplied",
         license: "user-supplied",
         source: "publisher-upload",
