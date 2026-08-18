@@ -9,6 +9,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   return [
     { url: base, changeFrequency: "hourly", priority: 1 },
+    ...(site.dataNav ?? []).map((d) => ({
+      url: `${base}${d.href}`,
+      changeFrequency: "hourly" as const,
+      priority: 0.9,
+    })),
     ...site.categories.map((c) => ({
       url: `${base}/category/${c.slug}`,
       changeFrequency: "daily" as const,

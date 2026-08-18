@@ -29,6 +29,15 @@ export function Header() {
           aria-label="Categories"
           className="-mx-1 flex gap-0.5 overflow-x-auto border-t border-current/10 pb-0"
         >
+          {site.dataNav?.map((d) => (
+            <Link
+              key={d.href}
+              href={d.href}
+              className="whitespace-nowrap border-b-2 border-accent/60 px-3.5 py-3 text-sm font-bold text-chrome-accent transition hover:border-accent"
+            >
+              {d.label}
+            </Link>
+          ))}
           {site.categories.map((c) => (
             <Link
               key={c.slug}

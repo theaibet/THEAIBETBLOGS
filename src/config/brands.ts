@@ -14,6 +14,11 @@ export const BRANDS: Record<SiteKey, BrandConfig> = {
   aflreviews: {
     key: "aflreviews",
     homeVariant: "news",
+    dataNav: [
+      { href: "/ladder", label: "Ladder" },
+      { href: "/fixtures", label: "Fixtures" },
+      { href: "/results", label: "Results" },
+    ],
     name: "AFL Reviews",
     domain: "aflreviews.com.au",
     tagline: "Every match. Every angle.",

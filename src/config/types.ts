@@ -50,6 +50,8 @@ export interface BrandConfig {
   key: SiteKey;
   /** Which homepage editorial layout this publication uses */
   homeVariant: HomeVariant;
+  /** Extra data-page links shown in the nav (e.g. Ladder / Fixtures / Results) */
+  dataNav?: { href: string; label: string }[];
   name: string;
   domain: string; // production domain, no protocol
   tagline: string;

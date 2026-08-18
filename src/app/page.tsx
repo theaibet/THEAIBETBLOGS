@@ -3,17 +3,29 @@ import { getSite } from "@/config/site";
 import { JsonLd } from "@/components/JsonLd";
 import { websiteJsonLd } from "@/lib/seo";
 import { BroadsheetHome, IndexHome, MagazineHome, NewsHome } from "@/components/home/variants";
+import { AFLHomepage } from "@/components/home/AFLHomepage";
 
 export default async function HomePage() {
   const site = getSite();
   const articles = await getArticles(24);
 
-  const Home = {
-    news: NewsHome,
-    broadsheet: BroadsheetHome,
-    magazine: MagazineHome,
-    index: IndexHome,
-  }[site.homeVariant];
+  // Publication-specific homepages (brief §6): AFL Reviews gets a live-data
+  // sports product; other brands keep their distinct editorial layouts until
+  // their own product builds land (UFC event product next).
+  const home =
+    site.key === "aflreviews" ? (
+      <AFLHomepage articles={articles} />
+    ) : (
+      (() => {
+        const Home = {
+          news: NewsHome,
+          broadsheet: BroadsheetHome,
+          magazine: MagazineHome,
+          index: IndexHome,
+        }[site.homeVariant];
+        return <Home articles={articles} />;
+      })()
+    );
 
   return (
     <>
@@ -21,7 +33,7 @@ export default async function HomePage() {
       <h1 className="sr-only">
         {site.name} — {site.tagline}
       </h1>
-      <Home articles={articles} />
+      {home}
     </>
   );
 }
