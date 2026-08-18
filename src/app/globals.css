@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+/*
+ * Brand tokens are injected as CSS variables on <html> by the root layout,
+ * from the active brand config. Tailwind utilities map to them here, so the
+ * SAME components render five visually distinct publications.
+ */
+@theme inline {
+  --color-bg: var(--brand-bg);
+  --color-surface: var(--brand-surface);
+  --color-ink: var(--brand-text);
+  --color-muted: var(--brand-muted);
+  --color-accent: var(--brand-accent);
+  --color-accent-contrast: var(--brand-accent-contrast);
+  --color-chrome: var(--brand-chrome);
+  --color-chrome-text: var(--brand-chrome-text);
+  --color-edge: var(--brand-border);
+  --color-chrome-accent: var(--brand-chrome-accent);
+  --radius-brand: var(--brand-radius);
+}
+
+body {
+  background: var(--brand-bg);
+  color: var(--brand-text);
+  font-family: var(--brand-font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-heading {
+  font-family: var(--brand-font-heading);
+  font-weight: var(--brand-heading-weight);
+  text-transform: var(--brand-heading-transform);
+}
+
+/* Article body typography (kept dependency-free) */
+.article-body {
+  font-size: 1.075rem;
+  line-height: 1.8;
+}
+.article-body p {
+  margin-bottom: 1.25rem;
+}
+.article-body h2 {
+  font-family: var(--brand-font-heading);
+  font-weight: var(--brand-heading-weight);
+  text-transform: var(--brand-heading-transform);
+  font-size: 1.45rem;
+  line-height: 1.3;
+  margin: 2.25rem 0 0.9rem;
+}
+.article-body h3 {
+  font-family: var(--brand-font-heading);
+  font-weight: var(--brand-heading-weight);
+  font-size: 1.2rem;
+  margin: 1.75rem 0 0.75rem;
+}
+.article-body a {
+  color: var(--brand-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.article-body ul,
+.article-body ol {
+  margin: 0 0 1.25rem 1.5rem;
+}
+.article-body ul {
+  list-style: disc;
+}
+.article-body ol {
+  list-style: decimal;
+}
+.article-body blockquote {
+  border-left: 3px solid var(--brand-accent);
+  padding-left: 1.25rem;
+  margin: 1.5rem 0;
+  color: var(--brand-muted);
+  font-style: italic;
+}
+.article-body img {
+  border-radius: var(--brand-radius);
+  margin: 1.5rem 0;
+}
