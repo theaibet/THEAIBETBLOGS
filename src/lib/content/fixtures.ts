@@ -70,11 +70,34 @@ const FIXTURES: Record<SiteKey, Article[]> = {
           "Collingwood arrive off one of the strangest results of the season \u2014 a 92-all draw with Hawthorn at the MCG that felt like a loss for both sides and kept the Magpies two premiership points clear of ninth.",
           "Brisbane's Round 23 was the opposite: a 95\u201353 dismantling of Gold Coast at the Gabba that pushed their percentage to 119.5, comfortably clear of the teams around them."
         ) +
+        h2("Team news: three Pies race the clock") +
+        p(
+          "Collingwood's official Round 24 injury update lists three senior players \u2014 Jeremy Howe (fractured arm), Brayden Maynard (knee) and Steele Sidebottom, a late withdrawal from the Hawthorn draw through illness \u2014 to be assessed after main training on Wednesday.",
+          "Isaac Quaynor (glute) has been ruled out of the Brisbane clash but is expected back for finals, while Pat Lipinski (calf) and Harry Perryman (hamstring) remain on individual programs."
+        ) +
         h2("What the ladder says") +
         p(
           "The maths is simple. A Collingwood win locks their finals place and drags Brisbane back toward the 60-point logjam. A Brisbane win almost certainly seals a top-four berth \u2014 and opens the door for the Western Bulldogs, on 50 points and playing Melbourne this round, to attack eighth.",
-          "The MCG on a Friday night, a draw to atone for, and a double chance on the line. This is what late August football is for."
+          "The MCG on a Friday night, a draw to atone for, three stars racing the clock \u2014 and a double chance on the line. This is what late August football is for."
         ),
+      featuredImage: {
+        url: "/photos/collingwood-run.jpg",
+        alt: "Collingwood players stream forward at the MCG",
+        width: 1266,
+        height: 688,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
+      inlineImage: {
+        url: "/photos/lions-celebration.jpg",
+        alt: "Brisbane Lions players celebrate a goal",
+        width: 1216,
+        height: 840,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
       categorySlug: "previews",
       tags: ["Collingwood", "Brisbane Lions", "MCG", "Round 24"],
       author: AUTHORS.mitchHarlan,
@@ -104,6 +127,24 @@ const FIXTURES: Record<SiteKey, Article[]> = {
         p(
           "Brisbane's 42-point win over Gold Coast and GWS's 54-point win over West Coast rounded out a Round 23 that clarified the top two \u2014 Fremantle and Sydney \u2014 and left six clubs separated by eight points fighting for the other six finals spots."
         ),
+      featuredImage: {
+        url: "/photos/carlton-mark.jpg",
+        alt: "A Carlton player takes a high mark over Western Bulldogs opponents",
+        width: 1266,
+        height: 1618,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
+      inlineImage: {
+        url: "/photos/afl-contest.jpg",
+        alt: "A Collingwood defender wraps up his opponent in a tackle",
+        width: 1150,
+        height: 1562,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
       categorySlug: "reviews",
       tags: ["Round 23", "Hawthorn", "Collingwood", "Melbourne", "Draw"],
       author: AUTHORS.mitchHarlan,
@@ -134,6 +175,15 @@ const FIXTURES: Record<SiteKey, Article[]> = {
           "Under the current finals format the premier has overwhelmingly come from the top four \u2014 which is why three clubs on 60 points will treat this weekend like a final. Two of them can finish in the four. One of them probably plays elimination football instead.",
           "Percentage may yet decide it: Brisbane's 119.5 leads Geelong's 120.2 and Hawthorn's 117.3 in the fine print that separates a qualifying final from an elimination final."
         ),
+      featuredImage: {
+        url: "/photos/afl-contest.jpg",
+        alt: "A fierce tackle in a top-eight contest",
+        width: 1150,
+        height: 1562,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
       categorySlug: "stats",
       tags: ["Ladder", "Finals", "Round 24", "Run Home"],
       author: AUTHORS.mitchHarlan,
@@ -196,6 +246,15 @@ const FIXTURES: Record<SiteKey, Article[]> = {
           "The co-main features a grappler with elite control time against a striker whose takedown defence numbers look good until you notice the level of wrestling he's faced. Statistical profiles built against weak grapplers are the market's most common blind spot.",
           "On the prelims, watch the short-notice replacement bout: weight-cut quality and camp length are worth more than any highlight reel in those spots."
         ),
+      featuredImage: {
+        url: "/photos/ufc-champion-belts.jpg",
+        alt: "A UFC champion roars with both title belts",
+        width: 1248,
+        height: 1288,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
       categorySlug: "previews",
       tags: ["UFC 330", "Card Breakdown", "Main Event"],
       author: AUTHORS.danaOkafor,
@@ -251,6 +310,15 @@ const FIXTURES: Record<SiteKey, Article[]> = {
           "Almost everything in an open-stance fight flows from whose lead foot is outside. Win the foot position and your power side aligns with the opponent's centre line; lose it and you're punching across yourself all night.",
           "Fighters who consciously fight for outside foot position win open-stance rounds at a significantly higher rate. Watch tape with only the feet on screen and you can often call the round without seeing a single punch."
         ),
+      featuredImage: {
+        url: "/photos/ufc-exchange.jpg",
+        alt: "A straight punch lands flush in a UFC bout",
+        width: 1284,
+        height: 774,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
       categorySlug: "matchups",
       tags: ["Style Matchups", "Southpaw", "Striking"],
       author: AUTHORS.danaOkafor,
@@ -276,6 +344,15 @@ const FIXTURES: Record<SiteKey, Article[]> = {
           "Three signals matter most: output that holds or rises in round three, defensive metrics improving fight-over-fight, and performance against step-up competition rather than padded records.",
           "Fighters who tick all three tend to beat the number the first two or three times they face ranked opposition — the window before the market catches up."
         ),
+      featuredImage: {
+        url: "/photos/fighter-training.jpg",
+        alt: "Camp testing: conditioning data now shapes every fighter\'s preparation",
+        width: 1236,
+        height: 1562,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
       categorySlug: "fighters",
       tags: ["Prospects", "Analytics", "Rankings"],
       author: AUTHORS.danaOkafor,
@@ -362,6 +439,15 @@ const FIXTURES: Record<SiteKey, Article[]> = {
           "Raw finishing positions lie. The tell is in closing sectionals relative to race averages: when horses running the fastest final 400 metres consistently fail to make ground, position on the track is beating quality of horse — the definition of bias.",
           "Punters who adjust for this within a race meeting, not after it, are the ones who profit. By the time the bias is on social media, it's in the prices."
         ),
+      featuredImage: {
+        url: "/photos/flemington-finish.jpg",
+        alt: "Two runners hit the line together at Flemington",
+        width: 1284,
+        height: 644,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
       categorySlug: "tracks",
       tags: ["Flemington", "Track Bias", "Sectionals"],
       author: AUTHORS.tomBrennan,
@@ -373,28 +459,51 @@ const FIXTURES: Record<SiteKey, Article[]> = {
     },
     {
       id: "rac-004",
-      slug: "spring-carnival-2026-early-markets-value-scan",
-      title: "Spring Carnival 2026: An Early Scan of the Futures Markets",
+      slug: "spicy-martini-road-to-the-everest",
+      title: "Spicy Martini: The $8,000 Mare Chasing the World's Best Sprinter",
       excerpt:
-        "Caulfield Cup, Cox Plate and Melbourne Cup futures — where the early money has gone and what still looks over the odds.",
+        "From an $8,000 purchase to a $3 million Stradbroke \u2014 and now connections want an Everest slot against Ka Ying Rising.",
       bodyHtml:
         p(
-          "Futures betting is a different game: you're pricing not just ability but the probability a horse actually gets to the race, at the right distance, in the right condition. Most early futures bets lose to a scratching, not a slow horse.",
-          "That said, every spring a handful of horses are clearly under-priced in August because their path to a major is more certain than the market appreciates."
+          "Every Everest needs a fairytale, and this spring it might wear the colours of an $8,000 bargain buy. Spicy Martini, the Toby Edmonds-trained mare from the Gold Coast, stamped herself as one of Australia's emerging sprint stars with victory in the $3 million Stradbroke Handicap at Eagle Farm in June \u2014 a first Group 1 for young jockey Taylor Marshall.",
+          "The win took the daughter of American Triple Crown champion Justify past $2.7 million in earnings \u2014 more than 300 times her purchase price \u2014 and prompted connections to bypass the Tattersall's Tiara and aim squarely at October: The Everest at Royal Randwick."
         ) +
-        h2("How to shop futures") +
+        h2("The mountain in the way") +
         p(
-          "The checklist: a stated target from a stable that means it, a proven pattern for the race's conditions, ballot-exemption or enough rating to guarantee a start, and a preparation with an obvious lead-up sequence.",
-          "Horses ticking all four are rare, and they're the only futures bets worth the exposure. Everything else is better taken on the day at a shorter but safer price."
+          "Waiting at Randwick is the horse many judges now call the best sprinter in the world \u2014 and some are ready to call the best they've seen. Ka Ying Rising, Hong Kong's champion, returns to defend the Everest crown he won in 2025, and the world's top-ranked sprinter has been preparing for exactly this defence.",
+          "That is the equation facing every slot-holder this spring: take the proven mountain, or back the story still being written."
+        ) +
+        h2("The case for the mare") +
+        p(
+          "Trainer Toby Edmonds isn't shying from the target. \u201CHopefully this mare might attract an Everest slot, we'll see what happens,\u201D he said after the Stradbroke, invoking Les Bridge \u2014 still training Everest winners into his eighties \u2014 as proof the race rewards believers.",
+          "A Stradbroke-winning mare, rising through the sprinting ranks at the right time of year, with the race of her life on the calendar and the best sprinter alive standing at the top of it. Australian racing does not script them better."
         ),
-      categorySlug: "markets",
-      tags: ["Spring Carnival", "Futures", "Melbourne Cup"],
+      categorySlug: "news",
+      tags: ["Spicy Martini", "The Everest", "Ka Ying Rising", "Randwick", "Stradbroke"],
       author: AUTHORS.tomBrennan,
-      publishedAt: "2026-08-09T23:00:00Z",
-      updatedAt: "2026-08-10T01:00:00Z",
+      publishedAt: "2026-08-18T08:00:00Z",
+      updatedAt: "2026-08-18T08:00:00Z",
+      featuredImage: {
+        url: "/photos/racing-blinkers.jpg",
+        alt: "Spicy Martini in her distinctive red blinkers heads to the barriers",
+        width: 1256,
+        height: 892,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
+      inlineImage: {
+        url: "/photos/jockey-celebration.jpg",
+        alt: "Taylor Marshall salutes after Spicy Martini's Stradbroke Handicap victory",
+        width: 1154,
+        height: 1612,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
       theaibetPath: "/racing",
-      theaibetCtaLabel: "View AI racing analysis and runner rankings",
-      masterStoryId: "MS-2026-0809-SPRING-FUTURES",
+      theaibetCtaLabel: "See TheAIbet's AI analysis of the Everest sprinters",
+      masterStoryId: "MS-2026-0818-SPICY-MARTINI",
     },
   ],
 
@@ -419,6 +528,15 @@ const FIXTURES: Record<SiteKey, Article[]> = {
         p(
           "The double chance, the extra rest and home-ground advantage compound: the large majority of premierships in the current format have been won by top-four sides, and most by teams that won their qualifying final. Finishing fifth with the same win total as fourth is a dramatically worse position — which is why late home-and-away rounds between contenders carry such weight."
         ),
+      featuredImage: {
+        url: "/photos/carlton-mark.jpg",
+        alt: "A high mark in an AFL contest",
+        width: 1266,
+        height: 1618,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
       categorySlug: "explainers",
       tags: ["AFL", "Finals", "Explainer"],
       author: AUTHORS.priyaSharma,
@@ -448,6 +566,15 @@ const FIXTURES: Record<SiteKey, Article[]> = {
         p(
           "Takedowns score nothing by themselves — what happens after the takedown is what counts. Similarly, cage control without effective offence is a tiebreaker at best. The judges' question is always the same: who did more damage and came closer to ending the fight?"
         ),
+      featuredImage: {
+        url: "/photos/ufc-exchange.jpg",
+        alt: "Effective striking: the first thing UFC judges score",
+        width: 1284,
+        height: 774,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
       categorySlug: "explainers",
       tags: ["UFC", "Scoring", "Explainer"],
       author: AUTHORS.priyaSharma,
@@ -477,6 +604,15 @@ const FIXTURES: Record<SiteKey, Article[]> = {
         p(
           "Since Vintage Crop's 1993 breakthrough for Ireland, internationally-trained horses have reshaped the race — European stayers bred for distance have claimed a large share of recent editions, changing how the local market prices the race entirely."
         ),
+      featuredImage: {
+        url: "/photos/flemington-finish.jpg",
+        alt: "A photo finish at Flemington",
+        width: 1284,
+        height: 644,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
       categorySlug: "racing",
       tags: ["Melbourne Cup", "History", "Records"],
       author: AUTHORS.priyaSharma,
@@ -502,6 +638,15 @@ const FIXTURES: Record<SiteKey, Article[]> = {
           "NRL scoring: a try is worth four points, conversions two, penalty goals two and field goals one. AFL scoring: a goal (between the two tall central posts) is worth six points, a behind one point.",
           "The AFL season runs 24 home-and-away rounds into an eight-team finals series; the NRL runs 27 rounds into its own top-eight format. Both grand finals are among the most-watched television events in Australia each year."
         ),
+      featuredImage: {
+        url: "/photos/collingwood-run.jpg",
+        alt: "Australian rules football in full flight",
+        width: 1266,
+        height: 688,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
       categorySlug: "explainers",
       tags: ["NRL", "AFL", "Explainer"],
       author: AUTHORS.priyaSharma,
@@ -564,6 +709,15 @@ const FIXTURES: Record<SiteKey, Article[]> = {
         p(
           "I've made better bets than he ever did. I've had access to numbers he couldn't have imagined — probabilities, models, markets in my pocket. But the discipline underneath it all is still his: decide what it's worth before you know how it ends, and clap either way."
         ),
+      featuredImage: {
+        url: "/photos/lions-celebration.jpg",
+        alt: "The moment every September dreams of",
+        width: 1216,
+        height: 840,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
       categorySlug: "moments",
       tags: ["Grand Final", "Essay", "Memory"],
       author: AUTHORS.jackDoyle,

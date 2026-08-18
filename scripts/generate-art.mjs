@@ -196,7 +196,7 @@ const ARTICLES = {
     "memsie-stakes-day-preview-caulfield",
     "understanding-market-percentages-betting-education",
     "flemington-track-bias-report-winter-2026",
-    "spring-carnival-2026-early-markets-value-scan",
+    "spicy-martini-road-to-the-everest",
     "_default",
     "_inline",
   ],
