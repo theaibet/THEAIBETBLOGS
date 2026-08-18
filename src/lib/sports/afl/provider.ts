@@ -84,7 +84,8 @@ class SquiggleProvider implements AFLDataProvider {
 
   async getGames(year: number): Promise<AFLGame[]> {
     const data = await this.fetchJson<{ games: SquiggleGame[] }>(`games;year=${year}`, 600);
-    return data.games.map(mapGame);
+    // Finals placeholders have null teams until matchups are known — exclude
+    return data.games.filter((g) => g.hteam && g.ateam).map(mapGame);
   }
 }
 
@@ -181,7 +182,8 @@ export const TEAM_ABBREV: Record<string, string> = {
   "St Kilda": "STK", Sydney: "SYD", "West Coast": "WCE", "Western Bulldogs": "WBD",
 };
 
-export function teamAbbrev(name: string): string {
+export function teamAbbrev(name: string | null | undefined): string {
+  if (!name) return "TBC";
   return TEAM_ABBREV[name] ?? name.slice(0, 3).toUpperCase();
 }
 

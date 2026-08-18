@@ -177,10 +177,10 @@ function art(brandKey, slug, title) {
 // article slugs per brand (must match fixtures.ts) + a category-default set
 const ARTICLES = {
   aflreviews: [
-    "collingwood-vs-carlton-round-23-preview",
-    "top-four-race-ladder-scenarios-2026",
-    "why-forward-pressure-is-the-2026-premiership-stat",
-    "injury-list-round-23-who-returns-for-finals",
+    "collingwood-v-brisbane-lions-round-24-preview",
+    "round-23-review-two-draws-in-one-round",
+    "afl-run-home-round-24-ladder-scenarios",
+    "fremantle-2026-season-by-the-numbers",
     "_default",
     "_inline",
   ],

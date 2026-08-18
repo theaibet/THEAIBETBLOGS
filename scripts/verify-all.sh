@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 declare -A ARTICLES=(
-  [aflreviews]="/previews/collingwood-vs-carlton-round-23-preview"
+  [aflreviews]="/previews/collingwood-v-brisbane-lions-round-24-preview"
   [ufcreview]="/previews/ufc-330-full-card-breakdown"
   [puntersreview]="/previews/memsie-stakes-day-preview-caulfield"
   [sportinformation]="/explainers/afl-finals-system-explained"

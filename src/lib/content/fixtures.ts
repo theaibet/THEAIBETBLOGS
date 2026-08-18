@@ -55,113 +55,122 @@ function h2(text: string): string {
 const FIXTURES: Record<SiteKey, Article[]> = {
   aflreviews: [
     {
-      id: "afl-001",
-      slug: "collingwood-vs-carlton-round-23-preview",
-      title: "Collingwood vs Carlton: Round 23 Match Preview",
+      id: "afl-101",
+      slug: "collingwood-v-brisbane-lions-round-24-preview",
+      title: "Collingwood v Brisbane Lions: The Round 24 Blockbuster at the MCG",
       excerpt:
-        "Form, injuries, key matchups and the numbers that will decide Friday night's blockbuster at the MCG.",
+        "Eighth hosts third on Friday night with finals shape on the line \u2014 Collingwood off a draw, Brisbane off a 42-point statement.",
       bodyHtml:
         p(
-          "Friday night at the MCG rarely needs extra stakes, but this one has them anyway: both clubs are jostling for a top-four berth with a fortnight left in the home-and-away season, and the loser faces a likely elimination final.",
-          "Collingwood's midfield has been the engine of their late-season surge. Their clearance differential over the last six weeks ranks among the league's best, and their pressure rating at stoppages has forced opposition midfields into rushed, low-percentage exits."
+          "Friday night at the MCG delivers the game of Round 24: Collingwood, clinging to eighth on 52 points, host a Brisbane Lions side sitting third on 60 and playing like a team that wants a top-four double chance.",
+          "The stakes are lopsided in the best way. Collingwood are defending their place in the eight from a pack of chasers; Brisbane are defending a top-four spot from Hawthorn and Melbourne, both also on 60 points."
         ) +
-        h2("The matchup that decides it") +
+        h2("The form lines") +
         p(
-          "Carlton's tall forward structure against Collingwood's undersized but highly organised defence is the clearest fault line in this game. If the Blues can generate one-on-ones inside 50, they win those contests more often than not. If the Magpies force them to bomb long to outnumbered contests, the intercept game takes over.",
-          "The other pivot point is the wings. Both teams want to control the corridor, and whichever wing pairing provides more defensive coverage will dictate where the game is played."
+          "Collingwood arrive off one of the strangest results of the season \u2014 a 92-all draw with Hawthorn at the MCG that felt like a loss for both sides and kept the Magpies two premiership points clear of ninth.",
+          "Brisbane's Round 23 was the opposite: a 95\u201353 dismantling of Gold Coast at the Gabba that pushed their percentage to 119.5, comfortably clear of the teams around them."
         ) +
-        h2("Selection and conditions") +
+        h2("What the ladder says") +
         p(
-          "Both clubs go in close to full strength, with late fitness tests expected for one key defender apiece. A dry, still Melbourne night should mean a high-possession, high-mark game — conditions that historically favour the more methodical ball-movement side.",
-          "The history says these games are close: the last five meetings have been decided by an average of under 12 points."
+          "The maths is simple. A Collingwood win locks their finals place and drags Brisbane back toward the 60-point logjam. A Brisbane win almost certainly seals a top-four berth \u2014 and opens the door for the Western Bulldogs, on 50 points and playing Melbourne this round, to attack eighth.",
+          "The MCG on a Friday night, a draw to atone for, and a double chance on the line. This is what late August football is for."
         ),
       categorySlug: "previews",
-      tags: ["Collingwood", "Carlton", "MCG", "Round 23"],
+      tags: ["Collingwood", "Brisbane Lions", "MCG", "Round 24"],
       author: AUTHORS.mitchHarlan,
-      publishedAt: "2026-08-17T22:00:00Z",
-      updatedAt: "2026-08-17T22:00:00Z",
-      theaibetPath: "/afl/collingwood-vs-carlton",
-      theaibetCtaLabel: "See the AI model's probability, confidence and edge for Collingwood vs Carlton",
-      masterStoryId: "MS-2026-0812-COLL-CARL",
+      publishedAt: "2026-08-18T06:00:00Z",
+      updatedAt: "2026-08-18T06:00:00Z",
+      theaibetPath: "/afl",
+      theaibetCtaLabel: "See the AI model's probability, confidence and edge for Collingwood v Brisbane",
+      masterStoryId: "MS-2026-0818-COLL-BRIS-R24",
     },
     {
-      id: "afl-002",
-      slug: "top-four-race-ladder-scenarios-2026",
-      title: "The Top-Four Race: Every Ladder Scenario With Two Rounds Left",
+      id: "afl-102",
+      slug: "round-23-review-two-draws-in-one-round",
+      title: "Round 23 Review: Two Draws in One Round \u2014 and a Flag Contender Roars",
       excerpt:
-        "Six clubs, four spots, two rounds. We map every realistic permutation of the 2026 run home.",
+        "Hawthorn 92, Collingwood 92. Bulldogs 82, Carlton 82. One round, two draws, and Melbourne's 76-point warning shot.",
       bodyHtml:
         p(
-          "With two rounds remaining, six clubs can still finish in the top four, and the percentage gaps are tight enough that margins — not just results — will matter.",
-          "The simplest path belongs to the ladder leaders: win one of two and they cannot drop out of the top two. Below them it gets messy quickly."
+          "Round 23 of the 2026 season produced something genuinely rare: two drawn games in a single round. Hawthorn and Collingwood finished locked at 92 apiece at the MCG on Saturday night, and a day later the Western Bulldogs and Carlton couldn't be separated at 82-all at Docklands.",
+          "Draws change finals races in ways wins and losses don't. Hawthorn banked two points that kept them fourth on 60. Collingwood's two points kept eighth. Carlton and the Bulldogs each took two \u2014 and both probably needed four."
         ) +
-        h2("The scenarios that matter") +
+        h2("Melbourne's statement") +
         p(
-          "Third through sixth are separated by four premiership points and less than three per cent. Head-to-head results in the final fortnight mean two of these sides will directly eliminate each other from the double chance.",
-          "Percentage swings of the size required are rare but not unprecedented in final rounds, particularly when one contender plays a bottom-four side."
+          "The result of the round belonged to Melbourne: 132\u201356 over Port Adelaide at Adelaide Oval, a 76-point away demolition that lifted the Demons to 60 points and announced them as a genuine September threat.",
+          "Elsewhere, Fremantle consolidated top spot with a 112\u201388 win over Adelaide in Perth, Sydney handled Essendon by 36 at the MCG, and Geelong outlasted North Melbourne in a 235-point shootout at Docklands."
+        ) +
+        h2("The bottom line") +
+        p(
+          "Brisbane's 42-point win over Gold Coast and GWS's 54-point win over West Coast rounded out a Round 23 that clarified the top two \u2014 Fremantle and Sydney \u2014 and left six clubs separated by eight points fighting for the other six finals spots."
+        ),
+      categorySlug: "reviews",
+      tags: ["Round 23", "Hawthorn", "Collingwood", "Melbourne", "Draw"],
+      author: AUTHORS.mitchHarlan,
+      publishedAt: "2026-08-17T00:00:00Z",
+      updatedAt: "2026-08-17T00:00:00Z",
+      theaibetPath: "/afl",
+      theaibetCtaLabel: "See how the AI models rated every Round 23 result",
+      masterStoryId: "MS-2026-0817-R23-REVIEW",
+    },
+    {
+      id: "afl-103",
+      slug: "afl-run-home-round-24-ladder-scenarios",
+      title: "The Run Home: What Round 24 Means for Every Finals Contender",
+      excerpt:
+        "Six teams, eight points, six finals spots still moving. The real ladder maths heading into the final home-and-away round.",
+      bodyHtml:
+        p(
+          "The live ladder tells a clean story at the top: Fremantle first on 76 points with a league-best 142.5 per cent, Sydney second on 68. Barring the absurd, the double-chance top two is set.",
+          "Below them is the tightest congestion of the season. Brisbane, Hawthorn and Melbourne all sit on 60 points, Geelong and Adelaide on 56, Collingwood eighth on 52 \u2014 six clubs inside eight points, all still moving."
+        ) +
+        h2("The games that decide it") +
+        p(
+          "Round 24 could not have been scripted better. Collingwood host Brisbane at the MCG on Friday in a direct eighth-versus-third collision. Melbourne, fifth, play the ninth-placed Western Bulldogs \u2014 who sit two points behind Collingwood and are very much alive.",
+          "Hawthorn travel to Perth to face West Coast, Adelaide host GWS at Adelaide Oval, and Carlton \u2014 tenth on 46 after their draw \u2014 get top-of-the-table Fremantle at Docklands."
         ) +
         h2("What history says") +
         p(
-          "Since the current finals format was introduced, teams finishing in the top four have supplied the premier in the overwhelming majority of seasons. The double chance is not a bonus — it is the whole ball game."
+          "Under the current finals format the premier has overwhelmingly come from the top four \u2014 which is why three clubs on 60 points will treat this weekend like a final. Two of them can finish in the four. One of them probably plays elimination football instead.",
+          "Percentage may yet decide it: Brisbane's 119.5 leads Geelong's 120.2 and Hawthorn's 117.3 in the fine print that separates a qualifying final from an elimination final."
         ),
       categorySlug: "stats",
-      tags: ["Ladder", "Finals", "Top Four"],
+      tags: ["Ladder", "Finals", "Round 24", "Run Home"],
       author: AUTHORS.mitchHarlan,
-      publishedAt: "2026-08-16T04:30:00Z",
-      updatedAt: "2026-08-16T04:30:00Z",
+      publishedAt: "2026-08-17T22:00:00Z",
+      updatedAt: "2026-08-18T02:00:00Z",
       theaibetPath: "/afl",
-      theaibetCtaLabel: "View AI-modelled finals probabilities for every AFL club",
-      masterStoryId: "MS-2026-0816-AFL-LADDER",
+      theaibetCtaLabel: "View AI-modelled finals probabilities for every club",
+      masterStoryId: "MS-2026-0817-RUN-HOME",
     },
     {
-      id: "afl-003",
-      slug: "why-forward-pressure-is-the-2026-premiership-stat",
-      title: "Why Forward-Half Pressure Is the 2026 Premiership Stat",
+      id: "afl-104",
+      slug: "fremantle-2026-season-by-the-numbers",
+      title: "Fremantle's 2026: The Numbers Behind a Runaway Minor Premiership",
       excerpt:
-        "The numbers say turnovers created inside forward 50 have never been more valuable. Here's why.",
+        "76 points, a 142.5 per cent, and the league's stingiest defence. How the Dockers built the season's best resume.",
       bodyHtml:
         p(
-          "Every era of football has its defining statistic. In 2026, the strongest correlation with winning isn't clearances or inside 50s — it's turnovers generated in the forward half.",
-          "Scores from turnover now account for a larger share of total scoring than at any point in the last decade, and the sides that create repeat forward-half stoppages are the ones controlling territory and rest patterns."
+          "Fremantle sit on top of the AFL ladder on 76 points, eight clear of Sydney, with the competition's best percentage at 142.5. Those are minor-premiership numbers \u2014 and the underlying figures are even more emphatic.",
+          "The Dockers have conceded just 1,547 points, the fewest in the league by a wide margin, while scoring 2,204. No other club combines a top-three attack with the number-one defence."
         ) +
-        h2("The tactical shift") +
+        h2("The defensive foundation") +
         p(
-          "Coaches have responded to faster ball movement by pushing extra numbers behind the ball, which makes clean exits harder and turnovers deadlier. A turnover won 60 metres out is worth demonstrably more than a centre clearance, because the defence is disorganised.",
-          "For the contenders, the message is blunt: if your forwards don't pressure, your defence gets flooded with fast entries — and no key-back group survives that for four quarters of finals football."
+          "Holding opponents to 220 goals across a season is the bedrock stat. In an era where scores from turnover decide finals, Fremantle simply refuse to give up easy chains \u2014 their 112\u201388 handling of Adelaide in Round 23 was a demonstration in controlling territory without over-committing numbers forward.",
+          "Perth Stadium has become a fortress, and September will run through it: the top-of-the-ladder finish delivers home qualifying finals in front of 60,000."
+        ) +
+        h2("The September question") +
+        p(
+          "The only question left is the one the numbers can't answer: whether a dominant home-and-away season converts. Sydney on 68 and the 60-point trio of Brisbane, Hawthorn and Melbourne will have their say. The resume, though, is the strongest in the competition."
         ),
       categorySlug: "teams",
-      tags: ["Tactics", "Statistics", "Pressure"],
+      tags: ["Fremantle", "Ladder", "Statistics", "Finals"],
       author: AUTHORS.mitchHarlan,
-      publishedAt: "2026-08-13T06:00:00Z",
-      updatedAt: "2026-08-14T01:00:00Z",
+      publishedAt: "2026-08-16T22:00:00Z",
+      updatedAt: "2026-08-16T22:00:00Z",
       theaibetPath: "/afl",
-      theaibetCtaLabel: "Explore AFL team metrics inside TheAIbet",
-      masterStoryId: "MS-2026-0813-AFL-PRESSURE",
-    },
-    {
-      id: "afl-004",
-      slug: "injury-list-round-23-who-returns-for-finals",
-      title: "Round 23 Injury List: Who Makes It Back for Finals?",
-      excerpt:
-        "The full injury picture across the contenders, and which returns genuinely move the needle in September.",
-      bodyHtml:
-        p(
-          "Finals are usually decided by the list you have standing in September, not the one you picked in March. With two rounds left, several contenders are sweating on key returns.",
-          "The pattern this time of year is familiar: clubs get conservative, timelines get vague, and 'testing later in the week' becomes the most common phrase in football."
-        ) +
-        h2("Returns that change structures") +
-        p(
-          "A returning key defender changes a team's entire defensive method — permitting a more aggressive intercept game rather than forced zone coverage. Similarly, a genuine ruck returning reshapes centre bounce setups that have been improvised for months.",
-          "The riskiest category is the soft-tissue return in week one of finals: recurrence rates within the first two matches back remain the quiet fear of every high-performance department."
-        ),
-      categorySlug: "injuries",
-      tags: ["Injuries", "Finals", "Selection"],
-      author: AUTHORS.mitchHarlan,
-      publishedAt: "2026-08-15T00:00:00Z",
-      updatedAt: "2026-08-17T00:00:00Z",
-      theaibetPath: "/afl",
-      theaibetCtaLabel: "See how injuries shift AI match probabilities",
-      masterStoryId: "MS-2026-0815-AFL-INJURY",
+      theaibetCtaLabel: "Explore Fremantle's AI premiership probability",
+      masterStoryId: "MS-2026-0816-FREO-NUMBERS",
     },
   ],
 
