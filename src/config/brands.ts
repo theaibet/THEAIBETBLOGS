@@ -58,6 +58,7 @@ export const BRANDS: Record<SiteKey, BrandConfig> = {
   ufcreview: {
     key: "ufcreview",
     homeVariant: "news",
+    dataNav: [{ href: "/events", label: "Events" }],
     name: "UFC Review",
     domain: "ufcreview.com.au",
     tagline: "Fight cards, broken down.",
