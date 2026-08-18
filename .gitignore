@@ -5,3 +5,4 @@ screenshots
 .env*
 tsconfig.tsbuildinfo
 _to_delete/
+.DS_Store

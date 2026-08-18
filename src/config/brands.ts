@@ -1,12 +1,19 @@
 import type { BrandConfig, SiteKey } from "./types";
 
-const SANS =
-  'ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif';
-const SERIF = 'Georgia, "Times New Roman", Cambria, "Iowan Old Style", serif';
+const SYS = 'ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif';
+const INTER = `"Inter", ${SYS}`;
+const ARCHIVO = `"Archivo", ${SYS}`;
+const BARLOW_C = `"Barlow Condensed", ${SYS}`;
+const BARLOW = `"Barlow", ${SYS}`;
+const FRAUNCES = `"Fraunces", Georgia, serif`;
+const GROTESK = `"Space Grotesk", ${SYS}`;
+const PLAYFAIR = `"Playfair Display", Georgia, serif`;
+const LORA = `"Lora", Georgia, serif`;
 
 export const BRANDS: Record<SiteKey, BrandConfig> = {
   aflreviews: {
     key: "aflreviews",
+    homeVariant: "news",
     name: "AFL Reviews",
     domain: "aflreviews.com.au",
     tagline: "Every match. Every angle.",
@@ -31,8 +38,8 @@ export const BRANDS: Record<SiteKey, BrandConfig> = {
       chrome: "#0B1F3A",
       chromeText: "#FFFFFF",
       border: "#E3E6EC",
-      fontHeading: SANS,
-      fontBody: SANS,
+      fontHeading: ARCHIVO,
+      fontBody: INTER,
       headingTransform: "none",
       headingWeight: 800,
       radius: "0.5rem",
@@ -45,6 +52,7 @@ export const BRANDS: Record<SiteKey, BrandConfig> = {
 
   ufcreview: {
     key: "ufcreview",
+    homeVariant: "news",
     name: "UFC Review",
     domain: "ufcreview.com.au",
     tagline: "Fight cards, broken down.",
@@ -69,8 +77,8 @@ export const BRANDS: Record<SiteKey, BrandConfig> = {
       chrome: "#08090B",
       chromeText: "#F2F3F5",
       border: "#26282F",
-      fontHeading: SANS,
-      fontBody: SANS,
+      fontHeading: BARLOW_C,
+      fontBody: BARLOW,
       headingTransform: "uppercase",
       headingWeight: 900,
       radius: "0.25rem",
@@ -83,6 +91,7 @@ export const BRANDS: Record<SiteKey, BrandConfig> = {
 
   puntersreview: {
     key: "puntersreview",
+    homeVariant: "broadsheet",
     name: "Punters Review",
     domain: "puntersreview.com.au",
     tagline: "Racing, read properly.",
@@ -108,8 +117,8 @@ export const BRANDS: Record<SiteKey, BrandConfig> = {
       chromeText: "#F3EFDF",
       border: "#E2DDCB",
       chromeAccent: "#D9B64A",
-      fontHeading: SERIF,
-      fontBody: SANS,
+      fontHeading: FRAUNCES,
+      fontBody: INTER,
       headingTransform: "none",
       headingWeight: 700,
       radius: "0.375rem",
@@ -122,6 +131,7 @@ export const BRANDS: Record<SiteKey, BrandConfig> = {
 
   sportinformation: {
     key: "sportinformation",
+    homeVariant: "index",
     name: "Sport Information",
     domain: "sportinformation.com.au",
     tagline: "The numbers behind the game.",
@@ -146,8 +156,8 @@ export const BRANDS: Record<SiteKey, BrandConfig> = {
       chrome: "#FFFFFF",
       chromeText: "#0F1728",
       border: "#E4E9F1",
-      fontHeading: SANS,
-      fontBody: SANS,
+      fontHeading: GROTESK,
+      fontBody: INTER,
       headingTransform: "none",
       headingWeight: 700,
       radius: "0.75rem",
@@ -160,6 +170,7 @@ export const BRANDS: Record<SiteKey, BrandConfig> = {
 
   punterstory: {
     key: "punterstory",
+    homeVariant: "magazine",
     name: "Punter Story",
     domain: "punterstory.com.au",
     tagline: "True stories from Australian punting.",
@@ -184,8 +195,8 @@ export const BRANDS: Record<SiteKey, BrandConfig> = {
       chrome: "#FAF7F1",
       chromeText: "#221E1A",
       border: "#E8E1D5",
-      fontHeading: SERIF,
-      fontBody: SERIF,
+      fontHeading: PLAYFAIR,
+      fontBody: LORA,
       headingTransform: "none",
       headingWeight: 700,
       radius: "0",

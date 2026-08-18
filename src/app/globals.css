@@ -30,12 +30,22 @@ body {
   font-family: var(--brand-font-heading);
   font-weight: var(--brand-heading-weight);
   text-transform: var(--brand-heading-transform);
+  letter-spacing: -0.015em;
+}
+
+::selection {
+  background: var(--brand-accent);
+  color: var(--brand-accent-contrast);
 }
 
 /* Article body typography (kept dependency-free) */
 .article-body {
-  font-size: 1.075rem;
-  line-height: 1.8;
+  font-size: 1.125rem;
+  line-height: 1.85;
+}
+.article-body > p:first-of-type {
+  font-size: 1.2rem;
+  line-height: 1.75;
 }
 .article-body p {
   margin-bottom: 1.25rem;

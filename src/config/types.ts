@@ -43,8 +43,13 @@ export interface NavCategory {
   description: string;
 }
 
+/** Homepage editorial layout — same engine, visibly different publications */
+export type HomeVariant = "news" | "broadsheet" | "magazine" | "index";
+
 export interface BrandConfig {
   key: SiteKey;
+  /** Which homepage editorial layout this publication uses */
+  homeVariant: HomeVariant;
   name: string;
   domain: string; // production domain, no protocol
   tagline: string;

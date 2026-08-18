@@ -1,8 +1,8 @@
 import Link from "next/link";
-import Image from "next/image";
 import type { Article } from "@/lib/content/types";
 import { getSite } from "@/config/site";
 import { formatDate } from "@/lib/format";
+import { ArtImage } from "./ArtImage";
 
 export function ArticleCard({ article, featured = false }: { article: Article; featured?: boolean }) {
   const site = getSite();
@@ -11,46 +11,49 @@ export function ArticleCard({ article, featured = false }: { article: Article; f
 
   return (
     <article
-      className={`group overflow-hidden rounded-brand border border-edge bg-surface transition hover:shadow-lg ${
+      className={`group overflow-hidden rounded-brand border border-edge bg-surface transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl ${
         featured ? "md:col-span-2" : ""
       }`}
     >
       <Link href={href} className="block">
-        <div
-          className={`relative flex items-end bg-gradient-to-br from-accent/25 via-accent/10 to-transparent ${
-            featured ? "aspect-[21/9]" : "aspect-[16/9]"
-          }`}
-        >
-          {article.featuredImage ? (
-            <Image
-              src={article.featuredImage.url}
-              alt={article.featuredImage.alt}
-              fill
-              className="object-cover"
-              sizes={featured ? "(min-width: 768px) 66vw, 100vw" : "(min-width: 768px) 33vw, 100vw"}
-            />
-          ) : (
-            <div aria-hidden className="absolute inset-0 flex items-center justify-center">
-              <span className="font-heading select-none text-5xl tracking-tight opacity-[0.08]">
-                {site.logoText}
-              </span>
-            </div>
-          )}
-          <span className="relative m-3 rounded-brand bg-accent px-2.5 py-1 text-xs font-semibold text-accent-contrast">
+        <div className={`relative overflow-hidden ${featured ? "aspect-[21/10]" : "aspect-[16/9]"}`}>
+          <ArtImage
+            image={article.featuredImage}
+            alt={article.featuredImage?.alt ?? article.title}
+            className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent" />
+          <span className="absolute left-4 top-4 rounded-brand bg-accent px-2.5 py-1 text-[11px] font-bold uppercase tracking-[0.08em] text-accent-contrast">
             {category?.name ?? article.categorySlug}
           </span>
+          {featured && (
+            <div className="absolute inset-x-0 bottom-0 hidden p-6 sm:block">
+              <h2 className="font-heading max-w-3xl text-3xl leading-[1.08] text-white drop-shadow-sm">
+                {article.title}
+              </h2>
+            </div>
+          )}
         </div>
         <div className="p-5">
-          <h2
-            className={`font-heading leading-snug transition group-hover:text-accent ${
-              featured ? "text-2xl" : "text-lg"
-            }`}
-          >
-            {article.title}
-          </h2>
-          <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-muted">{article.excerpt}</p>
+          {!featured && (
+            <h2 className="font-heading text-xl leading-snug transition-colors group-hover:text-accent">
+              {article.title}
+            </h2>
+          )}
+          <p className={`line-clamp-2 text-sm leading-relaxed text-muted ${featured ? "" : "mt-2"}`}>
+            {article.excerpt}
+          </p>
           <div className="mt-4 flex items-center gap-2 text-xs text-muted">
-            <span className="font-medium text-ink">{article.author.name}</span>
+            <span
+              aria-hidden
+              className="flex h-6 w-6 items-center justify-center rounded-full bg-accent text-[10px] font-bold text-accent-contrast"
+            >
+              {article.author.name
+                .split(" ")
+                .map((n) => n[0])
+                .join("")}
+            </span>
+            <span className="font-semibold text-ink">{article.author.name}</span>
             <span aria-hidden>·</span>
             <time dateTime={article.publishedAt}>{formatDate(article.publishedAt)}</time>
           </div>

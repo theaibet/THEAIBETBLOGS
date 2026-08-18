@@ -6,31 +6,34 @@ export function Header() {
   return (
     <header className="bg-chrome text-chrome-text border-b border-edge/40">
       <div className="mx-auto max-w-6xl px-4">
-        <div className="flex items-center justify-between py-5">
-          <Link href="/" className="group flex items-baseline gap-1.5" aria-label={`${site.name} home`}>
-            <span className="font-heading text-2xl tracking-tight">{site.logoText}</span>
+        <div className="flex items-center justify-between py-6">
+          <Link href="/" className="group flex items-baseline gap-2" aria-label={`${site.name} home`}>
+            <span className="font-heading text-3xl tracking-tight sm:text-4xl">{site.logoText}</span>
             {site.logoAccentText && (
-              <span className="font-heading text-2xl tracking-tight text-chrome-accent">
+              <span className="font-heading text-3xl tracking-tight text-chrome-accent sm:text-4xl">
                 {site.logoAccentText}
               </span>
             )}
           </Link>
-          <div className="hidden text-xs uppercase tracking-[0.2em] opacity-70 sm:block">
+          <div className="hidden text-[11px] font-semibold uppercase tracking-[0.28em] opacity-60 md:block">
             {site.tagline}
           </div>
           <Link
             href="/search"
-            className="rounded-brand border border-current/30 px-3 py-1.5 text-sm opacity-80 transition hover:opacity-100"
+            className="rounded-brand border border-current/25 px-3.5 py-1.5 text-sm font-medium opacity-80 transition hover:border-current/60 hover:opacity-100"
           >
             Search
           </Link>
         </div>
-        <nav aria-label="Categories" className="flex gap-1 overflow-x-auto pb-3 -mx-1">
+        <nav
+          aria-label="Categories"
+          className="-mx-1 flex gap-0.5 overflow-x-auto border-t border-current/10 pb-0"
+        >
           {site.categories.map((c) => (
             <Link
               key={c.slug}
               href={`/category/${c.slug}`}
-              className="whitespace-nowrap rounded-brand px-3 py-1.5 text-sm font-medium opacity-85 transition hover:bg-accent hover:text-accent-contrast hover:opacity-100"
+              className="whitespace-nowrap border-b-2 border-transparent px-3.5 py-3 text-sm font-semibold opacity-80 transition hover:border-accent hover:opacity-100"
             >
               {c.name}
             </Link>
