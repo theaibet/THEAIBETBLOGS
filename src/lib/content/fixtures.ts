@@ -97,10 +97,10 @@ const FIXTURES: Record<SiteKey, Article[]> = {
       publishedAt: "2026-08-18T11:30:00Z",
       updatedAt: "2026-08-18T11:30:00Z",
       featuredImage: {
-        url: "/photos/afl-contest.jpg",
-        alt: "A Collingwood defender fights through a tackle \u2014 a wounded Pies side refusing to go away",
-        width: 1150,
-        height: 1562,
+        url: "/photos/collingwood-ball-carrier.jpg",
+        alt: "A Collingwood ball-carrier accelerates away from teammates \u2014 the young Pies side finding a way through",
+        width: 1266,
+        height: 688,
         credit: "Supplied",
         license: "user-supplied",
         source: "publisher-upload",
@@ -158,7 +158,7 @@ const FIXTURES: Record<SiteKey, Article[]> = {
         source: "publisher-upload",
       },
       inlineImage: {
-        url: "/photos/lions-celebration.jpg",
+        url: "/photos/lions-goal-celebration.jpg",
         alt: "Brisbane Lions players celebrate a goal",
         width: 1216,
         height: 840,
@@ -248,10 +248,10 @@ const FIXTURES: Record<SiteKey, Article[]> = {
           "Percentage may yet decide it: Brisbane's 119.5 leads Geelong's 120.2 and Hawthorn's 117.3 in the fine print that separates a qualifying final from an elimination final."
         ),
       featuredImage: {
-        url: "/photos/afl-contest.jpg",
-        alt: "A fierce tackle in a top-eight contest",
-        width: 1150,
-        height: 1562,
+        url: "/photos/hawthorn-pack-mark.jpg",
+        alt: "A Hawthorn player out-marks a pack of Sydney defenders — the kind of contested ball that decides tight finals races",
+        width: 1600,
+        height: 1091,
         credit: "Supplied",
         license: "user-supplied",
         source: "publisher-upload",
@@ -285,6 +285,15 @@ const FIXTURES: Record<SiteKey, Article[]> = {
         p(
           "The only question left is the one the numbers can't answer: whether a dominant home-and-away season converts. Sydney on 68 and the 60-point trio of Brisbane, Hawthorn and Melbourne will have their say. The resume, though, is the strongest in the competition."
         ),
+      featuredImage: {
+        url: "/photos/afl-contested-mark.jpg",
+        alt: "A contested overhead mark — the kind of clean ball-use underpinning Fremantle's league-best defensive numbers",
+        width: 1252,
+        height: 1600,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
       categorySlug: "teams",
       tags: ["Fremantle", "Ladder", "Statistics", "Finals"],
       author: AUTHORS.mitchHarlan,
@@ -325,10 +334,10 @@ const FIXTURES: Record<SiteKey, Article[]> = {
           "One round after that, the ladder locks in for finals. This is the last weekend to move."
         ),
       featuredImage: {
-        url: "/photos/carlton-mark.jpg",
-        alt: "A Carlton player takes a strong overhead mark",
-        width: 1200,
-        height: 800,
+        url: "/photos/round-24-tackle.jpg",
+        alt: "A Sydney ball-carrier is wrapped up by a Collingwood tackle — the physical edge that decides Round 24",
+        width: 1150,
+        height: 1562,
         credit: "Supplied",
         license: "user-supplied",
         source: "publisher-upload",
@@ -415,6 +424,15 @@ const FIXTURES: Record<SiteKey, Article[]> = {
         p(
           "Championship rounds reward control and consistency \u2014 the qualities models measure best. Prelims reward chaos. The discipline is knowing which regime you're pricing before the cage door shuts."
         ),
+      featuredImage: {
+        url: "/photos/ufc-double-champ-belts.jpg",
+        alt: "A UFC fighter roars while holding two championship belts across his shoulders",
+        width: 1248,
+        height: 1288,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
       categorySlug: "model-vs-market",
       tags: ["Model vs Market", "UFC 330", "Analytics"],
       author: AUTHORS.danaOkafor,
@@ -527,10 +545,10 @@ const FIXTURES: Record<SiteKey, Article[]> = {
           "Pantoja held the belt through a string of defences before losing it to injury rather than to a finish or a judge's card, most recently submitting Kai Kara-France to retain the title. At 35, this is realistically his last run at reclaiming it, and he's made no secret of wanting the finish this time, not the freak ending."
         ),
       featuredImage: {
-        url: "/photos/ufc-champion-belts.jpg",
-        alt: "UFC championship belts on display",
-        width: 1200,
-        height: 800,
+        url: "/photos/ufc-striking-exchange-2.jpg",
+        alt: "Two fighters trade strikes at close range inside the cage — the kind of finish Pantoja wants this time",
+        width: 1284,
+        height: 774,
         credit: "Supplied",
         license: "user-supplied",
         source: "publisher-upload",
@@ -655,6 +673,15 @@ const FIXTURES: Record<SiteKey, Article[]> = {
         p(
           "Markets are sharpest where the most money flows: metropolitan Saturday racing, feature races, short-priced favourites. They are weakest in thin midweek markets, early markets before scratchings settle, and races where a single piece of information — a track bias, a gear change — hasn't been fully absorbed."
         ),
+      featuredImage: {
+        url: "/photos/racing-field-turn.jpg",
+        alt: "A tightly bunched field of runners in various silks rounds the turn — the moment a market's overround gets tested",
+        width: 1384,
+        height: 672,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
       categorySlug: "education",
       tags: ["Betting Education", "Value", "Markets"],
       author: AUTHORS.tomBrennan,
@@ -1068,6 +1095,15 @@ const FIXTURES: Record<SiteKey, Article[]> = {
         p(
           "Every punter in that room has told the story since, and in every telling the horse's margin gets shorter and Ray gets calmer. That's the thing about punting stories: the money is never really the point. The point is that for four minutes on a Tuesday, a suburban TAB held its breath together."
         ),
+      featuredImage: {
+        url: "/photos/racing-head-to-head-finish.jpg",
+        alt: "Two horses hit the line together in a driving head-to-head finish",
+        width: 1284,
+        height: 644,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
       categorySlug: "big-wins",
       tags: ["TAB", "Multi", "Big Wins"],
       author: AUTHORS.jackDoyle,
@@ -1175,6 +1211,15 @@ const FIXTURES: Record<SiteKey, Article[]> = {
           "The quaddie paid $11,240 for his dollar-forty flexi. The venue got its deposit, the best man got his story, and the couple got a wedding in which the father of the bride toasted 'the mare that made this possible'.",
           "Dave hasn't had a serious bet since. 'You retire on top,' he says. 'Everyone knows that. Nobody does it. I did it.' His wife rolls her eyes. The framed ticket hangs in their hallway."
         ),
+      featuredImage: {
+        url: "/photos/racing-winner-flowers.jpg",
+        alt: "A winning horse crosses the line clear of the field under a sponsor's signage — the moment the quaddie got home",
+        width: 1074,
+        height: 774,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
       categorySlug: "big-wins",
       tags: ["Quaddie", "Big Wins", "Culture"],
       author: AUTHORS.jackDoyle,
