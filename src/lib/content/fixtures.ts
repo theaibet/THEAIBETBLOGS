@@ -527,10 +527,10 @@ const FIXTURES: Record<SiteKey, Article[]> = {
           "Pantoja held the belt through a string of defences before losing it to injury rather than to a finish or a judge's card, most recently submitting Kai Kara-France to retain the title. At 35, this is realistically his last run at reclaiming it, and he's made no secret of wanting the finish this time, not the freak ending."
         ),
       featuredImage: {
-        url: "/photos/ufc-striking-exchange-2.jpg",
-        alt: "Two fighters trade strikes at close range inside the cage — the kind of finish Pantoja wants this time",
-        width: 1284,
-        height: 774,
+        url: "/photos/ufc-jab-exchange.jpg",
+        alt: "A fighter's jab lands flush in a UFC bout — the kind of finish Pantoja wants this time",
+        width: 1162,
+        height: 676,
         credit: "Supplied",
         license: "user-supplied",
         source: "publisher-upload",
