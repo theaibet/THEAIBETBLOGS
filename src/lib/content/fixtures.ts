@@ -425,10 +425,10 @@ const FIXTURES: Record<SiteKey, Article[]> = {
           "Championship rounds reward control and consistency \u2014 the qualities models measure best. Prelims reward chaos. The discipline is knowing which regime you're pricing before the cage door shuts."
         ),
       featuredImage: {
-        url: "/photos/ufc-double-champ-belts.jpg",
-        alt: "A UFC fighter roars while holding two championship belts across his shoulders",
-        width: 1248,
-        height: 1288,
+        url: "/photos/ufc-decision-announced.jpg",
+        alt: "A fighter erupts as the judges' decision is read out — the moment a model's pre-fight number gets marked right or wrong",
+        width: 1040,
+        height: 730,
         credit: "Supplied",
         license: "user-supplied",
         source: "publisher-upload",
