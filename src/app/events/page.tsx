@@ -1,16 +1,14 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getSite, getSiteUrl } from "@/config/site";
-import { getUFCEvents, nextEvent, formatEventDate } from "@/lib/sports/ufc/provider";
-import { EventCard } from "@/components/ufc/EventCard";
-import { EventCountdown } from "@/components/ufc/EventCountdown";
-import { JsonLd } from "@/components/JsonLd";
+import { getUFCData, formatEventDate, daysUntil } from "@/lib/sports/ufc/provider";
+import { FightCard } from "@/components/ufc/FightCard";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "UFC Events — Upcoming Fight Cards & Countdown",
+    title: "UFC Schedule — Upcoming Events and Fight Cards",
     description:
-      "Every confirmed upcoming UFC event: dates, venues and main event matchups, with a live countdown to the next card.",
+      "Every upcoming UFC event: dates in AEST, venues, and the full announced fight card for each card.",
     alternates: { canonical: `${getSiteUrl()}/events` },
   };
 }
@@ -18,73 +16,40 @@ export function generateMetadata(): Metadata {
 export default async function EventsPage() {
   const site = getSite();
   if (site.key !== "ufcreview") notFound();
-  const snapshot = await getUFCEvents();
-  const events = snapshot?.events ?? [];
-  const next = nextEvent(events);
-
-  const itemListJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    itemListElement: events.map((e, i) => ({
-      "@type": "ListItem",
-      position: i + 1,
-      url: `${getSiteUrl()}/events/${e.slug}`,
-      name: e.name,
-    })),
-  };
+  const ufc = await getUFCData();
 
   return (
     <>
-      {snapshot && <JsonLd data={itemListJsonLd} />}
       <header className="border-b-2 border-ink/90 pb-5">
-        <h1 className="font-heading text-3xl sm:text-4xl">UFC Events</h1>
+        <h1 className="font-heading text-3xl sm:text-4xl">UFC Schedule</h1>
         <p className="mt-2 max-w-2xl text-muted">
-          Confirmed upcoming UFC cards — dates, venues and main event matchups.
+          Upcoming UFC events with announced fight cards. Dates shown are the Australian broadcast day (AEST).
         </p>
       </header>
 
-      {next && (
-        <section className="mt-8 rounded-brand border border-accent/40 bg-accent/[0.06] p-6 sm:p-8">
-          <div className="text-[11px] font-semibold uppercase tracking-[0.15em] text-accent">
-            Next Card
-          </div>
-          <h2 className="mt-2 font-heading text-2xl sm:text-3xl">
-            {next.mainEvent
-              ? `${next.mainEvent.fighterA} vs. ${next.mainEvent.fighterB}`
-              : next.name}
-          </h2>
-          <p className="mt-1 text-sm text-muted">
-            {next.venue}, {next.city}, {next.country} · {formatEventDate(next.dateAEST)}
-          </p>
-          <div className="mt-6">
-            <EventCountdown dateAEST={next.dateAEST} />
-          </div>
-          <a
-            href={`/events/${next.slug}`}
-            className="mt-6 inline-flex items-center gap-2 rounded-brand bg-accent px-5 py-2.5 text-sm font-semibold text-accent-contrast transition hover:opacity-90"
-          >
-            Full card details <span aria-hidden>→</span>
-          </a>
-        </section>
-      )}
-
-      {events.length ? (
-        <section className="mt-10">
-          <h2 className="font-heading text-xl">All Confirmed Events</h2>
-          <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {events.map((e) => (
-              <EventCard key={e.slug} event={e} />
-            ))}
-          </div>
-        </section>
+      {ufc ? (
+        <div className="mt-10 space-y-12">
+          {ufc.upcoming.map((e) => {
+            const days = daysUntil(e.dateAEST);
+            return (
+              <section key={e.id}>
+                <div className="flex flex-wrap items-baseline justify-between gap-2 border-b border-edge pb-3">
+                  <h2 className="font-heading text-xl">{e.name}</h2>
+                  <div className="text-sm text-muted">
+                    {formatEventDate(e.dateAEST)} · {e.venue}, {e.city}
+                    {days > 0 && <span className="ml-2 font-bold text-accent">{days}d</span>}
+                  </div>
+                </div>
+                <div className="mt-5">
+                  <FightCard event={e} />
+                </div>
+              </section>
+            );
+          })}
+          <p className="text-xs text-muted">{ufc.source} · verified {ufc.verifiedAt}</p>
+        </div>
       ) : (
-        <p className="mt-8 text-muted">Event data is temporarily unavailable — check back shortly.</p>
-      )}
-
-      {snapshot && (
-        <p className="mt-10 text-xs text-muted">
-          Verified {snapshot.lastVerified}. {snapshot.verificationNote}
-        </p>
+        <p className="mt-8 text-muted">Schedule data is temporarily unavailable — check back shortly.</p>
       )}
     </>
   );

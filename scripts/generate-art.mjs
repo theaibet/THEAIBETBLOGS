@@ -177,6 +177,7 @@ function art(brandKey, slug, title) {
 // article slugs per brand (must match fixtures.ts) + a category-default set
 const ARTICLES = {
   aflreviews: [
+    "sydney-swans-suspend-five-players-what-it-means-for-september",
     "the-kids-are-coming-collingwood-september",
     "collingwood-v-brisbane-lions-round-24-preview",
     "round-23-review-two-draws-in-one-round",
@@ -186,6 +187,8 @@ const ARTICLES = {
     "_inline",
   ],
   ufcreview: [
+    "umar-nurmagomedov-song-yadong-shanghai-preview",
+    "ufc-331-van-pantoja-2-preview",
     "ufc-330-results-makhachev-breaks-record",
     "model-vs-market-what-ufc-330-taught-us",
     "the-southpaw-problem-style-matchups-explained",

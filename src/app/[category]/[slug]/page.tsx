@@ -104,11 +104,22 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
         </header>
 
         <figure className="mt-8">
-          <div className="overflow-hidden rounded-brand border border-edge">
+          <div
+            className="overflow-hidden rounded-brand border border-edge"
+            /* Respect unusually wide source images (e.g. multi-player composites)
+               instead of cropping the outer subjects out of a 16:9 box. */
+            style={{
+              aspectRatio:
+                article.featuredImage?.width && article.featuredImage?.height &&
+                article.featuredImage.width / article.featuredImage.height > 2
+                  ? `${article.featuredImage.width} / ${article.featuredImage.height}`
+                  : "16 / 9",
+            }}
+          >
             <ArtImage
               image={article.featuredImage}
               alt={article.featuredImage?.alt ?? article.title}
-              className="aspect-[16/9] w-full object-cover"
+              className="h-full w-full object-cover"
               eager
             />
           </div>

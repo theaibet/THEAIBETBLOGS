@@ -53,6 +53,12 @@ export interface Article {
   theaibetPath?: string;
   /** CTA label, e.g. "View the AI model analysis for UFC 330" */
   theaibetCtaLabel?: string;
+  /** Which TheAIbet section this article should feed (resolver input) */
+  theaibetSport?:
+    | "afl" | "nrl" | "nfl" | "aleague"
+    | "ufc" | "racing" | "greyhounds" | "tip" | "general";
+  /** Provider event id for future exact-event deep links */
+  theaibetEventId?: string;
   /** Master story ID from the central newsroom (attribution + dedup) */
   masterStoryId?: string;
   /** FAQ entries rendered on-page + emitted as FAQPage JSON-LD (AEO) */

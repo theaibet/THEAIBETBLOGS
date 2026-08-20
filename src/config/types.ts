@@ -61,8 +61,6 @@ export interface BrandConfig {
   /** Publication categories (mirrors WordPress categories) */
   categories: NavCategory[];
   theme: BrandTheme;
-  /** Default TheAIbet section this brand feeds into, used when an article has no explicit destination */
-  theaibetDefaultPath: string;
   /** Wordmark treatment */
   logoText: string;
   logoAccentText?: string;

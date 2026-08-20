@@ -4,6 +4,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { websiteJsonLd } from "@/lib/seo";
 import { BroadsheetHome, IndexHome, MagazineHome, NewsHome } from "@/components/home/variants";
 import { AFLHomepage } from "@/components/home/AFLHomepage";
+import { UFCHomepage } from "@/components/home/UFCHomepage";
 
 export default async function HomePage() {
   const site = getSite();
@@ -15,6 +16,8 @@ export default async function HomePage() {
   const home =
     site.key === "aflreviews" ? (
       <AFLHomepage articles={articles} />
+    ) : site.key === "ufcreview" ? (
+      <UFCHomepage articles={articles} />
     ) : (
       (() => {
         const Home = {

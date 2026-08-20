@@ -12,35 +12,11 @@ import type { SiteKey } from "@/config/types";
  */
 
 const AUTHORS: Record<string, Author> = {
-  mitchHarlan: {
-    slug: "mitch-harlan",
-    name: "Mitch Harlan",
-    role: "Senior AFL Writer",
-    bio: "Mitch has covered the AFL for over a decade, with a focus on tactics, list management and the numbers that actually decide games.",
-  },
-  danaOkafor: {
-    slug: "dana-okafor",
-    name: "Dana Okafor",
-    role: "Combat Sports Analyst",
-    bio: "Dana breaks down fight cards through stats and style matchups, and tracks where quantitative models disagree with the betting market.",
-  },
-  tomBrennan: {
-    slug: "tom-brennan",
-    name: "Tom Brennan",
-    role: "Racing Analyst",
-    bio: "Form student, speed-map obsessive and long-time watcher of Victorian and Sydney racing. Tom writes previews, reviews and market analysis.",
-  },
-  priyaSharma: {
-    slug: "priya-sharma",
-    name: "Priya Sharma",
-    role: "Sports Data Writer",
-    bio: "Priya turns sports data into plain-English information: records, rules, history and the numbers behind Australian and US sport.",
-  },
-  jackDoyle: {
-    slug: "jack-doyle",
-    name: "Jack Doyle",
-    role: "Feature Writer",
-    bio: "Jack writes long-form stories about Australian punting culture — the wins, the losses and the characters in between.",
+  zacReid: {
+    slug: "zac-reid",
+    name: "Zac Reid",
+    role: "Sports and Racing Analysis",
+    bio: "Zac Reid writes sports and racing analysis across TheAIbet media network, with a focus on form, data and the numbers that actually decide results.",
   },
 };
 
@@ -54,6 +30,83 @@ function h2(text: string): string {
 
 const FIXTURES: Record<SiteKey, Article[]> = {
   aflreviews: [
+    {
+      id: "afl-105",
+      slug: "sydney-swans-suspend-five-players-what-it-means-for-september",
+      title: "Sydney Suspend Five Stars for the Season: What's Confirmed, and What It Does to September",
+      excerpt:
+        "Heeney, Warner, Blakey, Jordon and Bice are out for the year. Sydney still finishes second \u2014 but every model of their premiership chances has to be rebuilt.",
+      bodyHtml:
+        p(
+          "Sydney have suspended five players for the remainder of the 2026 season \u2014 finals included \u2014 after an incident at a Melbourne hotel in the early hours of Monday morning. Isaac Heeney, Chad Warner, Nick Blakey, James Jordon and Riley Bice will not play again this year.",
+          "The football consequence is brutal and simple: a club that has locked away second place, a home qualifying final and one of the strongest premiership platforms in the competition has just removed five regular players from its team."
+        ) +
+        h2("What the club has confirmed") +
+        p(
+          "Sydney's sanctions relate to breaches of club standards \u2014 specifically, players continuing to drink late into the night and bringing women back to the team hotel. Chairman Andrew Pridham was blunt about the club's response: \u201CThey shouldn't have been in that situation. The only way we can deal with it is to put our foot down incredibly hard, which we've done.\u201D",
+          "Chief executive Matthew Pavlich confirmed the players remain part of the club: \u201CThey will be allowed back at the football club\u2026 We're not abandoning our players.\u201D The AFL has separately ruled all five out of consideration for the 2026 All-Australian team.",
+          "The five issued a joint statement accepting the sanction and apologising to their partners, families, teammates, supporters and the wider club community."
+        ) +
+        h2("What police are investigating \u2014 and what they are not") +
+        p(
+          "Victoria Police detectives are investigating an allegation of touching without consent following the incident at the Pullman Hotel in Melbourne. The woman involved has spoken with police.",
+          "Several distinctions matter here and deserve stating plainly. It has not been suggested that any of the five suspended players is accused of the alleged assault. None of the banned players had been formally interviewed by police. No arrests have been made and no charges have been laid.",
+          "The club sanctioned five players for conduct it established through its own internal standards process. Police are separately investigating whether a criminal offence occurred. One does not establish the other, and an allegation is not a finding.",
+          "Further claims about that night have circulated online. AFL Reviews has not been able to verify them and does not repeat them. Until the investigation concludes, nobody outside that room can responsibly claim to know the full sequence of events."
+        ) +
+        h2("Five absences, one broken structure") +
+        p(
+          "Sydney finish the home-and-away season 17\u20135 with a percentage of 134.5, second only to Fremantle and immovable from second place with a round to play. Under any normal circumstance that is a premiership platform.",
+          "These circumstances are not normal. This is not a side covering five fringe players \u2014 it is losing an established group that has been in the team almost every week, across every part of the ground. Heeney brings clearance power, marking strength and scoreboard impact. Warner can break a game open through the midfield. Blakey drives the transition out of defence. Jordon takes the hard defensive midfield assignments. Bice has become a regular part of the backline structure.",
+          "The injury list offers no relief. The club's Round 24 update lists James Rowbottom (hand fracture) as a test and Justin McInerney (hamstring strain) at two to three weeks, with Joel Amartey two weeks away and Hayden McLean in concussion protocols."
+        ) +
+        h2("Why every Sydney prediction has to be rebuilt") +
+        p(
+          "A lazy model subtracts five player ratings from a team rating and moves on. That badly understates this, because these losses compound.",
+          "Removing Heeney and Warner together costs more than either individually \u2014 it strips two elite midfield weapons, clearance strength and two players who hit the scoreboard from the same unit. Removing Blakey and Bice together changes how the ball leaves defence. Removing Jordon changes who takes the opposition's most dangerous midfielder.",
+          "An honest adjustment lowers Sydney's expected score, lowers the midfield clearance rating, reassesses defensive-transition efficiency, raises the expected output of the opposition's best midfielder \u2014 and, most importantly, widens the uncertainty band around every number, because the replacement structure is untested at this level.",
+          "Any prediction still leaning on Sydney's full-season form is rating a team that no longer exists."
+        ) +
+        h2("Sunday is the experiment") +
+        p(
+          "Sydney host North Melbourne at the SCG on Sunday in a game that cannot change their ladder position. The result is close to irrelevant; the structure is everything.",
+          "Who attends centre bounces without Heeney, Warner and Jordon? Who takes the opposition's best midfielder? Who replaces Blakey's run from defence? Who is the player Sydney turn to when a final needs changing? Dean Cox has one week to find answers.",
+          "Their qualifying-final opponent will be settled in the final round, with Brisbane, Hawthorn and Melbourne all level on 60 points fighting for third. Brisbane can punish a depleted midfield. Hawthorn can attack a weakened transition. Melbourne can drag the game into the contest and make Sydney win it without two of their best.",
+          "Second place and a home final still matter. Sydney remain a good football team. But the margin for error that came with that record has gone \u2014 and the modelling has no choice but to start again."
+        ),
+      categorySlug: "teams",
+      tags: ["Sydney Swans", "Isaac Heeney", "Chad Warner", "Finals", "AFL News"],
+      author: AUTHORS.zacReid,
+      publishedAt: "2026-08-20T09:00:00Z",
+      updatedAt: "2026-08-20T09:00:00Z",
+      featuredImage: {
+        url: "/photos/swans-five-banned.jpg",
+        alt: "Isaac Heeney, Chad Warner, Nick Blakey, James Jordon and Riley Bice \u2014 the five Sydney Swans players suspended for the rest of 2026",
+        width: 1179,
+        height: 458,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
+      inlineImage: {
+        url: "/photos/afl-marking-contest.jpg",
+        alt: "A marking contest \u2014 Sydney must rebuild their structure in a single week",
+        width: 1600,
+        height: 1090,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
+      theaibetSport: "afl",
+      theaibetCtaLabel: "See the AI's updated finals probabilities for Sydney",
+      masterStoryId: "MS-2026-0820-SWANS-SUSPENSIONS",
+      faq: [
+        { q: "Which Sydney Swans players are suspended?", a: "Isaac Heeney, Chad Warner, Nick Blakey, James Jordon and Riley Bice have been suspended by the club for the remainder of the 2026 season, including the finals series." },
+        { q: "Why were the Sydney Swans players suspended?", a: "The club sanctioned them for breaching club standards \u2014 continuing to drink late into the night and bringing women back to the team hotel. The AFL has also ruled them out of 2026 All-Australian consideration." },
+        { q: "Are the suspended players accused of sexual assault?", a: "No. Victoria Police are investigating an allegation of touching without consent following the incident, but it has not been suggested that any of the five suspended players is accused of that alleged assault. No arrests have been made and no charges laid." },
+        { q: "Where does Sydney finish on the ladder?", a: "Second, with a 17-5 record and 134.5 per cent \u2014 locked in ahead of the final round, and hosting a qualifying final at the SCG." },
+      ],
+    },
     {
       id: "afl-100",
       slug: "the-kids-are-coming-collingwood-september",
@@ -93,28 +146,27 @@ const FIXTURES: Record<SiteKey, Article[]> = {
         ),
       categorySlug: "teams",
       tags: ["Collingwood", "Sam Swadling", "Steele Sidebottom", "Finals", "Opinion"],
-      author: AUTHORS.mitchHarlan,
+      author: AUTHORS.zacReid,
       publishedAt: "2026-08-18T11:30:00Z",
       updatedAt: "2026-08-18T11:30:00Z",
       featuredImage: {
-        url: "/photos/collingwood-run.jpg",
-        alt: "Collingwood players stream forward \u2014 the young Pies side finding a way through",
-        width: 1266,
-        height: 688,
+        url: "/photos/afl-contest.jpg",
+        alt: "A Collingwood defender fights through a tackle \u2014 a wounded Pies side refusing to go away",
+        width: 1150,
+        height: 1562,
         credit: "Supplied",
         license: "user-supplied",
         source: "publisher-upload",
       },
       inlineImage: {
-        url: "/photos/collingwood-gather.jpg",
-        alt: "A young Collingwood player gathers the ball under pressure \u2014 the kind of moment the Pies need their kids to handle in September",
-        width: 928,
-        height: 626,
+        url: "/photos/afl-marking-contest.jpg",
+        alt: "A pack flies in the Hawthorn game \u2014 the 92-all draw that showed both sides of Collingwood",
+        width: 1600,
+        height: 1090,
         credit: "Supplied",
         license: "user-supplied",
         source: "publisher-upload",
       },
-      theaibetPath: "/sports?sport=aussierules_afl",
       theaibetCtaLabel: "See the AI's September probabilities for Collingwood",
       masterStoryId: "MS-2026-0818-PIES-KIDS",
       faq: [
@@ -149,6 +201,15 @@ const FIXTURES: Record<SiteKey, Article[]> = {
           "The MCG on a Friday night, a draw to atone for, three stars racing the clock \u2014 and a double chance on the line. This is what late August football is for."
         ),
       featuredImage: {
+        url: "/photos/collingwood-run.jpg",
+        alt: "Collingwood players stream forward at the MCG",
+        width: 1266,
+        height: 688,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
+      inlineImage: {
         url: "/photos/lions-celebration.jpg",
         alt: "Brisbane Lions players celebrate a goal",
         width: 1216,
@@ -159,10 +220,9 @@ const FIXTURES: Record<SiteKey, Article[]> = {
       },
       categorySlug: "previews",
       tags: ["Collingwood", "Brisbane Lions", "MCG", "Round 24"],
-      author: AUTHORS.mitchHarlan,
+      author: AUTHORS.zacReid,
       publishedAt: "2026-08-18T06:00:00Z",
       updatedAt: "2026-08-18T06:00:00Z",
-      theaibetPath: "/sports?sport=aussierules_afl",
       theaibetCtaLabel: "See the AI model's probability, confidence and edge for Collingwood v Brisbane",
       masterStoryId: "MS-2026-0818-COLL-BRIS-R24",
       faq: [
@@ -199,12 +259,20 @@ const FIXTURES: Record<SiteKey, Article[]> = {
         license: "user-supplied",
         source: "publisher-upload",
       },
+      inlineImage: {
+        url: "/photos/afl-contest.jpg",
+        alt: "A Collingwood defender wraps up his opponent in a tackle",
+        width: 1150,
+        height: 1562,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
       categorySlug: "reviews",
       tags: ["Round 23", "Hawthorn", "Collingwood", "Melbourne", "Draw"],
-      author: AUTHORS.mitchHarlan,
+      author: AUTHORS.zacReid,
       publishedAt: "2026-08-17T00:00:00Z",
       updatedAt: "2026-08-17T00:00:00Z",
-      theaibetPath: "/sports?sport=aussierules_afl",
       theaibetCtaLabel: "See how the AI models rated every Round 23 result",
       masterStoryId: "MS-2026-0817-R23-REVIEW",
     },
@@ -230,20 +298,19 @@ const FIXTURES: Record<SiteKey, Article[]> = {
           "Percentage may yet decide it: Brisbane's 119.5 leads Geelong's 120.2 and Hawthorn's 117.3 in the fine print that separates a qualifying final from an elimination final."
         ),
       featuredImage: {
-        url: "/photos/afl-marking-contest.jpg",
-        alt: "A Hawthorn player out-marks a pack of Sydney defenders — the kind of contested ball that decides tight finals races",
-        width: 1600,
-        height: 1090,
+        url: "/photos/afl-contest.jpg",
+        alt: "A fierce tackle in a top-eight contest",
+        width: 1150,
+        height: 1562,
         credit: "Supplied",
         license: "user-supplied",
         source: "publisher-upload",
       },
       categorySlug: "stats",
       tags: ["Ladder", "Finals", "Round 24", "Run Home"],
-      author: AUTHORS.mitchHarlan,
+      author: AUTHORS.zacReid,
       publishedAt: "2026-08-17T22:00:00Z",
       updatedAt: "2026-08-18T02:00:00Z",
-      theaibetPath: "/sports?sport=aussierules_afl",
       theaibetCtaLabel: "View AI-modelled finals probabilities for every club",
       masterStoryId: "MS-2026-0817-RUN-HOME",
     },
@@ -267,80 +334,117 @@ const FIXTURES: Record<SiteKey, Article[]> = {
         p(
           "The only question left is the one the numbers can't answer: whether a dominant home-and-away season converts. Sydney on 68 and the 60-point trio of Brisbane, Hawthorn and Melbourne will have their say. The resume, though, is the strongest in the competition."
         ),
-      featuredImage: {
-        url: "/photos/afl-contest.jpg",
-        alt: "A tackle is laid on in a hard-fought contest — the kind of defensive pressure underpinning Fremantle's league-best numbers",
-        width: 1150,
-        height: 1562,
-        credit: "Supplied",
-        license: "user-supplied",
-        source: "publisher-upload",
-      },
       categorySlug: "teams",
       tags: ["Fremantle", "Ladder", "Statistics", "Finals"],
-      author: AUTHORS.mitchHarlan,
+      author: AUTHORS.zacReid,
       publishedAt: "2026-08-16T22:00:00Z",
       updatedAt: "2026-08-16T22:00:00Z",
-      theaibetPath: "/sports?sport=aussierules_afl",
       theaibetCtaLabel: "Explore Fremantle's AI premiership probability",
       masterStoryId: "MS-2026-0816-FREO-NUMBERS",
-    },
-    {
-      id: "afl-105",
-      slug: "round-24-afl-fixtures-full-guide",
-      title: "Round 24 at a Glance: Every AFL Fixture This Weekend",
-      excerpt:
-        "Nine games, three days, and a home-and-away season that's almost out of runway — the complete Round 24 fixture with venues and AEST times.",
-      bodyHtml:
-        p(
-          "The home-and-away season has one round left in it after this one, and Round 24 is stacked with finals implications from Thursday night through to Sunday evening in Perth.",
-          "Below is the complete round, venue by venue, with kickoff times converted to AEST."
-        ) +
-        h2("Thursday, August 20") +
-        p("St Kilda v Gold Coast Suns — Marvel Stadium, 7:30pm AEST.") +
-        h2("Friday, August 21") +
-        p(
-          "Collingwood v Brisbane Lions — MCG, 7:40pm AEST. Eighth hosts third with a double chance on the line for the Lions and a finals spot to defend for the Magpies — the round's headline game, previewed in full separately."
-        ) +
-        h2("Saturday, August 22") +
-        p(
-          "Carlton v Fremantle — Marvel Stadium, 1:15pm AEST. Melbourne v Western Bulldogs — MCG, 4:15pm AEST. Geelong v Richmond — GMHBA Stadium, 7:45pm AEST. Adelaide v GWS Giants — Adelaide Oval, 8:10pm AEST (7:40pm local)."
-        ) +
-        h2("Sunday, August 23") +
-        p(
-          "Essendon v Port Adelaide — Marvel Stadium, 12:20pm AEST. Sydney v North Melbourne — SCG, 3:20pm AEST. West Coast Eagles v Hawthorn — Optus Stadium, 7:50pm AEST (5:20pm local) to close out the round."
-        ) +
-        h2("Why it matters") +
-        p(
-          "Fremantle have the minor premiership sewn up, but almost everything else in the eight is live. Western Bulldogs, on 50 points, can put real pressure on eighth-placed Collingwood (52) with a win over Melbourne, while Adelaide, Geelong and Hawthorn are all within a game of each other in the 56–60-point cluster jammed around third to seventh.",
-          "One round after that, the ladder locks in for finals. This is the last weekend to move."
-        ),
-      featuredImage: {
-        url: "/photos/collingwood-kick.jpg",
-        alt: "A Collingwood player fires off a kick under lights — Round 24 kicks off Thursday and runs through to Sunday in Perth",
-        width: 950,
-        height: 842,
-        credit: "Supplied",
-        license: "user-supplied",
-        source: "publisher-upload",
-      },
-      categorySlug: "previews",
-      tags: ["Round 24", "AFL Fixture", "Finals Race"],
-      author: AUTHORS.mitchHarlan,
-      publishedAt: "2026-08-18T08:00:00Z",
-      updatedAt: "2026-08-18T08:00:00Z",
-      theaibetPath: "/sports?sport=aussierules_afl",
-      theaibetCtaLabel: "See AI win probabilities for every Round 24 game",
-      masterStoryId: "MS-2026-0818-R24-FIXTURES",
-      faq: [
-        { q: "What time does Collingwood v Brisbane kick off in Round 24?", a: "Friday, August 21, 2026 at 7:40pm AEST at the MCG." },
-        { q: "How many games are in an AFL round?", a: "Nine — all 18 clubs play once per round during the home-and-away season." },
-        { q: "Has Fremantle secured the minor premiership?", a: "Yes — Fremantle's Round 23 position has them clear on top of the ladder with the minor premiership effectively locked in." },
-      ],
     },
   ],
 
   ufcreview: [
+    {
+      id: "ufc-005",
+      slug: "umar-nurmagomedov-song-yadong-shanghai-preview",
+      title: "Umar Nurmagomedov v Song Yadong: A Title Eliminator in Shanghai",
+      excerpt:
+        "The No. 3 bantamweight takes on the No. 5 in a fight the winner almost certainly turns into a title shot.",
+      bodyHtml:
+        p(
+          "The UFC returns to Shanghai on Saturday 29 August with a bantamweight main event that carries genuine championship weight: No. 3-ranked Umar Nurmagomedov (20-1) against No. 5-ranked Song Yadong (23-9-1) at the Shanghai Oriental Sports Center.",
+          "This is a title-challenger eliminator in everything but name. Two of the division's top five, both with reasons to believe the winner is next."
+        ) +
+        h2("The 20-1 problem") +
+        p(
+          "Nurmagomedov's record tells the story of a fighter who has beaten almost everyone put in front of him \u2014 a single defeat across 21 professional fights, and a skill set built on the smothering wrestling-and-pressure template that has made his surname the most feared in the sport.",
+          "The tactical question is whether Song can prevent that template from being applied. Once Nurmagomedov establishes control positions, rounds tend to evaporate quietly on the scorecards."
+        ) +
+        h2("Song at home") +
+        p(
+          "Song Yadong fights in China as the region's biggest homegrown draw, and a 23-9-1 record built largely against the division's upper half gives him the experience edge in fight-week chaos.",
+          "His path is the striker's path: keep the fight vertical, make the exchanges happen in space, and force his opponent to take risks to close distance. Song's counter-right has ended nights before."
+        ) +
+        h2("The rest of the card") +
+        p(
+          "The co-main is a strong one in its own right \u2014 No. 4-ranked Yan Xiaonan (19-5) against No. 13 Denise Gomes at women's strawweight, a fight with its own contender implications.",
+          "Elsewhere, Alex Perez (26-10) meets Sumudaerji in a flyweight rematch, Junior Tafa faces Liu Ce at light heavyweight, and unbeaten-in-the-UFC flyweight Rei Tsuruya (11-1) takes on Kevin Borjas."
+        ),
+      categorySlug: "previews",
+      tags: ["UFC Shanghai", "Umar Nurmagomedov", "Song Yadong", "Bantamweight"],
+      author: AUTHORS.zacReid,
+      publishedAt: "2026-08-20T06:00:00Z",
+      updatedAt: "2026-08-20T06:00:00Z",
+      featuredImage: {
+        url: "/photos/ufc-ground-strike.jpg",
+        alt: "Ground-and-pound in the Octagon \u2014 control positions decide bantamweight title eliminators",
+        width: 1540,
+        height: 896,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
+      theaibetSport: "ufc",
+      theaibetEventId: "ufc-shanghai-2026",
+      theaibetCtaLabel: "See the AI fight analysis for Nurmagomedov v Song",
+      masterStoryId: "MS-2026-0820-UFC-SHANGHAI",
+      faq: [
+        { q: "When is UFC Shanghai: Nurmagomedov vs Song?", a: "Saturday 29 August 2026 at the Shanghai Oriental Sports Center in Shanghai, China." },
+        { q: "What are Umar Nurmagomedov and Song Yadong's records?", a: "Umar Nurmagomedov is 20-1 and ranked No. 3 at bantamweight; Song Yadong is 23-9-1 and ranked No. 5." },
+        { q: "What is the co-main event in Shanghai?", a: "No. 4-ranked Yan Xiaonan (19-5) versus No. 13-ranked Denise Gomes (12-3) at women's strawweight." },
+      ],
+    },
+    {
+      id: "ufc-006",
+      slug: "ufc-331-van-pantoja-2-preview",
+      title: "UFC 331: Joshua Van v Alexandre Pantoja 2 — The Rematch the Title Deserves",
+      excerpt:
+        "Van won the belt when Pantoja's elbow gave way 26 seconds in. In Los Angeles on 19 September, both men get the fight they were denied.",
+      bodyHtml:
+        p(
+          "Some title fights need a rematch. This one demands it. Joshua Van holds the UFC flyweight championship because Alexandre Pantoja suffered an elbow injury 26 seconds into their meeting at UFC 323 \u2014 a title changing hands before either man had thrown anything meaningful.",
+          "On Saturday 19 September at the Crypto.com Arena in Los Angeles, UFC 331 gives the division the fight it was denied."
+        ) +
+        h2("The champion has since proved the point") +
+        p(
+          "Whatever the circumstances of the win, Van has answered the obvious question. He defended the belt in emphatic fashion with a fifth-round TKO of Tatsuro Taira at UFC 328 in May \u2014 a finish that late in a championship fight says as much about conditioning and will as it does about power.",
+          "A champion who stops a top contender in the fifth is not a paper champion."
+        ) +
+        h2("Pantoja's last act") +
+        p(
+          "Pantoja, 36, is chasing history: he would become just the third flyweight in UFC history to reclaim the championship. Before losing the belt he defended it four times \u2014 against Brandon Royval, Steve Erceg, Kai Asakura and Kai Kara-France \u2014 a reign that stands as one of the division's best.",
+          "The Brazilian's case rests on the one thing the first fight never tested: whether his grappling and championship-round experience still solve the puzzle Van presents."
+        ) +
+        h2("A card with weight underneath") +
+        p(
+          "The co-main is arguably the best non-title fight of the month: No. 2-ranked Arman Tsarukyan against No. 7 Mauricio Ruffy in a five-round lightweight contest with clear title implications.",
+          "Further down, Renato Moicano meets Brian Ortega, Patricio Pitbull faces Dooho Choi at featherweight, and Alonzo Menifield takes on Iwo Baraniewski at light heavyweight."
+        ),
+      categorySlug: "previews",
+      tags: ["UFC 331", "Joshua Van", "Alexandre Pantoja", "Flyweight Title", "Arman Tsarukyan"],
+      author: AUTHORS.zacReid,
+      publishedAt: "2026-08-20T07:00:00Z",
+      updatedAt: "2026-08-20T07:00:00Z",
+      featuredImage: {
+        url: "/photos/ufc-fighter-celebrates.jpg",
+        alt: "A fighter celebrates in the Octagon \u2014 UFC 331 puts the flyweight title back on the line",
+        width: 1040,
+        height: 730,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
+      theaibetSport: "ufc",
+      theaibetEventId: "ufc-331",
+      theaibetCtaLabel: "See the AI model's read on Van v Pantoja 2",
+      masterStoryId: "MS-2026-0820-UFC331",
+      faq: [
+        { q: "When is UFC 331?", a: "Saturday 19 September 2026 at Crypto.com Arena in Los Angeles \u2014 Sunday 20 September AEST for Australian viewers." },
+        { q: "How did Joshua Van win the flyweight title?", a: "Van became champion at UFC 323 when Alexandre Pantoja suffered an elbow injury 26 seconds into the opening round. Van then defended the title with a fifth-round TKO of Tatsuro Taira at UFC 328 in May." },
+        { q: "What is the UFC 331 co-main event?", a: "Arman Tsarukyan (No. 2) versus Mauricio Ruffy (No. 7) in a five-round lightweight bout." },
+      ],
+    },
     {
       id: "ufc-001",
       slug: "ufc-330-results-makhachev-breaks-record",
@@ -364,7 +468,7 @@ const FIXTURES: Record<SiteKey, Article[]> = {
         ),
       categorySlug: "results",
       tags: ["UFC 330", "Islam Makhachev", "Mackenzie Dern", "Results", "Philadelphia"],
-      author: AUTHORS.danaOkafor,
+      author: AUTHORS.zacReid,
       publishedAt: "2026-08-16T14:00:00Z",
       updatedAt: "2026-08-16T14:00:00Z",
       featuredImage: {
@@ -376,7 +480,6 @@ const FIXTURES: Record<SiteKey, Article[]> = {
         license: "user-supplied",
         source: "publisher-upload",
       },
-      theaibetPath: "/ufc",
       theaibetCtaLabel: "See how TheAIbet's models scored UFC 330",
       masterStoryId: "MS-2026-0816-UFC330-RESULTS",
       faq: [
@@ -406,21 +509,11 @@ const FIXTURES: Record<SiteKey, Article[]> = {
         p(
           "Championship rounds reward control and consistency \u2014 the qualities models measure best. Prelims reward chaos. The discipline is knowing which regime you're pricing before the cage door shuts."
         ),
-      featuredImage: {
-        url: "/photos/ufc-decision-announced.jpg",
-        alt: "A fighter erupts as the judges' decision is read out — the moment a model's pre-fight number gets marked right or wrong",
-        width: 1040,
-        height: 730,
-        credit: "Supplied",
-        license: "user-supplied",
-        source: "publisher-upload",
-      },
       categorySlug: "model-vs-market",
       tags: ["Model vs Market", "UFC 330", "Analytics"],
-      author: AUTHORS.danaOkafor,
+      author: AUTHORS.zacReid,
       publishedAt: "2026-08-16T09:00:00Z",
       updatedAt: "2026-08-16T09:00:00Z",
-      theaibetPath: "/ufc",
       theaibetCtaLabel: "See live model probability, confidence and edge for UFC 330",
       masterStoryId: "MS-2026-0816-UFC330-MVM",
     },
@@ -451,10 +544,9 @@ const FIXTURES: Record<SiteKey, Article[]> = {
       },
       categorySlug: "matchups",
       tags: ["Style Matchups", "Southpaw", "Striking"],
-      author: AUTHORS.danaOkafor,
+      author: AUTHORS.zacReid,
       publishedAt: "2026-08-12T08:00:00Z",
       updatedAt: "2026-08-12T08:00:00Z",
-      theaibetPath: "/ufc",
       theaibetCtaLabel: "Explore fighter style data inside TheAIbet",
       masterStoryId: "MS-2026-0812-UFC-STANCE",
     },
@@ -490,102 +582,15 @@ const FIXTURES: Record<SiteKey, Article[]> = {
       },
       categorySlug: "previews",
       tags: ["UFC Sacramento", "Anthony Hernandez", "Gregory Rodrigues", "Fight Night"],
-      author: AUTHORS.danaOkafor,
+      author: AUTHORS.zacReid,
       publishedAt: "2026-08-18T09:00:00Z",
       updatedAt: "2026-08-18T09:00:00Z",
-      theaibetPath: "/ufc",
       theaibetCtaLabel: "See the AI fight analysis for Hernandez v Rodrigues",
       masterStoryId: "MS-2026-0818-UFC-SACRAMENTO",
       faq: [
         { q: "When is UFC Fight Night: Hernandez vs Rodrigues?", a: "Saturday, August 22, 2026 in Sacramento (Sunday, August 23 AEST) at Golden 1 Center." },
         { q: "What are the records of Hernandez and Rodrigues?", a: "Anthony Hernandez is 15-3 with 1 no-contest; Gregory Rodrigues is 19-6 and chasing a fourth straight win." },
         { q: "What weight class is the main event?", a: "Middleweight." },
-      ],
-    },
-    {
-      id: "ufc-005",
-      slug: "ufc-331-van-pantoja-2-preview-the-rematch",
-      title: "UFC 331 Preview: Van v Pantoja 2 — The Rematch Nobody Wanted to End Like That",
-      excerpt:
-        "Alexandre Pantoja's arm snapped in round one at UFC 323. Five weeks later he's chasing the belt back off the 24-year-old who took it from him.",
-      bodyHtml:
-        p(
-          "Joshua Van is the flyweight champion because Alexandre Pantoja's elbow gave out. That's not a criticism of Van — he caught a kick, threw the counter, and Pantoja's arm broke on the way down — but it's the reason UFC 331, on September 20 (AEST) at Crypto.com Arena in Los Angeles, is a rematch instead of a coronation.",
-          "Referee Herb Dean waved it off in round one at UFC 323. Van, then 24, became the second-youngest champion in UFC history. Pantoja, 35 and building a case as one of the best flyweights ever, was left with nothing to say about a fight he was in the middle of losing anyway."
-        ) +
-        h2("What actually happened at UFC 323") +
-        p(
-          "Van caught a high kick early in round one, elevated Pantoja and put him on the mat. As Pantoja tried to post his arm to break the fall, it snapped at the elbow. The stoppage was immediate — Dean waved it off within seconds of the injury being visible.",
-          "It's the kind of ending that leaves everyone — winner included — wanting to see it run again on a clean night."
-        ) +
-        h2("The champion") +
-        p(
-          "Van, unbeaten and now the man everyone in the division is chasing, gets the chance to prove UFC 323 wasn't circumstance. A win here — a real, finished win — is the difference between a champion with an asterisk and a champion, full stop."
-        ) +
-        h2("The former champion") +
-        p(
-          "Pantoja held the belt through a string of defences before losing it to injury rather than to a finish or a judge's card, most recently submitting Kai Kara-France to retain the title. At 35, this is realistically his last run at reclaiming it, and he's made no secret of wanting the finish this time, not the freak ending."
-        ),
-      featuredImage: {
-        url: "/photos/ufc-jab-exchange.jpg",
-        alt: "A fighter's jab lands flush in a UFC bout — the kind of finish Pantoja wants this time",
-        width: 1162,
-        height: 676,
-        credit: "Supplied",
-        license: "user-supplied",
-        source: "publisher-upload",
-      },
-      categorySlug: "previews",
-      tags: ["UFC 331", "Joshua Van", "Alexandre Pantoja", "Flyweight Title"],
-      author: AUTHORS.danaOkafor,
-      publishedAt: "2026-08-18T10:00:00Z",
-      updatedAt: "2026-08-18T10:00:00Z",
-      theaibetPath: "/ufc",
-      theaibetCtaLabel: "See the AI model's title-fight probability for Van v Pantoja 2",
-      masterStoryId: "MS-2026-0818-UFC331-REMATCH",
-      faq: [
-        { q: "When is UFC 331: Van vs Pantoja 2?", a: "Saturday, September 19, 2026 US time (Sunday, September 20 AEST) at Crypto.com Arena, Los Angeles. It's a flyweight title fight." },
-        { q: "How did Joshua Van win the title in the first fight?", a: "By referee stoppage in round one at UFC 323, after Alexandre Pantoja suffered an elbow injury attempting to post his arm from a takedown." },
-        { q: "What is Alexandre Pantoja's title history?", a: "He held the flyweight title through multiple defences, including a submission win over Kai Kara-France, before losing the belt to injury against Van rather than by finish or decision." },
-      ],
-    },
-    {
-      id: "ufc-006",
-      slug: "ufc-paris-hooker-parnasse-preview",
-      title: "UFC Paris Preview: A Veteran's Worst Nightmare — a Hyped Debutant on Home Soil",
-      excerpt:
-        "Salahdine Parnasse walks into his UFC debut as a two-division champion elsewhere and the freshest thing in the lightweight division. Dan Hooker has seen this movie before — usually as the villain.",
-      bodyHtml:
-        p(
-          "UFC Paris, on September 6 (AEST) at Accor Arena, hands Dan Hooker one of the toughest possible welcomes for a hyped debutant: a main event, in the debutant's home country, in front of a crowd that's been waiting years for this signing.",
-          "Salahdine Parnasse, 28, was one of the best fighters outside the UFC for the better part of five years — a two-division champion at KSW in featherweight and lightweight — before signing with the promotion this year for a deal reportedly 20-30 times bigger than what he was offered in 2024. His stock has never been higher after a first-round knockout on the high-profile 'Rousey vs Carano' Netflix card earlier in 2026."
-        ) +
-        h2("The gatekeeper's role") +
-        p(
-          "Hooker, 36, is exactly the kind of durable, dangerous veteran the UFC puts in front of a hyped prospect to find out if the hype is real. He strung together three straight wins from 2022 to 2024 but has dropped his last two against top contenders — the form line of a fighter who can still hurt anyone but is no longer a lock against the division's best.",
-          "For the French crowd, an emphatic Parnasse debut win in the main event is the whole point of the card. For Hooker, spoiling that story in Paris would be one of the best wins of a long UFC career."
-        ),
-      featuredImage: {
-        url: "/photos/fighter-training.jpg",
-        alt: "A fighter shadow-boxes during a training session ahead of fight week",
-        width: 1200,
-        height: 800,
-        credit: "Supplied",
-        license: "user-supplied",
-        source: "publisher-upload",
-      },
-      categorySlug: "previews",
-      tags: ["UFC Paris", "Dan Hooker", "Salahdine Parnasse", "Lightweight"],
-      author: AUTHORS.danaOkafor,
-      publishedAt: "2026-08-18T10:15:00Z",
-      updatedAt: "2026-08-18T10:15:00Z",
-      theaibetPath: "/ufc",
-      theaibetCtaLabel: "See the AI model's read on Hooker v Parnasse",
-      masterStoryId: "MS-2026-0818-UFC-PARIS",
-      faq: [
-        { q: "When is UFC Paris: Hooker vs Parnasse?", a: "Saturday, September 5, 2026 local time (Sunday, September 6 AEST) at Accor Arena, Paris." },
-        { q: "Is this Salahdine Parnasse's UFC debut?", a: "Yes. He arrives as a former two-division (featherweight and lightweight) champion at KSW, one of the top promotions outside the UFC." },
-        { q: "What is Dan Hooker's recent form?", a: "He won three straight fights from 2022-2024 but has lost his last two against top-ranked lightweight contenders." },
       ],
     },
   ],
@@ -622,10 +627,9 @@ const FIXTURES: Record<SiteKey, Article[]> = {
       },
       categorySlug: "previews",
       tags: ["Memsie Stakes", "Caulfield", "Spring Carnival", "Group 1", "Sheza Alibi"],
-      author: AUTHORS.tomBrennan,
+      author: AUTHORS.zacReid,
       publishedAt: "2026-08-18T07:00:00Z",
       updatedAt: "2026-08-18T07:00:00Z",
-      theaibetPath: "/horse-racing",
       theaibetCtaLabel: "See AI runner rankings for Memsie Stakes day",
       masterStoryId: "MS-2026-0818-MEMSIE-2026",
       faq: [
@@ -655,21 +659,11 @@ const FIXTURES: Record<SiteKey, Article[]> = {
         p(
           "Markets are sharpest where the most money flows: metropolitan Saturday racing, feature races, short-priced favourites. They are weakest in thin midweek markets, early markets before scratchings settle, and races where a single piece of information — a track bias, a gear change — hasn't been fully absorbed."
         ),
-      featuredImage: {
-        url: "/photos/racing-field-turn.jpg",
-        alt: "A tightly bunched field of runners in various silks rounds the turn — the moment a market's overround gets tested",
-        width: 1384,
-        height: 672,
-        credit: "Supplied",
-        license: "user-supplied",
-        source: "publisher-upload",
-      },
       categorySlug: "education",
       tags: ["Betting Education", "Value", "Markets"],
-      author: AUTHORS.tomBrennan,
+      author: AUTHORS.zacReid,
       publishedAt: "2026-08-14T21:00:00Z",
       updatedAt: "2026-08-14T21:00:00Z",
-      theaibetPath: "/horse-racing",
       theaibetCtaLabel: "Compare AI-assessed probabilities against market prices",
       masterStoryId: "MS-2026-0814-EDU-PERCENT",
     },
@@ -696,7 +690,7 @@ const FIXTURES: Record<SiteKey, Article[]> = {
         ),
       categorySlug: "education",
       tags: ["Track Bias", "Sectionals", "Betting Education", "Form"],
-      author: AUTHORS.tomBrennan,
+      author: AUTHORS.zacReid,
       publishedAt: "2026-08-15T21:00:00Z",
       updatedAt: "2026-08-15T21:00:00Z",
       featuredImage: {
@@ -708,7 +702,6 @@ const FIXTURES: Record<SiteKey, Article[]> = {
         license: "user-supplied",
         source: "publisher-upload",
       },
-      theaibetPath: "/horse-racing",
       theaibetCtaLabel: "See track and sectional analysis inside TheAIbet",
       masterStoryId: "MS-2026-0815-BIAS-EDU",
       faq: [
@@ -739,7 +732,7 @@ const FIXTURES: Record<SiteKey, Article[]> = {
         ),
       categorySlug: "news",
       tags: ["Spicy Martini", "The Everest", "Ka Ying Rising", "Randwick", "Stradbroke"],
-      author: AUTHORS.tomBrennan,
+      author: AUTHORS.zacReid,
       publishedAt: "2026-08-18T08:00:00Z",
       updatedAt: "2026-08-18T08:00:00Z",
       featuredImage: {
@@ -760,91 +753,8 @@ const FIXTURES: Record<SiteKey, Article[]> = {
         license: "user-supplied",
         source: "publisher-upload",
       },
-      theaibetPath: "/horse-racing",
       theaibetCtaLabel: "See TheAIbet's AI analysis of the Everest sprinters",
       masterStoryId: "MS-2026-0818-SPICY-MARTINI",
-    },
-    {
-      id: "rac-005",
-      slug: "cosmic-crusader-pb-lawrence-stakes-win-memsie",
-      title: "Cosmic Crusader Keeps the Perfect Melbourne Record Rolling Into Memsie",
-      excerpt:
-        "The Andrea Leek-trained sprinter won the P.B. Lawrence Stakes at Caulfield on August 15 — and arrives at Memsie Stakes day unbeaten in Melbourne.",
-      bodyHtml:
-        p(
-          "Cosmic Crusader kept a perfect Melbourne record intact with victory in the P.B. Lawrence Stakes at Caulfield on Saturday, August 15 — the traditional Group 2 lead-up race and a genuine formline into the spring's first Group 1.",
-          "Trained by Andrea Leek, the win puts Cosmic Crusader into Memsie Stakes day on August 29 with unbeaten Melbourne form behind it — exactly the kind of formline this site flagged when the Memsie market first opened, with Cosmic Crusader sitting behind Sheza Alibi and alongside Jimmysstar in early quotes."
-        ) +
-        h2("Why it matters for Memsie") +
-        p(
-          "A P.B. Lawrence win doesn't guarantee a Group 1, but it's the standard modern lead-up for a Caulfield sprinter building into the first Saturday of the carnival. Cosmic Crusader now walks into Memsie as a formline that has to be respected rather than a name making up the numbers.",
-          "The market will move again once final fields and barriers are confirmed for Memsie Stakes day — worth watching closely given how tight the early quotes already were."
-        ),
-      featuredImage: {
-        url: "/photos/racing-close-finish.jpg",
-        alt: "A close finish between runners at a Melbourne track",
-        width: 1200,
-        height: 800,
-        credit: "Supplied",
-        license: "user-supplied",
-        source: "publisher-upload",
-      },
-      categorySlug: "news",
-      tags: ["Cosmic Crusader", "P.B. Lawrence Stakes", "Memsie Stakes", "Caulfield"],
-      author: AUTHORS.tomBrennan,
-      publishedAt: "2026-08-18T05:00:00Z",
-      updatedAt: "2026-08-18T05:00:00Z",
-      theaibetPath: "/horse-racing",
-      theaibetCtaLabel: "See AI runner rankings building into Memsie Stakes",
-      masterStoryId: "MS-2026-0818-COSMIC-CRUSADER",
-      faq: [
-        { q: "When did Cosmic Crusader win the P.B. Lawrence Stakes?", a: "Saturday, August 15, 2026, at Caulfield Racecourse." },
-        { q: "Who trains Cosmic Crusader?", a: "Andrea Leek." },
-        { q: "Is Cosmic Crusader running in the Memsie Stakes?", a: "Cosmic Crusader was among the early quotes for the August 29 Memsie Stakes when markets first opened, alongside Sheza Alibi and Jimmysstar — final fields are confirmed closer to raceday." },
-      ],
-    },
-    {
-      id: "rac-006",
-      slug: "spring-carnival-calendar-after-memsie-2026",
-      title: "After Memsie: What's Next on the Road to the Melbourne Cup",
-      excerpt:
-        "Memsie Stakes opens the carnival on August 29. Here's the real Group 1 calendar that follows it, through to Makybe Diva Stakes day on September 12.",
-      bodyHtml:
-        p(
-          "Memsie Stakes at Caulfield on August 29 is the traditional opening bell of the Melbourne Spring Carnival, but it's the start of a run of racing, not a one-off. Here's what's genuinely locked in on the calendar after it."
-        ) +
-        h2("Crown Makybe Diva Stakes Day — September 12, Flemington") +
-        p(
-          "Confirmed for Saturday, September 12: the Group 1 Crown Makybe Diva Stakes (1600m, $750,000) headlines a ten-race program at Flemington, alongside the Group 3 Lexus Archer Stakes (2500m) — whose winner earns a golden ticket straight into the $10 million Lexus Melbourne Cup.",
-          "It's the sprinter-into-miler pathway race the carnival's biggest names use to build toward The Everest and beyond, and it's the next confirmed marker after Memsie on the road to November."
-        ) +
-        h2("The shape of the carnival") +
-        p(
-          "Between Memsie and Makybe Diva day sits the usual mid-carnival build — Underwood Stakes and Caulfield's early September program among them — before the carnival's two biggest weeks arrive in October: Caulfield Guineas and Caulfield Cup, then Derby Day, Melbourne Cup Day (a Victorian public holiday, Tuesday November 3) and Stakes Day at Flemington.",
-          "Fields for the majority of these races won't firm up until closer to raceday — this is the real, confirmed skeleton of the calendar to build the next six weeks of coverage around."
-        ),
-      featuredImage: {
-        url: "/photos/racing-finish-roses.jpg",
-        alt: "Roses and ribbons at a Melbourne spring racing finish line",
-        width: 1200,
-        height: 800,
-        credit: "Supplied",
-        license: "user-supplied",
-        source: "publisher-upload",
-      },
-      categorySlug: "previews",
-      tags: ["Spring Carnival", "Makybe Diva Stakes", "Melbourne Cup", "Calendar"],
-      author: AUTHORS.tomBrennan,
-      publishedAt: "2026-08-18T05:30:00Z",
-      updatedAt: "2026-08-18T05:30:00Z",
-      theaibetPath: "/horse-racing",
-      theaibetCtaLabel: "Track the AI model through the spring carnival",
-      masterStoryId: "MS-2026-0818-SPRING-CALENDAR",
-      faq: [
-        { q: "When is Makybe Diva Stakes day 2026?", a: "Saturday, September 12, 2026 at Flemington." },
-        { q: "What is the Lexus Archer Stakes golden ticket?", a: "The winner of the Group 3 Lexus Archer Stakes on Makybe Diva Stakes day earns automatic entry into the $10 million Lexus Melbourne Cup." },
-        { q: "When is the Melbourne Cup in 2026?", a: "Tuesday, November 3, 2026 — a public holiday in Victoria." },
-      ],
     },
   ],
 
@@ -880,10 +790,9 @@ const FIXTURES: Record<SiteKey, Article[]> = {
       },
       categorySlug: "explainers",
       tags: ["AFL", "Finals", "Explainer"],
-      author: AUTHORS.priyaSharma,
+      author: AUTHORS.zacReid,
       publishedAt: "2026-08-15T02:00:00Z",
       updatedAt: "2026-08-15T02:00:00Z",
-      theaibetPath: "/sports?sport=aussierules_afl",
       theaibetCtaLabel: "See AI-modelled finals probabilities for the 2026 season",
       masterStoryId: "MS-2026-0815-AFL-EXPLAINER",
       faq: [
@@ -923,10 +832,9 @@ const FIXTURES: Record<SiteKey, Article[]> = {
       },
       categorySlug: "explainers",
       tags: ["UFC", "Scoring", "Explainer"],
-      author: AUTHORS.priyaSharma,
+      author: AUTHORS.zacReid,
       publishedAt: "2026-08-13T03:00:00Z",
       updatedAt: "2026-08-13T03:00:00Z",
-      theaibetPath: "/ufc",
       theaibetCtaLabel: "Explore UFC fight data and AI analysis",
       masterStoryId: "MS-2026-0813-UFC-SCORING",
       faq: [
@@ -966,10 +874,9 @@ const FIXTURES: Record<SiteKey, Article[]> = {
       },
       categorySlug: "racing",
       tags: ["Melbourne Cup", "History", "Records"],
-      author: AUTHORS.priyaSharma,
+      author: AUTHORS.zacReid,
       publishedAt: "2026-08-10T05:00:00Z",
       updatedAt: "2026-08-10T05:00:00Z",
-      theaibetPath: "/horse-racing",
       theaibetCtaLabel: "See AI analysis for Australian feature racing",
       masterStoryId: "MS-2026-0810-CUP-HISTORY",
       faq: [
@@ -1004,54 +911,11 @@ const FIXTURES: Record<SiteKey, Article[]> = {
       },
       categorySlug: "explainers",
       tags: ["NRL", "AFL", "Explainer"],
-      author: AUTHORS.priyaSharma,
+      author: AUTHORS.zacReid,
       publishedAt: "2026-08-08T04:00:00Z",
       updatedAt: "2026-08-08T04:00:00Z",
-      theaibetPath: "/",
       theaibetCtaLabel: "Explore AI sports analysis on TheAIbet",
       masterStoryId: "MS-2026-0808-CODES",
-    },
-    {
-      id: "spo-005",
-      slug: "nrl-2026-race-for-eighth-explained",
-      title: "NRL 2026: The Race for Eighth, Explained",
-      excerpt:
-        "Two competition points separate eighth from tenth with the regular season winding down — here's the ladder and what it means.",
-      bodyHtml:
-        p(
-          "The NRL finals system takes the top eight teams from 17 regular-season rounds of every club playing each other — and with the season entering its final stretch, the bottom of that eight is where the real tension sits.",
-          "As it stands, North Queensland hold eighth on 28 points from a 12-10 record. Two points back in ninth are Canterbury-Bankstown on 26 points (10-11), with Manly a further two points adrift in tenth on 24 (9-12)."
-        ) +
-        h2("The top of the table") +
-        p(
-          "Sydney Roosters lead the competition on 38 points (16-5), ahead of Penrith and New Zealand — both on 36 points (15-6) — with the Dolphins fourth on 34. Cronulla-Sutherland and Newcastle are locked together on 32 points, and South Sydney sit seventh on 30."
-        ) +
-        h2("How NRL finals work") +
-        p(
-          "Unlike the AFL's eight, the NRL runs a straight top-eight knockout system across four weeks, with the top four earning a double chance in week one. For the clubs clustered from seventh to tenth, every remaining round is effectively a finals eliminator already — a two-point gap with only a handful of rounds left is about as tight as it gets."
-        ),
-      featuredImage: {
-        url: "/photos/nrl-eels.jpg",
-        alt: "NRL players contest the ball near the sideline",
-        width: 1200,
-        height: 800,
-        credit: "Supplied",
-        license: "user-supplied",
-        source: "publisher-upload",
-      },
-      categorySlug: "nrl",
-      tags: ["NRL", "Ladder", "Finals Race"],
-      author: AUTHORS.priyaSharma,
-      publishedAt: "2026-08-18T04:00:00Z",
-      updatedAt: "2026-08-18T04:00:00Z",
-      theaibetPath: "/sports?sport=rugbyleague_nrl",
-      theaibetCtaLabel: "See live NRL odds and AI analysis on TheAIbet",
-      masterStoryId: "MS-2026-0818-NRL-EIGHTH",
-      faq: [
-        { q: "How many teams make the NRL finals?", a: "The top eight teams from the 17-round regular season, with the top four earning a double chance in the first week of finals." },
-        { q: "Who is currently eighth on the NRL ladder?", a: "North Queensland, on 28 points from a 12-10 record, as of mid-August 2026." },
-        { q: "How close is the fight for the last finals spot?", a: "Very — eighth-placed North Queensland (28 points) is separated from ninth-placed Canterbury-Bankstown (26 points) by just one win's worth of competition points." },
-      ],
     },
   ],
 
@@ -1077,21 +941,11 @@ const FIXTURES: Record<SiteKey, Article[]> = {
         p(
           "Every punter in that room has told the story since, and in every telling the horse's margin gets shorter and Ray gets calmer. That's the thing about punting stories: the money is never really the point. The point is that for four minutes on a Tuesday, a suburban TAB held its breath together."
         ),
-      featuredImage: {
-        url: "/photos/racing-head-to-head-finish.jpg",
-        alt: "Two horses hit the line together in a driving head-to-head finish",
-        width: 1284,
-        height: 644,
-        credit: "Supplied",
-        license: "user-supplied",
-        source: "publisher-upload",
-      },
       categorySlug: "big-wins",
       tags: ["TAB", "Multi", "Big Wins"],
-      author: AUTHORS.jackDoyle,
+      author: AUTHORS.zacReid,
       publishedAt: "2026-08-16T06:00:00Z",
       updatedAt: "2026-08-16T06:00:00Z",
-      theaibetPath: "/",
       theaibetCtaLabel: "See how AI analyses the races punters bet on",
       masterStoryId: "MS-2026-0816-STORY-TAB",
     },
@@ -1126,10 +980,9 @@ const FIXTURES: Record<SiteKey, Article[]> = {
       },
       categorySlug: "moments",
       tags: ["Grand Final", "Essay", "Memory"],
-      author: AUTHORS.jackDoyle,
+      author: AUTHORS.zacReid,
       publishedAt: "2026-08-14T07:00:00Z",
       updatedAt: "2026-08-14T07:00:00Z",
-      theaibetPath: "/",
       theaibetCtaLabel: "The modern punter's toolkit: AI analysis on TheAIbet",
       masterStoryId: "MS-2026-0814-STORY-GF",
     },
@@ -1156,7 +1009,7 @@ const FIXTURES: Record<SiteKey, Article[]> = {
         ),
       categorySlug: "moments",
       tags: ["Spicy Martini", "The Everest", "Racing Culture", "Underdog"],
-      author: AUTHORS.jackDoyle,
+      author: AUTHORS.zacReid,
       publishedAt: "2026-08-18T10:00:00Z",
       updatedAt: "2026-08-18T10:00:00Z",
       featuredImage: {
@@ -1168,7 +1021,6 @@ const FIXTURES: Record<SiteKey, Article[]> = {
         license: "user-supplied",
         source: "publisher-upload",
       },
-      theaibetPath: "/horse-racing",
       theaibetCtaLabel: "See what the AI models make of the Everest picture",
       masterStoryId: "MS-2026-0818-SPICY-STORY",
     },
@@ -1193,67 +1045,13 @@ const FIXTURES: Record<SiteKey, Article[]> = {
           "The quaddie paid $11,240 for his dollar-forty flexi. The venue got its deposit, the best man got his story, and the couple got a wedding in which the father of the bride toasted 'the mare that made this possible'.",
           "Dave hasn't had a serious bet since. 'You retire on top,' he says. 'Everyone knows that. Nobody does it. I did it.' His wife rolls her eyes. The framed ticket hangs in their hallway."
         ),
-      featuredImage: {
-        url: "/photos/racing-winner-flowers.jpg",
-        alt: "A winning horse crosses the line clear of the field under a sponsor's signage — the moment the quaddie got home",
-        width: 1074,
-        height: 774,
-        credit: "Supplied",
-        license: "user-supplied",
-        source: "publisher-upload",
-      },
       categorySlug: "big-wins",
       tags: ["Quaddie", "Big Wins", "Culture"],
-      author: AUTHORS.jackDoyle,
+      author: AUTHORS.zacReid,
       publishedAt: "2026-08-08T09:00:00Z",
       updatedAt: "2026-08-08T09:00:00Z",
-      theaibetPath: "/",
       theaibetCtaLabel: "Modern form analysis, powered by AI",
       masterStoryId: "MS-2026-0808-STORY-QUADDIE",
-    },
-    {
-      id: "sto-005",
-      slug: "the-race-that-stops-a-nation",
-      title: "The Race That Stops a Nation: Why One Race Still Owns a Tuesday",
-      excerpt:
-        "It's a public holiday in Victoria, a slogan older than television, and — even in a fractured media age — still the one race the whole country half-watches.",
-      bodyHtml:
-        p(
-          "Tuesday, November 3, 2026. Offices in Victoria empty out, a three-minute race runs at Flemington, and somewhere between a third and a tenth of the country puts money on it depending on how you count. The Melbourne Cup has been called 'the race that stops a nation' for so long the phrase barely registers as a claim anymore — it's just what the day is called.",
-          "Melbourne Cup Day has been a public holiday in Victoria since long before most of the people taking it off could tell you why. It's the only sporting event in the country with its own day off attached — not the Grand Final, not State of Origin, just a horse race that runs for about three and a half minutes."
-        ) +
-        h2("The numbers behind the myth") +
-        p(
-          "A YouGov survey of Australian adults found roughly three in ten Australians planned to have some money on the Melbourne Cup that year — split fairly evenly between betting in person, betting online, and having a punt in an office sweep with colleagues. For context, the same survey found only around one in eight Australians bother betting on The Everest, the world's richest race on turf and a race with more total prizemoney.",
-          "That gap is the whole story of the Melbourne Cup's cultural weight. It was never really about the prizemoney or the field quality — plenty of Group 1s have bigger purses and deeper fields. It's about being the one day a year when people who couldn't name a jockey still know who won."
-        ) +
-        h2("Why it still works") +
-        p(
-          "Cynics have been predicting the Cup's cultural decline for years — shorter attention spans, animal welfare debates, a fractured media landscape that no longer delivers one national moment the way it used to. And yet the office sweep survives. The frock and the fascinator survive. The 3pm AEDT stoppage, in offices that have nothing to do with racing, survives.",
-          "Every other race on the calendar is judged by its field. The Cup is judged by whether the country still stops. So far, it still does."
-        ),
-      featuredImage: {
-        url: "/photos/racing-field.jpg",
-        alt: "A full field of runners rounds the home turn in a major Melbourne race",
-        width: 1200,
-        height: 800,
-        credit: "Supplied",
-        license: "user-supplied",
-        source: "publisher-upload",
-      },
-      categorySlug: "culture",
-      tags: ["Melbourne Cup", "Racing Culture", "Australian Punting"],
-      author: AUTHORS.jackDoyle,
-      publishedAt: "2026-08-18T09:00:00Z",
-      updatedAt: "2026-08-18T09:00:00Z",
-      theaibetPath: "/",
-      theaibetCtaLabel: "See how the AI models read the Cup field when it's announced",
-      masterStoryId: "MS-2026-0818-CUP-CULTURE",
-      faq: [
-        { q: "Is Melbourne Cup Day a public holiday?", a: "Yes — it's a public holiday in Victoria, held on the first Tuesday of November. In 2026 that's November 3." },
-        { q: "How many Australians bet on the Melbourne Cup?", a: "A YouGov survey found roughly three in ten Australian adults planned to bet on the Melbourne Cup in some form — in person, online, or in an office sweep." },
-        { q: "Where does the phrase 'the race that stops a nation' come from?", a: "It's a long-standing description of the Melbourne Cup's cultural reach — the one sporting event with enough national pull to be marked by a public holiday and widespread office sweeps, even among people who don't otherwise follow racing." },
-      ],
     },
   ],
 };
