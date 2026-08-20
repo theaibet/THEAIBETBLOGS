@@ -33,7 +33,7 @@ const FIXTURES: Record<SiteKey, Article[]> = {
     {
       id: "afl-105",
       slug: "sydney-swans-suspend-five-players-what-it-means-for-september",
-      title: "Sydney Suspend Five Stars for the Season: What's Confirmed, and What It Does to September",
+      title: "Five Stars, One Hotel Room, No September: The Ban That Blew Up Sydney's Season",
       excerpt:
         "Heeney, Warner, Blakey, Jordon and Bice are out for the year. Sydney still finishes second \u2014 but every model of their premiership chances has to be rebuilt.",
       bodyHtml:
@@ -159,10 +159,10 @@ const FIXTURES: Record<SiteKey, Article[]> = {
         source: "publisher-upload",
       },
       inlineImage: {
-        url: "/photos/afl-marking-contest.jpg",
-        alt: "A pack flies in the Hawthorn game \u2014 the 92-all draw that showed both sides of Collingwood",
-        width: 1600,
-        height: 1090,
+        url: "/photos/afl-kick-action.jpg",
+        alt: "A Collingwood player drives the ball forward by foot",
+        width: 928,
+        height: 626,
         credit: "Supplied",
         license: "user-supplied",
         source: "publisher-upload",
@@ -260,10 +260,10 @@ const FIXTURES: Record<SiteKey, Article[]> = {
         source: "publisher-upload",
       },
       inlineImage: {
-        url: "/photos/afl-contest.jpg",
-        alt: "A Collingwood defender wraps up his opponent in a tackle",
-        width: 1150,
-        height: 1562,
+        url: "/photos/afl-tackle-contest.jpg",
+        alt: "A tackle is laid in heavy traffic during an AFL match",
+        width: 1062,
+        height: 626,
         credit: "Supplied",
         license: "user-supplied",
         source: "publisher-upload",
@@ -298,10 +298,10 @@ const FIXTURES: Record<SiteKey, Article[]> = {
           "Percentage may yet decide it: Brisbane's 119.5 leads Geelong's 120.2 and Hawthorn's 117.3 in the fine print that separates a qualifying final from an elimination final."
         ),
       featuredImage: {
-        url: "/photos/afl-contest.jpg",
-        alt: "A fierce tackle in a top-eight contest",
-        width: 1150,
-        height: 1562,
+        url: "/photos/afl-pack-mark.jpg",
+        alt: "Players contest a pack mark in a tight AFL contest",
+        width: 1058,
+        height: 500,
         credit: "Supplied",
         license: "user-supplied",
         source: "publisher-upload",
@@ -334,6 +334,15 @@ const FIXTURES: Record<SiteKey, Article[]> = {
         p(
           "The only question left is the one the numbers can't answer: whether a dominant home-and-away season converts. Sydney on 68 and the 60-point trio of Brisbane, Hawthorn and Melbourne will have their say. The resume, though, is the strongest in the competition."
         ),
+      featuredImage: {
+        url: "/photos/afl-goal-celebration.jpg",
+        alt: "An AFL forward celebrates a goal in front of the crowd",
+        width: 914,
+        height: 712,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
       categorySlug: "teams",
       tags: ["Fremantle", "Ladder", "Statistics", "Finals"],
       author: AUTHORS.zacReid,
