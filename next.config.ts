@@ -10,7 +10,15 @@ const nextConfig: NextConfig = {
     ],
   },
   async redirects() {
-    return [];
+    return [
+      // Byline change (Zac Reid -> Zac Christie): keep the old author URL alive
+      // so anything already indexed or linked lands on the new page.
+      {
+        source: "/author/zac-reid",
+        destination: "/author/zac-christie",
+        permanent: true,
+      },
+    ];
   },
 };
 
