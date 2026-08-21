@@ -131,7 +131,7 @@ export function BroadsheetHome({ articles }: { articles: Article[] }) {
                   <ArtImage
                     image={a.featuredImage}
                     alt={a.featuredImage?.alt ?? a.title}
-                    className="aspect-[16/7] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                    className="aspect-[16/7] w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
                   />
                 </div>
                 <div className="text-xs text-muted">
@@ -170,7 +170,7 @@ export function MagazineHome({ articles }: { articles: Article[] }) {
               <ArtImage
                 image={lead.featuredImage}
                 alt={lead.featuredImage?.alt ?? lead.title}
-                className="aspect-[21/9] w-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+                className="aspect-[21/9] w-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.02]"
                 eager
               />
             </div>
@@ -205,7 +205,7 @@ export function MagazineHome({ articles }: { articles: Article[] }) {
                 <ArtImage
                   image={a.featuredImage}
                   alt={a.featuredImage?.alt ?? a.title}
-                  className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                  className="aspect-[4/3] w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
                 />
               </div>
               <div>

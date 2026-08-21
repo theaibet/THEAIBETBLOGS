@@ -20,7 +20,7 @@ export function ArticleCard({ article, featured = false }: { article: Article; f
           <ArtImage
             image={article.featuredImage}
             alt={article.featuredImage?.alt ?? article.title}
-            className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+            className="absolute inset-0 h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent" />
           <span className="absolute left-4 top-4 rounded-brand bg-accent px-2.5 py-1 text-[11px] font-bold uppercase tracking-[0.08em] text-accent-contrast">

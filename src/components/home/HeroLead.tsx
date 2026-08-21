@@ -27,7 +27,7 @@ export function HeroLead({
         <ArtImage
           image={article.featuredImage}
           alt={article.featuredImage?.alt ?? article.title}
-          className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+          className="absolute inset-0 h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.02]"
           eager
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent" />

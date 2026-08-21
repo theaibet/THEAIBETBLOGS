@@ -119,7 +119,7 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
             <ArtImage
               image={article.featuredImage}
               alt={article.featuredImage?.alt ?? article.title}
-              className="h-full w-full object-cover"
+              className="h-full w-full object-cover object-top"
               eager
             />
           </div>
@@ -145,7 +145,7 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
                   <ArtImage
                     image={article.inlineImage}
                     alt={article.inlineImage?.alt ?? article.title}
-                    className="aspect-[21/9] w-full object-cover"
+                    className="aspect-[21/9] w-full object-cover object-top"
                   />
                 </div>
                 <ImageCredit image={article.inlineImage} />
