@@ -2,16 +2,17 @@ import Link from "next/link";
 import type { Article } from "@/lib/content/types";
 import { getSite } from "@/config/site";
 import { formatDate } from "@/lib/format";
+import { getPopulatedCategories } from "@/lib/content";
 import { ArtImage } from "@/components/ArtImage";
 import { ArticleCard } from "@/components/ArticleCard";
 import { HeroLead } from "./HeroLead";
 import { SectionRule } from "./SectionRule";
 
-function CategoryTiles({ prominent = false }: { prominent?: boolean }) {
-  const site = getSite();
+async function CategoryTiles({ prominent = false }: { prominent?: boolean }) {
+  const categories = await getPopulatedCategories();
   return (
     <div className={`grid gap-5 sm:grid-cols-2 ${prominent ? "lg:grid-cols-3" : "lg:grid-cols-3"}`}>
-      {site.categories.map((c) => (
+      {categories.map((c) => (
         <Link
           key={c.slug}
           href={`/category/${c.slug}`}

@@ -1,6 +1,7 @@
 import { getSite } from "@/config/site";
 import type { Article, Author } from "./types";
 import { getFixtures } from "./fixtures";
+import type { NavCategory } from "@/config/types";
 import {
   wordpressEnabled,
   wpGetArticleBySlug,
@@ -80,3 +81,18 @@ export async function searchArticles(query: string): Promise<Article[]> {
 }
 
 export type { Article, Author };
+
+/**
+ * Categories that actually have at least one published article.
+ *
+ * WHY: empty category pages are thin content. Shipping them in the nav and the
+ * sitemap invites Google to crawl and index pages with nothing on them, which
+ * drags the whole domain. A category re-appears automatically the moment its
+ * first article publishes — nothing to maintain by hand.
+ */
+export async function getPopulatedCategories(): Promise<NavCategory[]> {
+  const site = getSite();
+  const articles = await getArticles(200);
+  const used = new Set(articles.map((a) => a.categorySlug));
+  return site.categories.filter((c) => used.has(c.slug));
+}

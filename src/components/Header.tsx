@@ -1,8 +1,11 @@
 import Link from "next/link";
 import { getSite } from "@/config/site";
+import { getPopulatedCategories } from "@/lib/content";
 
-export function Header() {
+export async function Header() {
   const site = getSite();
+  // Only surface categories that actually have articles — see getPopulatedCategories.
+  const categories = await getPopulatedCategories();
   return (
     <header className="bg-chrome text-chrome-text border-b border-edge/40">
       <div className="mx-auto max-w-6xl px-4">
@@ -38,7 +41,7 @@ export function Header() {
               {d.label}
             </Link>
           ))}
-          {site.categories.map((c) => (
+          {categories.map((c) => (
             <Link
               key={c.slug}
               href={`/category/${c.slug}`}

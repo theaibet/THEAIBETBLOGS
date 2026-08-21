@@ -29,7 +29,9 @@ export function LadderTable({
   compact?: boolean;
   attribution?: string;
 }) {
-  const rows = compact ? standings.slice(0, 8) : standings;
+  // 2026 finals format: top six advance directly; 7th-10th contest the new
+  // Wildcard Round (7v10, 8v9) before the finals proper. See afl.com.au.
+  const rows = compact ? standings.slice(0, 10) : standings;
   return (
     <div className="overflow-hidden rounded-brand border border-edge bg-surface">
       <table className="w-full text-sm">
@@ -51,7 +53,13 @@ export function LadderTable({
             <tr
               key={t.teamId}
               className={`border-b border-edge last:border-0 ${
-                t.rank <= 4 ? "bg-accent/[0.06]" : t.rank <= 8 ? "bg-accent/[0.02]" : ""
+                t.rank <= 4
+                  ? "bg-accent/[0.07]"
+                  : t.rank <= 6
+                    ? "bg-accent/[0.035]"
+                    : t.rank <= 10
+                      ? "bg-amber-400/[0.10]"
+                      : ""
               }`}
             >
               <td className="py-2.5 pl-4 pr-2">
@@ -59,9 +67,11 @@ export function LadderTable({
                   className={`inline-flex h-6 w-6 items-center justify-center rounded-full text-xs font-bold ${
                     t.rank <= 4
                       ? "bg-accent text-accent-contrast"
-                      : t.rank <= 8
+                      : t.rank <= 6
                         ? "border border-accent text-accent"
-                        : "text-muted"
+                        : t.rank <= 10
+                          ? "border border-amber-500 text-amber-600"
+                          : "text-muted"
                   }`}
                 >
                   {t.rank}
@@ -88,8 +98,9 @@ export function LadderTable({
       </table>
       <div className="flex items-center justify-between border-t border-edge px-4 py-2.5 text-[11px] text-muted">
         <span>
-          <span className="mr-3"><span className="mr-1 inline-block h-2 w-2 rounded-sm bg-accent" />Top 4</span>
-          <span><span className="mr-1 inline-block h-2 w-2 rounded-sm border border-accent" />Finals</span>
+          <span className="mr-3"><span className="mr-1 inline-block h-2 w-2 rounded-sm bg-accent" />Double chance</span>
+          <span className="mr-3"><span className="mr-1 inline-block h-2 w-2 rounded-sm border border-accent" />Top 6</span>
+          <span><span className="mr-1 inline-block h-2 w-2 rounded-sm border border-amber-500" />Wildcard</span>
         </span>
         <span>{attribution ?? "Data: Squiggle"}</span>
       </div>

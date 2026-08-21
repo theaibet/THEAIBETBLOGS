@@ -1,3 +1,4 @@
+import { getPopulatedCategories } from "@/lib/content";
 import Link from "next/link";
 import type { Article } from "@/lib/content/types";
 import { getSite } from "@/config/site";
@@ -15,6 +16,7 @@ import { formatDate } from "@/lib/format";
  * beside analysis. Data modules hide gracefully if the provider is down.
  */
 export async function AFLHomepage({ articles }: { articles: Article[] }) {
+  const categories = await getPopulatedCategories();
   const site = getSite();
   const afl = await getAFLData();
   const [lead, ...rest] = articles;
@@ -100,7 +102,7 @@ export async function AFLHomepage({ articles }: { articles: Article[] }) {
       <section aria-label="Browse by section" className="mt-16">
         <SectionRule title="Browse AFL Reviews" />
         <div className="mt-7 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {site.categories.map((c) => (
+          {categories.map((c) => (
             <Link
               key={c.slug}
               href={`/category/${c.slug}`}

@@ -177,6 +177,7 @@ function art(brandKey, slug, title) {
 // article slugs per brand (must match fixtures.ts) + a category-default set
 const ARTICLES = {
   aflreviews: [
+    "afl-wildcard-round-2026-what-it-means",
     "sydney-swans-suspend-five-players-what-it-means-for-september",
     "the-kids-are-coming-collingwood-september",
     "collingwood-v-brisbane-lions-round-24-preview",
@@ -187,6 +188,8 @@ const ARTICLES = {
     "_inline",
   ],
   ufcreview: [
+    "ufc-333-abu-dhabi-two-titles-one-trilogy",
+    "umar-nurmagomedov-fighter-profile-2026",
     "umar-nurmagomedov-song-yadong-shanghai-preview",
     "ufc-331-van-pantoja-2-preview",
     "ufc-330-results-makhachev-breaks-record",
@@ -197,6 +200,9 @@ const ARTICLES = {
     "_inline",
   ],
   puntersreview: [
+    "winx-stakes-2026-first-group-1-of-the-season",
+    "cox-plate-2026-moves-to-flemington",
+    "caulfield-cup-2026-nominations-150th-running",
     "memsie-stakes-day-preview-caulfield",
     "understanding-market-percentages-betting-education",
     "how-track-bias-works-betting-education",
@@ -205,6 +211,8 @@ const ARTICLES = {
     "_inline",
   ],
   sportinformation: [
+    "nrl-2026-ladder-race-for-the-eight",
+    "australian-sport-calendar-september-november-2026",
     "afl-finals-system-explained",
     "how-ufc-scoring-works-10-point-must",
     "melbourne-cup-history-facts-records",
@@ -213,6 +221,7 @@ const ARTICLES = {
     "_inline",
   ],
   punterstory: [
+    "bangladesh-darwin-first-test-win-in-australia",
     "the-day-the-tab-went-quiet",
     "grand-final-day-1989-a-punting-memory",
     "the-8000-dollar-fairytale-spicy-martini",

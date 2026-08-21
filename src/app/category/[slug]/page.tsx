@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getArticlesByCategory } from "@/lib/content";
+import { getArticlesByCategory, getPopulatedCategories } from "@/lib/content";
 import { getSite, getSiteUrl } from "@/config/site";
 import { ArticleCard } from "@/components/ArticleCard";
 import { getAFLData } from "@/lib/sports/afl/provider";
@@ -11,8 +11,12 @@ interface Params {
   slug: string;
 }
 
-export function generateStaticParams(): Params[] {
-  return getSite().categories.map((c) => ({ slug: c.slug }));
+export async function generateStaticParams(): Promise<Params[]> {
+  // Build only categories that have articles. An empty category page is thin
+  // content; it 404s until its first article publishes, then appears
+  // automatically in nav, sitemap and here.
+  const categories = await getPopulatedCategories();
+  return categories.map((c) => ({ slug: c.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
@@ -34,6 +38,7 @@ export default async function CategoryPage({ params }: { params: Promise<Params>
   if (!category) notFound();
 
   const articles = await getArticlesByCategory(slug);
+  if (articles.length === 0) notFound();
 
   // AFL Reviews "Stats & Ladder" is a live data page, not just an archive
   const isAflStats = site.key === "aflreviews" && slug === "stats";

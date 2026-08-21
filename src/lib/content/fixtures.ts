@@ -31,6 +31,67 @@ function h2(text: string): string {
 const FIXTURES: Record<SiteKey, Article[]> = {
   aflreviews: [
     {
+      id: "afl-107",
+      slug: "afl-wildcard-round-2026-what-it-means",
+      title: "Wildcard Round: Why Sixth Just Became the Most Valuable Place on the Ladder",
+      excerpt:
+        "The AFL\u2019s biggest finals change in 25 years arrives seven days from now. Ten teams, five weeks, and two clubs inside the eight who have to survive an extra final.",
+      bodyHtml:
+        p(
+          "Round 24 is not the last weekend of the season any more. For the first time since 2000 the AFL has changed the shape of September, and the new <strong>Wildcard Round</strong> is played on the weekend that used to be the pre-finals bye.",
+          "Ten clubs now make the finals. Five weeks, not four. And the club that finishes sixth has just been handed something the club that finishes seventh would give a lot for: a week off."
+        ) +
+        h2("What actually happens") +
+        p(
+          "The teams finishing seventh to tenth play off across one weekend. <strong>Seventh hosts tenth. Eighth hosts ninth.</strong> Winners go through to the finals proper. Losers are finished.",
+          "The top six do not play at all. They watch, they rest, and they enter the qualifying and elimination finals a week fresher than whoever comes through."
+        ) +
+        h2("The re-seed nobody has thought through yet") +
+        p(
+          "Here is the wrinkle that will decide somebody\u2019s season. The two Wildcard winners are not simply plugged into seventh and eighth based on who they beat. They are <strong>re-seeded on ladder position</strong> \u2014 a rankings system the AFL says it has not used since 1999.",
+          "The AFL\u2019s wording: \u201Cfifth will play the lowest-ranked Wildcard winner and sixth will play the highest-ranked Wildcard winner.\u201D So fifth and sixth genuinely do not know who they are playing until both Wildcard games are done. If tenth pulls off an upset, tenth is the lowest-ranked survivor and travels to fifth."
+        ) +
+        h2("Why this changes how Round 24 is played") +
+        p(
+          "In the old format, the fight at the bottom of the eight was about being in or out. Now it is about <strong>which door you come through</strong>, and the gap between them is enormous.",
+          "Finish sixth and you need three wins to lift the cup. Finish seventh or eighth and you need five straight, though at least you host your Wildcard game \u2014 AFL chief executive Andrew Dillon confirmed \u201Call teams who finish in the top eight of ten will host a home final.\u201D Finish ninth or tenth and you need five straight <em>away from home</em>. Nobody has ever done that."
+        ) +
+        h2("Who it applies to") +
+        p(
+          "Brisbane, Hawthorn and Melbourne are level on 60 points with Geelong and Adelaide two wins back on 56 \u2014 all five are playing for the safety of the top six. Collingwood sit eighth on 52, the Western Bulldogs ninth on 50, Carlton tenth on 46.",
+          "Two of those bottom four will be gone by this time next fortnight. The other two get a September nobody in their position would have had last year."
+        ) +
+        h2("The dates") +
+        p(
+          "Round 24 runs 20\u201323 August. The Wildcard Round takes the following weekend, with the fixture released once the ladder is final on Sunday night.",
+          "The <strong>Grand Final is Saturday 26 September at the MCG</strong>, 2:30pm AEST."
+        ),
+      featuredImage: {
+        url: "/photos/afl-marking-contest.jpg",
+        alt: "A pack flies in a marking contest in an AFL match",
+        width: 1058,
+        height: 500,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
+      categorySlug: "stats",
+      tags: ["Wildcard Round", "Finals", "AFL", "Format", "Round 24"],
+      author: AUTHORS.zacChristie,
+      publishedAt: "2026-08-21T05:00:00Z",
+      updatedAt: "2026-08-21T05:00:00Z",
+      theaibetSport: "afl",
+      theaibetCtaLabel: "See AI-modelled premiership odds under the new ten-team format",
+      masterStoryId: "MS-2026-0821-WILDCARD",
+      faq: [
+        { q: "What is the AFL Wildcard Round?", a: "A new finals week introduced in 2026. The clubs finishing 7th to 10th play off \u2014 7th hosts 10th, 8th hosts 9th \u2014 with the two winners advancing to the finals proper and the two losers eliminated." },
+        { q: "When is the 2026 AFL Wildcard Round?", a: "The weekend after Round 24, in the slot previously used for the pre-finals bye. The fixture is confirmed after the final home-and-away round." },
+        { q: "Do the top six play in the Wildcard Round?", a: "No. The top six have the weekend off and enter the qualifying and elimination finals fresh, which is why finishing sixth is now far more valuable than finishing seventh." },
+        { q: "How are the Wildcard winners seeded?", a: "By ladder position, not by who they beat. Fifth plays the lowest-ranked Wildcard winner and sixth plays the highest-ranked Wildcard winner." },
+        { q: "How many finals does a team from 10th have to win?", a: "Five, all away from home. No club has ever won a premiership from anywhere near that position." }
+      ],
+    },
+    {
       id: "afl-105",
       slug: "sydney-swans-suspend-five-players-what-it-means-for-september",
       title: "Five Stars, One Hotel Room, No September: The Ban That Blew Up Sydney's Season",
@@ -275,44 +336,66 @@ const FIXTURES: Record<SiteKey, Article[]> = {
       updatedAt: "2026-08-17T00:00:00Z",
       theaibetCtaLabel: "See how the AI models rated every Round 23 result",
       masterStoryId: "MS-2026-0817-R23-REVIEW",
+      faq: [
+        { q: "How many drawn games were there in AFL Round 23, 2026?", a: "Two. Hawthorn and Collingwood finished level at 92-apiece at the MCG, and the Western Bulldogs and Carlton drew 82-all at Marvel Stadium the following day." },
+        { q: "What was the biggest win of Round 23?", a: "Melbourne beat Port Adelaide 132\u201356 at Adelaide Oval, a 76-point away win that took the Demons to 60 points." },
+        { q: "How did the draws affect the finals race?", a: "Hawthorn's two points kept them fourth on 60 and Collingwood's kept them eighth, while Carlton and the Western Bulldogs each banked two points when both arguably needed four." },
+      ],
     },
     {
       id: "afl-103",
       slug: "afl-run-home-round-24-ladder-scenarios",
-      title: "The Run Home: What Round 24 Means for Every Finals Contender",
+      title: "The Run Home: What Round 24 Decides Under the New Top-Ten Finals",
       excerpt:
-        "Six teams, eight points, six finals spots still moving. The real ladder maths heading into the final home-and-away round.",
+        "Ten teams make September for the first time. The fight is no longer for eighth \u2014 it is to avoid the Wildcard Round entirely.",
       bodyHtml:
         p(
-          "The live ladder tells a clean story at the top: Fremantle first on 76 points with a league-best 142.5 per cent, Sydney second on 68. Barring the absurd, the double-chance top two is set.",
-          "Below them is the tightest congestion of the season. Brisbane, Hawthorn and Melbourne all sit on 60 points, Geelong and Adelaide on 56, Collingwood eighth on 52 \u2014 six clubs inside eight points, all still moving."
+          "The live ladder tells a clean story at the top: Fremantle first on 76 points with a league-best 142.5 per cent, Sydney second on 68. Barring the absurd, the top two is set.",
+          "Everything underneath is being decided by a system the AFL has never used before. Ten clubs make the 2026 finals, and the last weekend of the home-and-away season is really a fight over one thing \u2014 <strong>finishing sixth or better, and skipping the Wildcard Round altogether</strong>."
+        ) +
+        h2("Why sixth is the line that matters") +
+        p(
+          "Under the new format, the top six get the Wildcard weekend off and walk into the finals proper fresh. Seventh through tenth have to play an extra elimination game first \u2014 7th hosts 10th, 8th hosts 9th \u2014 and two of those four are gone before the qualifying finals are even played.",
+          "That turns the old scramble for eighth into something different. Eighth is now survivable but expensive: five straight wins to win a flag. Ninth and tenth need five straight wins <em>away from home</em>. Sixth needs three."
+        ) +
+        h2("The congestion") +
+        p(
+          "Brisbane, Hawthorn and Melbourne are level on 60 points. Geelong and Adelaide sit on 56. Collingwood are eighth on 52, the Western Bulldogs ninth on 50, Carlton tenth on 46 after their draw.",
+          "Percentage is doing real work in the fine print: Geelong\u2019s 120.2 leads Brisbane\u2019s 119.5 and Hawthorn\u2019s 117.3. A single result this weekend can move a club from a home qualifying final to a Wildcard game."
         ) +
         h2("The games that decide it") +
         p(
-          "Round 24 could not have been scripted better. Collingwood host Brisbane at the MCG on Friday in a direct eighth-versus-third collision. Melbourne, fifth, play the ninth-placed Western Bulldogs \u2014 who sit two points behind Collingwood and are very much alive.",
-          "Hawthorn travel to Perth to face West Coast, Adelaide host GWS at Adelaide Oval, and Carlton \u2014 tenth on 46 after their draw \u2014 get top-of-the-table Fremantle at Docklands."
+          "Collingwood hosted Brisbane at the MCG on Friday night in a direct collision between eighth and third. Melbourne, fifth, meet the ninth-placed Bulldogs \u2014 a game with finals seeding at both ends of it.",
+          "Hawthorn travel to Perth to face West Coast, Adelaide host GWS at Adelaide Oval, and Carlton get top-of-the-table Fremantle at Marvel Stadium with their Wildcard position on the line. Gold Coast opened the round on Thursday with a 14.19 (103) to 12.8 (80) win over St Kilda at Marvel."
         ) +
-        h2("What history says") +
+        h2("What happens next") +
         p(
-          "Under the current finals format the premier has overwhelmingly come from the top four \u2014 which is why three clubs on 60 points will treat this weekend like a final. Two of them can finish in the four. One of them probably plays elimination football instead.",
-          "Percentage may yet decide it: Brisbane's 119.5 leads Geelong's 120.2 and Hawthorn's 117.3 in the fine print that separates a qualifying final from an elimination final."
+          "The Wildcard Round is played the following weekend, on what used to be the pre-finals bye. The AFL confirms the fixture once the ladder is final on Sunday night.",
+          "Then the familiar bracket resumes: 1 v 4, 2 v 3 in the qualifying finals, and the two Wildcard survivors re-seeded into the elimination finals against fifth and sixth."
         ),
       featuredImage: {
-        url: "/photos/afl-pack-mark.jpg",
-        alt: "Players contest a pack mark in a tight AFL contest",
-        width: 1058,
-        height: 500,
+        url: "/photos/afl-tackle-contest.jpg",
+        alt: "A tackle is laid in heavy traffic during an AFL match",
+        width: 1062,
+        height: 626,
         credit: "Supplied",
         license: "user-supplied",
         source: "publisher-upload",
       },
       categorySlug: "stats",
-      tags: ["Ladder", "Finals", "Round 24", "Run Home"],
+      tags: ["Ladder", "Finals", "Round 24", "Wildcard Round", "Run Home"],
       author: AUTHORS.zacChristie,
       publishedAt: "2026-08-17T22:00:00Z",
-      updatedAt: "2026-08-18T02:00:00Z",
+      updatedAt: "2026-08-21T03:00:00Z",
+      theaibetSport: "afl",
       theaibetCtaLabel: "View AI-modelled finals probabilities for every club",
       masterStoryId: "MS-2026-0817-RUN-HOME",
+      faq: [
+        { q: "How many teams make the AFL finals in 2026?", a: "Ten. The AFL expanded to a ten-team, five-week finals series in 2026, opening with a Wildcard Round between the clubs finishing 7th to 10th." },
+        { q: "Which teams avoid the Wildcard Round?", a: "The top six. They have the Wildcard weekend off and enter the qualifying and elimination finals fresh." },
+        { q: "Who is still fighting for a top-six finish?", a: "Brisbane, Hawthorn and Melbourne are level on 60 points, with Geelong and Adelaide on 56. Percentage separates them: Geelong 120.2, Brisbane 119.5, Hawthorn 117.3." },
+        { q: "When is the AFL Wildcard Round played?", a: "On the weekend after Round 24, in the slot previously used for the pre-finals bye. The fixture is confirmed once the final ladder is known." }
+      ],
     },
     {
       id: "afl-104",
@@ -350,10 +433,121 @@ const FIXTURES: Record<SiteKey, Article[]> = {
       updatedAt: "2026-08-16T22:00:00Z",
       theaibetCtaLabel: "Explore Fremantle's AI premiership probability",
       masterStoryId: "MS-2026-0816-FREO-NUMBERS",
+      faq: [
+        { q: "Why did Fremantle win the 2026 minor premiership?", a: "Fremantle finished the home-and-away season on 76 points, eight clear of Sydney, with a league-best percentage of 142.5 \u2014 combining a top-three attack with the competition's best defence." },
+        { q: "How many points did Fremantle concede in 2026?", a: "1,547 \u2014 the fewest in the league by a wide margin \u2014 while scoring 2,204." },
+        { q: "What does finishing top of the ladder earn a club in 2026?", a: "A home qualifying final and, under the new ten-team format, a week off during the Wildcard Round." },
+      ],
     },
   ],
 
   ufcreview: [
+    {
+      id: "ufc-007",
+      slug: "ufc-333-abu-dhabi-two-titles-one-trilogy",
+      title: "UFC 333: Two Titles and a Trilogy in Abu Dhabi",
+      excerpt:
+        "Volkanovski defends against an undefeated Evloev, and Petr Yan and Merab Dvalishvili go a third time with the bantamweight belt on the line.",
+      bodyHtml:
+        p(
+          "The UFC has confirmed a championship doubleheader for <strong>UFC 333 on 24 October at Etihad Arena in Abu Dhabi</strong>, and it is the strongest card announced for the back half of 2026.",
+          "<strong>Alexander Volkanovski (28-4)</strong> defends the featherweight title against <strong>Movsar Evloev (20-0)</strong>, and <strong>Petr Yan (20-5)</strong> puts the bantamweight belt on the line against <strong>Merab Dvalishvili (21-5)</strong> in the third fight of a rivalry that has now produced a title change in both directions."
+        ) +
+        h2("Volkanovski v Evloev: the last undefeated problem") +
+        p(
+          "Evloev earned this with a decision over Lerone Murphy at UFC London in March. He arrives at 20-0 \u2014 the sort of record that eventually stops being a curiosity and starts being a warning.",
+          "The stylistic question is the obvious one and it is not a simple one. Volkanovski has spent his championship life solving pressure grapplers by out-working them in space and out-lasting them late. Evloev is the version of that problem who has never been solved by anybody."
+        ) +
+        h2("Yan v Dvalishvili 3: the belt keeps changing hands") +
+        p(
+          "Yan took the title from Dvalishvili by unanimous decision at UFC 323 on 6 December 2025, ending a fourteen-fight winning streak in the process. That result is what makes the trilogy fight compelling rather than obligatory \u2014 both men have now beaten the other in a fight that mattered.",
+          "Dvalishvili\u2019s case is volume and an engine that has broken better strikers than Yan. Yan\u2019s case is that he has already proven he can defuse it once."
+        ) +
+        h2("Where it sits on the calendar") +
+        p(
+          "Abu Dhabi lands five weeks after UFC 331 in Los Angeles, where <strong>Joshua Van</strong> defends the flyweight title against <strong>Alexandre Pantoja</strong> in a rematch of the fastest finish in flyweight championship history, and <strong>Arman Tsarukyan</strong> meets <strong>Mauricio Ruffy</strong> over five rounds.",
+          "Before either of those, the schedule runs through Sacramento, Shanghai, Paris, Glendale and Salt Lake City. UFC 332 in Salt Lake City on 3 October still has no announced main event."
+        ),
+      featuredImage: {
+        url: "/art/ufcreview/ufc-333-abu-dhabi-two-titles-one-trilogy.svg",
+        alt: "Abstract octagon artwork for UFC 333 in Abu Dhabi",
+        width: 1600,
+        height: 900,
+        credit: "UFC Review editorial artwork",
+        license: "owned",
+        source: "generated",
+      },
+      categorySlug: "news",
+      tags: ["UFC 333", "Volkanovski", "Evloev", "Petr Yan", "Dvalishvili", "Abu Dhabi"],
+      author: AUTHORS.zacChristie,
+      publishedAt: "2026-08-21T04:00:00Z",
+      updatedAt: "2026-08-21T04:00:00Z",
+      theaibetSport: "ufc",
+      theaibetCtaLabel: "See the AI model\u2019s read on both UFC 333 title fights",
+      masterStoryId: "MS-2026-0821-UFC333",
+      faq: [
+        { q: "When and where is UFC 333?", a: "Saturday 24 October 2026 at Etihad Arena in Abu Dhabi." },
+        { q: "What are the UFC 333 title fights?", a: "Alexander Volkanovski (28-4) defends the featherweight title against Movsar Evloev (20-0), and Petr Yan (20-5) defends the bantamweight title against Merab Dvalishvili (21-5) in their trilogy bout." },
+        { q: "How did Petr Yan win the bantamweight title?", a: "By unanimous decision over Merab Dvalishvili at UFC 323 on 6 December 2025, ending Dvalishvili\u2019s fourteen-fight winning streak." },
+        { q: "Is Movsar Evloev undefeated?", a: "Yes. He enters UFC 333 at 20-0, having earned the title shot with a decision win over Lerone Murphy at UFC London in March 2026." }
+      ],
+    },
+    {
+      id: "ufc-008",
+      slug: "umar-nurmagomedov-fighter-profile-2026",
+      title: "Umar Nurmagomedov: Seven Submissions, One Loss, and a Second Run at the Belt",
+      excerpt:
+        "The bantamweight No.3 fights in Shanghai next weekend. A look at what the record actually says about him \u2014 and what the one blemish cost.",
+      bodyHtml:
+        p(
+          "<strong>Umar Nurmagomedov</strong> is 20-1 as a professional and ranked third at bantamweight. Next Saturday in Shanghai he meets <strong>Song Yadong</strong>, ranked sixth, in a fight the division has effectively made an eliminator.",
+          "He is 30, fights out of Dagestan, stands 5\u20198\u201D with a 69-inch reach, and made his octagon debut on 20 January 2021. He carries <strong>seven submission wins and five first-round finishes</strong>."
+        ) +
+        h2("The one loss") +
+        p(
+          "On 18 January 2025 at UFC 311 he challenged <strong>Merab Dvalishvili</strong> for the bantamweight title and lost a unanimous decision. That is the entire blemish on the record \u2014 one fight, at the highest level, against a champion in the middle of a fourteen-fight run.",
+          "What he has done since is rebuild without shortcuts. A unanimous decision over <strong>Mario Bautista</strong> at UFC 321 in October 2025, then a unanimous decision over former flyweight champion <strong>Deiveson Figueiredo</strong> at UFC 324 in January 2026."
+        ) +
+        h2("The Song Yadong problem") +
+        p(
+          "Song is 23-9-1 and comes in off a submission win over the same Figueiredo \u2014 a second-round guillotine at UFC Fight Night Macau in May, which is a very different way of solving the same opponent.",
+          "The obvious framing is grappler against boxer: UFC.com lists Song\u2019s fighting style as boxer, and Nurmagomedov\u2019s seven submissions speak for themselves. The less obvious question is what happens in the rounds where neither man gets his preferred fight, because both have shown they can win those."
+        ) +
+        h2("What is actually at stake") +
+        p(
+          "The bantamweight belt is held by <strong>Petr Yan</strong>, who defends against Dvalishvili in a trilogy fight at UFC 333 in Abu Dhabi on 24 October. Whoever wins in Shanghai is next in a very short queue.",
+          "For Nurmagomedov specifically, a third straight win since the title loss makes the case difficult to argue against \u2014 and it would be a rematch with the man who beat him, or a first meeting with the man who beat that man."
+        ) +
+        h2("Card details") +
+        p(
+          "UFC Fight Night: Nurmagomedov vs Song is on <strong>Saturday 29 August 2026 in Shanghai</strong>, broadcast on Paramount+. The co-main is <strong>Yan Xiaonan</strong> (19-5, ranked fourth at women\u2019s strawweight) against <strong>Denise Gomes</strong> (12-3, ranked fourteenth).",
+          "Kai Asakura, Alex Perez, Sumudaerji, Jack Jenkins and former strawweight champion Xiong Jingnan also feature on the card."
+        ),
+      featuredImage: {
+        url: "/photos/fighter-training.jpg",
+        alt: "A mixed martial artist training",
+        width: 1200,
+        height: 800,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
+      categorySlug: "fighters",
+      tags: ["Umar Nurmagomedov", "Song Yadong", "Bantamweight", "Shanghai", "Fighter Profile"],
+      author: AUTHORS.zacChristie,
+      publishedAt: "2026-08-21T04:30:00Z",
+      updatedAt: "2026-08-21T04:30:00Z",
+      theaibetSport: "ufc",
+      theaibetCtaLabel: "See the AI model\u2019s probability and edge for Nurmagomedov vs Song",
+      masterStoryId: "MS-2026-0821-UMAR-PROFILE",
+      faq: [
+        { q: "What is Umar Nurmagomedov\u2019s record?", a: "20-1. His only defeat is a unanimous decision to Merab Dvalishvili in a bantamweight title fight at UFC 311 on 18 January 2025." },
+        { q: "Where is Umar Nurmagomedov ranked?", a: "Third at bantamweight on the UFC\u2019s official rankings as at August 2026." },
+        { q: "Who does Umar Nurmagomedov fight next?", a: "Song Yadong, ranked sixth at bantamweight, at UFC Fight Night in Shanghai on Saturday 29 August 2026." },
+        { q: "How many finishes does Umar Nurmagomedov have?", a: "He has seven submission wins and five first-round finishes across his 20 professional victories." },
+        { q: "Who holds the UFC bantamweight title?", a: "Petr Yan, who beat Merab Dvalishvili by unanimous decision at UFC 323 in December 2025. He defends against Dvalishvili in a trilogy fight at UFC 333 on 24 October 2026." }
+      ],
+    },
     {
       id: "ufc-005",
       slug: "umar-nurmagomedov-song-yadong-shanghai-preview",
@@ -518,6 +712,15 @@ const FIXTURES: Record<SiteKey, Article[]> = {
         p(
           "Championship rounds reward control and consistency \u2014 the qualities models measure best. Prelims reward chaos. The discipline is knowing which regime you're pricing before the cage door shuts."
         ),
+      featuredImage: {
+        url: "/art/ufcreview/model-vs-market-what-ufc-330-taught-us.svg",
+        alt: "Abstract octagon artwork representing model versus market analysis",
+        width: 1600,
+        height: 900,
+        credit: "UFC Review editorial artwork",
+        license: "owned",
+        source: "generated",
+      },
       categorySlug: "model-vs-market",
       tags: ["Model vs Market", "UFC 330", "Analytics"],
       author: AUTHORS.zacChristie,
@@ -525,6 +728,11 @@ const FIXTURES: Record<SiteKey, Article[]> = {
       updatedAt: "2026-08-16T09:00:00Z",
       theaibetCtaLabel: "See live model probability, confidence and edge for UFC 330",
       masterStoryId: "MS-2026-0816-UFC330-MVM",
+      faq: [
+        { q: "Who won the main event at UFC 330?", a: "Islam Makhachev retained the welterweight title with a unanimous decision over Ian Machado Garry, scored 49\u201346 twice and 48\u201347." },
+        { q: "What happened in the UFC 330 co-main event?", a: "Mackenzie Dern retained the women's strawweight title against Gillian Robertson on identical scorecards to the main event \u2014 49\u201346, 49\u201346, 48\u201347." },
+        { q: "Why are finishes hard for prediction models to price?", a: "A knockout compresses a fight's information into a single exchange. Round-by-round models estimate accumulated advantage, so an early finish like Jalin Turner's 39-second knockout of Kau\u00EA Fernandes sits outside what the model is measuring." },
+      ],
     },
     {
       id: "ufc-003",
@@ -558,6 +766,11 @@ const FIXTURES: Record<SiteKey, Article[]> = {
       updatedAt: "2026-08-12T08:00:00Z",
       theaibetCtaLabel: "Explore fighter style data inside TheAIbet",
       masterStoryId: "MS-2026-0812-UFC-STANCE",
+      faq: [
+        { q: "Why are southpaws overrepresented in MMA?", a: "The advantage is mechanical rather than mystical. In open-stance matchups the straight left lands at meaningfully higher rates than the equivalent orthodox cross, and southpaws face orthodox opponents far more often than the reverse." },
+        { q: "What is an open-stance matchup?", a: "A fight between an orthodox fighter and a southpaw, where the two fighters' lead feet are on opposite sides. A closed-stance fight is two fighters in the same stance." },
+        { q: "What decides an open-stance exchange?", a: "Outside foot position. Whoever gets their lead foot outside the opponent's aligns their power side with the opponent's centre line; the fighter who loses that position spends the round punching across himself." },
+      ],
     },
     {
       id: "ufc-004",
@@ -606,46 +819,218 @@ const FIXTURES: Record<SiteKey, Article[]> = {
 
   puntersreview: [
     {
-      id: "rac-001",
-      slug: "memsie-stakes-day-preview-caulfield",
-      title: "Memsie Stakes 2026: The Spring's First Group 1 Arrives at Caulfield",
+      id: "rac-005",
+      slug: "winx-stakes-2026-first-group-1-of-the-season",
+      title: "The Season Starts Here: Winx Stakes Opens the Group 1 Year at Randwick",
       excerpt:
-        "Saturday August 29, 1400 metres, $750,000 \u2014 and Sheza Alibi heads early markets from Cosmic Crusader and Jimmysstar.",
+        "Saturday, 1400 metres, $1 million \u2014 the first Group 1 of the Australian season, and Chris Waller has eight of the fourteen.",
       bodyHtml:
         p(
-          "The spring starts properly on Saturday, August 29, when the Group 1 Memsie Stakes (1400m, $750,000) is run at Caulfield \u2014 the first Group 1 of the Melbourne spring season and the traditional launching pad for Cox Plate campaigns.",
-          "Thirty horses feature among early nominations, and the market has already taken shape: Sheza Alibi heads early quotes at $2.50, from Cosmic Crusader and Jimmysstar sharing the second line at $3.50, with Angel Capital at $5.00 and Beiwacht at $7.00."
+          "Australian racing has been without a Group 1 since the Tattersall\u2019s Tiara at Eagle Farm on 27 June. That ends on <strong>Saturday 22 August</strong>, when the <strong>Winx Stakes</strong> is run over 1400 metres at Royal Randwick for $1 million \u2014 the first Group 1 of the new season and the traditional front door to the Sydney spring.",
+          "It is also, on the face of the field, a Chris Waller benefit. He saddles <strong>eight of the fourteen</strong>."
         ) +
-        h2("The Memsie's meaning") +
+        h2("The field") +
         p(
-          "The race's history says treat first-up form with respect: last year Treasurethe Moment took the 2025 edition, and Memsie winners regularly frank the form deep into October.",
-          "For punters, the eternal Memsie puzzle applies \u2014 proven weight-for-age horses resuming against in-form sprinter-milers at their peak. Fresh class against match fitness, at a track that can favour on-pacers in late winter."
+          "<strong>Autumn Glow</strong> is the $1.90 favourite for Waller, with <strong>James McDonald</strong> aboard from barrier three. <strong>Sheza Alibi</strong> ($3.10, Peter G Moody and Katherine Coleman, Luke Nolen) draws the inside gate.",
+          "The rest, in barrier order: Lady Shenandoah (Waller, McEvoy), Beiwacht, Midnight Dynamite (Bjorn Baker), Autumn Boy, Gringotts (Ciaron Maher, Ethan Brown), Ceolwulf (Joseph Pride), Idle Flyer (Matthew Smith), Fangirl (Waller, Tommy Berry), Aeliana, Lindermann (Hugh Bowman), Barnavara and Green Spaces."
         ) +
-        h2("What to watch") +
+        h2("What Waller is really doing") +
         p(
-          "Final fields and barriers will sharpen the picture in the week of the race. Watch for market moves once gates are drawn \u2014 1400 metres at Caulfield is unforgiving from a wide draw \u2014 and for stables using the race as a set-up for October targets rather than a mission in itself."
+          "Autumn Glow has been nominated for the Cox Plate, and Waller has been careful about what that means. \u201CIt\u2019s not on our radar, but if James at any stage says, \u2018have a go at the Cox Plate\u2019 she\u2019ll be having a go,\u201D he said.",
+          "That is the honest position for most of this field. The Winx Stakes is a Group 1 worth winning, but for the better half of the card it is a fitness test with prizemoney attached \u2014 the first read on horses whose real targets are seven weeks away."
+        ) +
+        h2("The rest of the card") +
+        p(
+          "Randwick also stages the <strong>Silver Shadow Stakes</strong> (1200m) and the <strong>Show County Quality</strong> (1200m) as supporting black type, along with the Premier\u2019s Cup over 2000 metres and the Drinkwise Mile.",
+          "Elsewhere on Saturday: <strong>Sandown</strong> hosts the Listed Carlyon Stakes in Melbourne, <strong>Doomben</strong> runs its Mekka Raceday in Brisbane, and <strong>Belmont Park</strong> has the Idyllic Prince Stakes in Perth. Moonee Valley is not racing \u2014 it is closed for redevelopment \u2014 and Ascot does not return until the warmer months, with Belmont carrying the Perth winter season through to 26 September."
+        ) +
+        h2("Then the real spring") +
+        p(
+          "The following Saturday, 29 August, splits between the <strong>Memsie Stakes</strong> at Caulfield \u2014 Melbourne\u2019s first Group 1 \u2014 and the Group 3 <strong>San Domenico Stakes</strong> at Rosehill.",
+          "From there Sydney runs Golden Rose (26 September, Rosehill), Epsom Day (3 October, Randwick), <strong>Everest Day (17 October, Randwick)</strong> and Golden Eagle (31 October)."
         ),
       featuredImage: {
-        url: "/photos/racing-field.jpg",
-        alt: "The field thunders down the straight \u2014 spring racing is back",
-        width: 1384,
-        height: 672,
+        url: "/photos/racing-close-finish.jpg",
+        alt: "A tight finish between horses at the post",
+        width: 1200,
+        height: 800,
         credit: "Supplied",
         license: "user-supplied",
         source: "publisher-upload",
       },
       categorySlug: "previews",
-      tags: ["Memsie Stakes", "Caulfield", "Spring Carnival", "Group 1", "Sheza Alibi"],
+      tags: ["Winx Stakes", "Randwick", "Group 1", "Chris Waller", "Autumn Glow"],
       author: AUTHORS.zacChristie,
-      publishedAt: "2026-08-18T07:00:00Z",
-      updatedAt: "2026-08-18T07:00:00Z",
-      theaibetCtaLabel: "See AI runner rankings for Memsie Stakes day",
-      masterStoryId: "MS-2026-0818-MEMSIE-2026",
+      publishedAt: "2026-08-21T06:00:00Z",
+      updatedAt: "2026-08-21T06:00:00Z",
+      theaibetSport: "racing",
+      theaibetCtaLabel: "See the AI model\u2019s ratings for Randwick on Saturday",
+      masterStoryId: "MS-2026-0821-WINX-STAKES",
       faq: [
-        { q: "When is the 2026 Memsie Stakes?", a: "Saturday, August 29, 2026 at Caulfield Racecourse in Melbourne." },
-        { q: "What distance and prize money is the Memsie Stakes?", a: "It is a Group 1 run over 1400 metres, worth $750,000 \u2014 the first Group 1 of the Melbourne spring season." },
-        { q: "Who is favourite for the 2026 Memsie Stakes?", a: "In early markets Sheza Alibi headed quotes at $2.50, ahead of Cosmic Crusader and Jimmysstar at $3.50." },
-        { q: "Who won the Memsie Stakes in 2025?", a: "Treasurethe Moment." },
+        { q: "When is the 2026 Winx Stakes?", a: "Saturday 22 August 2026 at Royal Randwick, over 1400 metres for $1 million. It is the first Group 1 of the Australian racing season." },
+        { q: "Who is favourite for the Winx Stakes?", a: "Autumn Glow at $1.90, trained by Chris Waller and ridden by James McDonald from barrier three. Sheza Alibi is next at $3.10." },
+        { q: "How many runners does Chris Waller have in the Winx Stakes?", a: "Eight of the fourteen, including Autumn Glow, Lady Shenandoah and Fangirl." },
+        { q: "What was the last Group 1 before the Winx Stakes?", a: "The Tattersall\u2019s Tiara at Eagle Farm on 27 June 2026, won by Splash Back for trainer Grahame Begg and jockey Jordan Childs \u2014 the final Group 1 of the 2025-26 season." }
+      ],
+    },
+    {
+      id: "rac-006",
+      slug: "cox-plate-2026-moves-to-flemington",
+      title: "The Cox Plate Is Leaving the Valley: What Flemington Does to Australia\u2019s Weight-For-Age Championship",
+      excerpt:
+        "For the first time in its history the Cox Plate will be run somewhere other than Moonee Valley. The track is closed, and the race the Valley built has to work somewhere else.",
+      bodyHtml:
+        p(
+          "The <strong>2026 Cox Plate will be run at Flemington on Saturday 24 October</strong>, over 2040 metres. It is the first time in the race\u2019s history it has been staged anywhere other than Moonee Valley.",
+          "The reason is straightforward: the Valley is closed for redevelopment, a shutdown of at least 21 months from November 2025. The reason it matters is anything but."
+        ) +
+        h2("The Valley made the race") +
+        p(
+          "Moonee Valley is 1805 metres round with a short straight and tight turns. That geometry is the Cox Plate. It is why the race has so often gone to the horse who could hold a position and quicken off a genuine tempo rather than the horse with the biggest raw finish \u2014 there is nowhere to make up five lengths at the Valley if you have not been in the race turning for home.",
+          "Flemington is the opposite proposition. Big, galloping, a 450-metre straight. The horse who is three-wide and last on the turn is not out of it."
+        ) +
+        h2("What that does to the form") +
+        p(
+          "Every Cox Plate trend built on Valley bias should be treated as suspect for this running. Barrier statistics, on-pace bias, the historic weight of tactical speed \u2014 all of it was measured at a track this race is not being run on.",
+          "The honest position for punters is that the 2026 Cox Plate is closer to a first running than a 106th. Handicappers and models trained on Valley data are working from the wrong track."
+        ) +
+        h2("It is not the only race that moved") +
+        p(
+          "Racing Victoria\u2019s 2026 spring programme has redeployed a string of Valley features. The <strong>Moir Stakes</strong> (Group 1, 1000m) goes to <strong>Sandown</strong> on 5 September. The <strong>Manikato Stakes</strong> moves to <strong>Caulfield</strong>. The Zipping Classic stays at Sandown.",
+          "Racing Victoria chief executive Aaron Morrison framed the Flemington decision commercially: \u201CFlemington is the best location to maximise attendance, wagering and engagement with the meeting.\u201D Moonee Valley Racing Club chief executive Michael Browell acknowledged the obvious \u2014 it is \u201Cthe first time the race has been run at a different track.\u201D"
+        ) +
+        h2("The nominations") +
+        p(
+          "The MVRC took <strong>103 nominations</strong> for the 2026 running. <strong>Sir Delius</strong> (Gai Waterhouse and Adrian Bott) heads the local entries after missing last year\u2019s race. <strong>Gstaad</strong>, runner-up in the Group 1 Sussex Stakes at Goodwood, and Royal Ascot winner <strong>Map Of Stars</strong> lead the international interest, with <strong>Buckaroo</strong> back after finishing second last year.",
+          "<strong>Aeliana</strong>, sixth in 2025, is being aimed at it again. Waller: \u201CWe\u2019ll probably make it her target race\u2026 a Cox Plate.\u201D"
+        ),
+      featuredImage: {
+        url: "/photos/flemington-finish.jpg",
+        alt: "Horses race to the line at Flemington",
+        width: 1200,
+        height: 800,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
+      categorySlug: "tracks",
+      tags: ["Cox Plate", "Flemington", "Moonee Valley", "Spring Carnival", "Track Bias"],
+      author: AUTHORS.zacChristie,
+      publishedAt: "2026-08-21T06:30:00Z",
+      updatedAt: "2026-08-21T06:30:00Z",
+      theaibetSport: "racing",
+      theaibetCtaLabel: "See how the AI model rates the spring staying and weight-for-age races",
+      masterStoryId: "MS-2026-0821-COX-PLATE-FLEMINGTON",
+      faq: [
+        { q: "Where is the 2026 Cox Plate being run?", a: "Flemington, on Saturday 24 October 2026, over 2040 metres. It is the first Cox Plate in the race\u2019s history run at a track other than Moonee Valley." },
+        { q: "Why has the Cox Plate moved from Moonee Valley?", a: "Moonee Valley is closed for redevelopment, a shutdown of at least 21 months from November 2025. Racing Victoria selected Flemington to host the 2026 running." },
+        { q: "Does the track change affect Cox Plate form?", a: "Substantially. Moonee Valley is 1805 metres round with a short straight, which historically favoured tactical speed and on-pace runners. Flemington is a big galloping track with a 450-metre straight, so Valley-derived barrier and pace trends should be treated as unreliable for this running." },
+        { q: "Which other races moved from Moonee Valley in 2026?", a: "The Moir Stakes goes to Sandown on 5 September and the Manikato Stakes to Caulfield, among other redeployed features in Racing Victoria\u2019s 2026 spring programme." }
+      ],
+    },
+    {
+      id: "rac-007",
+      slug: "caulfield-cup-2026-nominations-150th-running",
+      title: "124 Nominations for the 150th Caulfield Cup \u2014 and the Melbourne Cup Winner Heads Them",
+      excerpt:
+        "Half Yours leads a $6 million field that has drawn Aidan O\u2019Brien, Willie Mullins and William Haggas. Waller has 18 entries on his own.",
+      bodyHtml:
+        p(
+          "The <strong>150th Caulfield Cup</strong> has attracted <strong>124 nominations</strong> for the $6 million Group 1 over 2400 metres at Caulfield on <strong>Saturday 17 October</strong>.",
+          "Heading them is <strong>Half Yours</strong>, the reigning Melbourne Cup winner \u2014 which is the sort of entry that sets the tone for an entire staying spring."
+        ) +
+        h2("Who has the numbers") +
+        p(
+          "<strong>Chris Waller</strong> leads all nominators with 18 entries. <strong>Ciaron Maher</strong> and <strong>Joseph O\u2019Brien</strong> have 15 apiece.",
+          "The Australian list also includes Sir Delius, Treasurethe Moment, Cosmic Crusader, Green Spaces, Yellow Jersey, King Pedro and She\u2019s A Hustler."
+        ) +
+        h2("The European raid") +
+        p(
+          "The international contingent is deep. <strong>Aidan O\u2019Brien</strong> has entered Causeway. <strong>Willie Mullins</strong> has three \u2014 Gaucher, Love Me Tender and Thread Of Gold. <strong>Andrew Balding</strong> has Fantasy World, Mount Atlas and Tarriance. <strong>Roger Varian</strong> nominated Enfjaar and <strong>William Haggas</strong> Tenability.",
+          "Handicap staying races worth $6 million do not need to advertise themselves in Europe any more, and the entry sheet reflects that."
+        ) +
+        h2("Key dates") +
+        p(
+          "Late nominations close on <strong>8 September</strong> at $6,500. First declarations are due <strong>22 September</strong>.",
+          "The Caulfield Cup sits a week before the Cox Plate \u2014 which this year is at Flemington, not Moonee Valley \u2014 and just over two weeks before the Melbourne Cup on Tuesday 3 November."
+        ) +
+        h2("Where the Cup fits") +
+        p(
+          "The 2026 Melbourne spring runs from the Memsie Stakes on 29 August through to 29 November. The staying path into October goes Turnbull Stakes (3 October, Flemington), Caulfield Cup (17 October), Cox Plate (24 October), Victoria Derby (31 October) and Melbourne Cup (3 November).",
+          "For a horse like Half Yours, the Caulfield Cup is the question of whether last November was a peak or a plateau."
+        ),
+      featuredImage: {
+        url: "/photos/racing-finish-roses.jpg",
+        alt: "A winning horse and jockey after a feature race",
+        width: 1200,
+        height: 800,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
+      categorySlug: "news",
+      tags: ["Caulfield Cup", "Nominations", "Half Yours", "Chris Waller", "Spring Carnival"],
+      author: AUTHORS.zacChristie,
+      publishedAt: "2026-08-21T07:00:00Z",
+      updatedAt: "2026-08-21T07:00:00Z",
+      theaibetSport: "racing",
+      theaibetCtaLabel: "Track AI ratings across the spring staying races",
+      masterStoryId: "MS-2026-0821-CAULFIELD-CUP-NOMS",
+      faq: [
+        { q: "When is the 2026 Caulfield Cup?", a: "Saturday 17 October 2026 at Caulfield, over 2400 metres for $6 million. It is the 150th running of the race." },
+        { q: "How many nominations did the 2026 Caulfield Cup receive?", a: "124. Chris Waller leads all nominators with 18 entries, ahead of Ciaron Maher and Joseph O\u2019Brien on 15 each." },
+        { q: "Is the Melbourne Cup winner nominated for the Caulfield Cup?", a: "Yes. Half Yours, the reigning Melbourne Cup winner, heads the nominations." },
+        { q: "When do Caulfield Cup nominations close?", a: "Late nominations close on 8 September 2026 at $6,500, with first declarations due on 22 September." }
+      ],
+    },
+    {
+      id: "rac-001",
+      slug: "memsie-stakes-day-preview-caulfield",
+      title: "Memsie Stakes 2026: Melbourne\u2019s Spring Opens at Caulfield",
+      excerpt:
+        "Saturday 29 August, 1400 metres, Group 1 \u2014 the first serious Melbourne mission of the spring, and the traditional launching pad for October.",
+      bodyHtml:
+        p(
+          "The Melbourne spring opens properly on <strong>Saturday 29 August</strong>, when the Group 1 Memsie Stakes is run over 1400 metres at Caulfield. Racing Victoria has the carnival running from that date through to 29 November.",
+          "The Memsie has always been a race about intent. It is where the good weight-for-age horses declare themselves, and where the Cox Plate and Caulfield Cup campaigns get their first public read."
+        ) +
+        h2("Who is being aimed at it") +
+        p(
+          "<strong>Cosmic Crusader</strong> comes out of the Group 2 P.B. Lawrence Stakes at Caulfield on 15 August, which he won \u2014 two from two since making the trip across from Perth \u2014 and is squarely in the frame here.",
+          "<strong>Mr Brightside</strong>, <strong>Tom Kitten</strong> and <strong>Treasurethe Moment</strong> have all been reported as being readied for their first starts of the preparation in the Memsie. Aethera, De Bergerac, Giga Kick and Yellow Jersey were among others put through a Caulfield Heath trial in the lead-up."
+        ) +
+        h2("The Memsie puzzle") +
+        p(
+          "The eternal question in this race is fresh class against match fitness: proven weight-for-age horses resuming, against in-form sprinter-milers already wound up. Caulfield over 1400 metres in late winter rarely forgives a wide gate.",
+          "Final fields and barriers are released on the Wednesday of race week, which is when the market does most of its real moving. Anything quoted before then is a futures price on an assumed field, not a bet on a confirmed one."
+        ) +
+        h2("What it feeds") +
+        p(
+          "The 2026 spring runs Memsie (29 Aug) into the Makybe Diva Stakes at Flemington on 12 September, the Turnbull Stakes on 3 October, the Caulfield Cup on 17 October and the Cox Plate on 24 October.",
+          "One change worth carrying into every one of those previews: the <strong>Cox Plate is at Flemington this year</strong>, not Moonee Valley, with the Valley closed for redevelopment. It is the first time in the race\u2019s history it has been run at another track."
+        ),
+      featuredImage: {
+        url: "/photos/racing-field.jpg",
+        alt: "A field of thoroughbreds races down the straight",
+        width: 1200,
+        height: 800,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
+      categorySlug: "previews",
+      tags: ["Memsie Stakes", "Caulfield", "Group 1", "Spring Carnival", "Cosmic Crusader"],
+      author: AUTHORS.zacChristie,
+      publishedAt: "2026-08-18T00:00:00Z",
+      updatedAt: "2026-08-21T03:00:00Z",
+      theaibetSport: "racing",
+      theaibetCtaLabel: "See the AI model\u2019s read on Memsie Stakes day",
+      masterStoryId: "MS-2026-0818-MEMSIE",
+      faq: [
+        { q: "When is the 2026 Memsie Stakes?", a: "Saturday 29 August 2026 at Caulfield, over 1400 metres. It is a Group 1 and the opening feature of the Melbourne spring carnival." },
+        { q: "Which horses are being aimed at the Memsie Stakes?", a: "Cosmic Crusader comes off a P.B. Lawrence Stakes win on 15 August, and Mr Brightside, Tom Kitten and Treasurethe Moment have all been reported as being prepared for first-up runs in the race. The final field is released on the Wednesday of race week." },
+        { q: "Where is the 2026 Cox Plate being run?", a: "Flemington, on Saturday 24 October 2026. Moonee Valley is closed for redevelopment, making it the first Cox Plate run at another track in the race\u2019s history." },
+        { q: "What are the key Melbourne spring dates in 2026?", a: "Memsie Stakes 29 August, Makybe Diva Stakes 12 September, Turnbull Stakes 3 October, Caulfield Cup 17 October, Cox Plate 24 October and the Melbourne Cup on Tuesday 3 November." }
       ],
     },
     {
@@ -668,6 +1053,15 @@ const FIXTURES: Record<SiteKey, Article[]> = {
         p(
           "Markets are sharpest where the most money flows: metropolitan Saturday racing, feature races, short-priced favourites. They are weakest in thin midweek markets, early markets before scratchings settle, and races where a single piece of information — a track bias, a gear change — hasn't been fully absorbed."
         ),
+      featuredImage: {
+        url: "/art/puntersreview/understanding-market-percentages-betting-education.svg",
+        alt: "Abstract racing artwork representing betting market percentages",
+        width: 1600,
+        height: 900,
+        credit: "Punters Review editorial artwork",
+        license: "owned",
+        source: "generated",
+      },
       categorySlug: "education",
       tags: ["Betting Education", "Value", "Markets"],
       author: AUTHORS.zacChristie,
@@ -675,6 +1069,12 @@ const FIXTURES: Record<SiteKey, Article[]> = {
       updatedAt: "2026-08-14T21:00:00Z",
       theaibetCtaLabel: "Compare AI-assessed probabilities against market prices",
       masterStoryId: "MS-2026-0814-EDU-PERCENT",
+      faq: [
+        { q: "What is a market percentage or overround?", a: "The amount by which a betting market's implied probabilities exceed 100 per cent. A market framed to 116 per cent means the prices are collectively 16 per cent worse than fair, and that gap is the bookmaker's margin." },
+        { q: "How do you convert odds into implied probability?", a: "Divide 100 by the decimal odds. A $4 chance is implied at 25 per cent; a $2.50 chance is implied at 40 per cent." },
+        { q: "What does 'value' actually mean in betting?", a: "A bet has value when the price's implied probability is lower than your own assessed probability of the outcome. It is a long-run concept \u2014 any single result tells you nothing about whether the bet was correct." },
+        { q: "Where are markets weakest?", a: "In thin midweek markets, in early markets before scratchings settle, and in races where a single piece of information such as a track bias or a gear change has not yet been fully absorbed." },
+      ],
     },
     {
       id: "rac-003",
@@ -703,13 +1103,13 @@ const FIXTURES: Record<SiteKey, Article[]> = {
       publishedAt: "2026-08-15T21:00:00Z",
       updatedAt: "2026-08-15T21:00:00Z",
       featuredImage: {
-        url: "/photos/flemington-finish.jpg",
-        alt: "Two runners hit the line together in a driving finish",
-        width: 1284,
-        height: 644,
-        credit: "Supplied",
-        license: "user-supplied",
-        source: "publisher-upload",
+        url: "/art/puntersreview/how-track-bias-works-betting-education.svg",
+        alt: "Abstract racing artwork illustrating track bias and rail position",
+        width: 1600,
+        height: 900,
+        credit: "Punters Review editorial artwork",
+        license: "owned",
+        source: "generated",
       },
       theaibetCtaLabel: "See track and sectional analysis inside TheAIbet",
       masterStoryId: "MS-2026-0815-BIAS-EDU",
@@ -727,16 +1127,16 @@ const FIXTURES: Record<SiteKey, Article[]> = {
       bodyHtml:
         p(
           "Every Everest needs a fairytale, and this spring it might wear the colours of an $8,000 bargain buy. Spicy Martini, the Toby Edmonds-trained mare from the Gold Coast, stamped herself as one of Australia's emerging sprint stars with victory in the $3 million Stradbroke Handicap at Eagle Farm in June \u2014 a first Group 1 for young jockey Taylor Marshall.",
-          "The win took the daughter of American Triple Crown champion Justify past $2.7 million in earnings \u2014 more than 300 times her purchase price \u2014 and prompted connections to bypass the Tattersall's Tiara and aim squarely at October: The Everest at Royal Randwick."
+          "The win took her past $2.7 million in earnings \u2014 more than 300 times her purchase price \u2014 and pointed the campaign at Sydney. She has <strong>no Everest slot</strong>: the plan reported at the start of August is a spring run beginning in The Shorts, the most traditional path any horse takes toward the $20 million race."
         ) +
         h2("The mountain in the way") +
         p(
-          "Waiting at Randwick is the horse many judges now call the best sprinter in the world \u2014 and some are ready to call the best they've seen. Ka Ying Rising, Hong Kong's champion, returns to defend the Everest crown he won in 2025, and the world's top-ranked sprinter has been preparing for exactly this defence.",
+          "Waiting at Randwick is the horse many judges now call the best sprinter in the world. Ka Ying Rising, Hong Kong's champion, won the 2025 Everest and is being prepared to come back for it \u2014 the Hong Kong Jockey Club holds its slot under a two-year agreement struck in 2025, which covers this running.",
           "That is the equation facing every slot-holder this spring: take the proven mountain, or back the story still being written."
         ) +
         h2("The case for the mare") +
         p(
-          "Trainer Toby Edmonds isn't shying from the target. \u201CHopefully this mare might attract an Everest slot, we'll see what happens,\u201D he said after the Stradbroke, invoking Les Bridge \u2014 still training Everest winners into his eighties \u2014 as proof the race rewards believers.",
+          "Trainer Toby Edmonds isn't shying from the target, but he has never claimed more than he has. \u201CHopefully this mare might attract an Everest slot, we'll see what happens,\u201D he said after the Stradbroke. Two months on, that is still exactly where it sits \u2014 a campaign built to earn a slot, not one that has been given one.",
           "A Stradbroke-winning mare, rising through the sprinting ranks at the right time of year, with the race of her life on the calendar and the best sprinter alive standing at the top of it. Australian racing does not script them better."
         ),
       categorySlug: "news",
@@ -764,50 +1164,193 @@ const FIXTURES: Record<SiteKey, Article[]> = {
       },
       theaibetCtaLabel: "See TheAIbet's AI analysis of the Everest sprinters",
       masterStoryId: "MS-2026-0818-SPICY-MARTINI",
+      faq: [
+        { q: "Does Spicy Martini have an Everest slot?", a: "No. As at August 2026 she has not been named in any of the twelve slots. Trainer Toby Edmonds said after the Stradbroke only that \u201Chopefully this mare might attract an Everest slot\u201D, and her reported spring campaign begins in The Shorts." },
+        { q: "What has Spicy Martini won?", a: "The $3 million Group 1 Stradbroke Handicap at Eagle Farm in June 2026 \u2014 a first Group 1 for jockey Taylor Marshall. Her earnings now exceed $2.7 million, more than 300 times her $8,000 purchase price." },
+        { q: "When and where is The Everest run?", a: "Saturday 17 October 2026 at Royal Randwick, over 1200 metres for $20 million, with twelve starters selected by twelve slot-holders." },
+        { q: "Who won the 2025 Everest?", a: "Ka Ying Rising, for the Hong Kong Jockey Club, which holds its slot under a two-year agreement struck in 2025." },
+      ],
     },
   ],
 
   sportinformation: [
     {
-      id: "spo-001",
-      slug: "afl-finals-system-explained",
-      title: "The AFL Finals System Explained: How the Top Eight Actually Works",
+      id: "spo-005",
+      slug: "nrl-2026-ladder-race-for-the-eight",
+      title: "NRL 2026: The Ladder, the Run Home and the Race for the Eight",
       excerpt:
-        "The complete guide to the AFL finals format — the double chance, week-by-week structure and why finishing top four matters so much.",
+        "Three rounds left. Penrith and the Roosters are locked together on 38 points and four clubs are fighting over the last two spots.",
       bodyHtml:
         p(
-          "The AFL finals series takes the top eight teams from the home-and-away season through a four-week knockout structure — but it is not a simple knockout bracket, and the differences matter enormously.",
-          "The defining feature is the double chance. Teams finishing first to fourth can lose their opening final and remain alive; teams finishing fifth to eighth are eliminated the moment they lose."
+          "With three rounds of the 2026 Telstra Premiership still to play, the top of the NRL ladder is a two-horse race and the bottom of the eight is a genuine scramble.",
+          "<strong>Penrith</strong> and the <strong>Roosters</strong> are level on 38 points, separated only by points differential \u2014 Penrith +294, the Roosters +163. The <strong>Warriors</strong> sit third on 36 with a differential of +276, which is the second-best in the competition."
         ) +
-        h2("Week by week") +
+        h2("The ladder") +
         p(
-          "Week one comprises two qualifying finals (1st v 4th, 2nd v 3rd) and two elimination finals (5th v 8th, 6th v 7th). Qualifying final winners advance straight to preliminary finals with a week's rest; losers host semi-finals against elimination final winners.",
-          "Week three's preliminary finals feed the grand final, traditionally played at the MCG on the last Saturday in September or first in October."
+          "1. Panthers 38 \u00b7 2. Roosters 38 \u00b7 3. Warriors 36 \u00b7 4. Dolphins 34 \u00b7 5. Sharks 32 \u00b7 6. Knights 32 \u00b7 7. Rabbitohs 30 \u00b7 8. Cowboys 30 \u00b7 9. Bulldogs 26 \u00b7 10. Sea Eagles 24 \u00b7 11. Storm 24 \u00b7 12. Raiders 24.",
+          "The Cowboys hold eighth on 30 points but with a differential of \u2212 78 \u2014 the only side inside the eight with a negative record. The Bulldogs are four points back on 26 with two rounds to make it up."
         ) +
-        h2("Why top four is everything") +
+        h2("What is left") +
         p(
-          "The double chance, the extra rest and home-ground advantage compound: the large majority of premierships in the current format have been won by top-four sides, and most by teams that won their qualifying final. Finishing fifth with the same win total as fourth is a dramatically worse position — which is why late home-and-away rounds between contenders carry such weight."
+          "Round 25 runs 20\u201323 August, Round 26 from 27\u201330 August, and the final round from 3\u20136 September. The regular season ends on <strong>Sunday 6 September</strong>.",
+          "Byes still matter: the Cowboys have theirs in Round 25, the Raiders in Round 26 and the Knights in Round 27. In a competition where four clubs are separated by six points, a bye in the wrong week is a real disadvantage."
+        ) +
+        h2("How the NRL finals work") +
+        p(
+          "The NRL runs a top-eight over four weeks. Week one has two qualifying finals \u2014 <strong>1st hosts 4th</strong>, <strong>2nd hosts 3rd</strong> \u2014 and two elimination finals, <strong>5th hosts 8th</strong> and <strong>6th hosts 7th</strong>. Elimination final losers are out.",
+          "Qualifying final winners get a bye straight to a home preliminary final. Qualifying final losers drop into home semi-finals against the elimination final winners. That is the double chance, and it is why the difference between fourth and fifth is worth more than one ladder position suggests: the top four need two wins to reach the decider, fifth through eighth need three."
+        ) +
+        h2("Grand Final") +
+        p(
+          "The <strong>2026 NRL Grand Final is Sunday 4 October at Accor Stadium</strong>, sharing the day with the NRLW decider.",
+          "The week-by-week finals fixture is confirmed after the final round, once the ladder is locked."
         ),
       featuredImage: {
-        url: "/photos/carlton-mark.jpg",
-        alt: "A high mark in an AFL contest",
-        width: 1266,
-        height: 1618,
+        url: "/photos/nrl-eels.jpg",
+        alt: "NRL players contest possession",
+        width: 1200,
+        height: 800,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
+      categorySlug: "nrl",
+      tags: ["NRL", "Ladder", "Finals", "Penrith", "Roosters"],
+      author: AUTHORS.zacChristie,
+      publishedAt: "2026-08-21T07:30:00Z",
+      updatedAt: "2026-08-21T07:30:00Z",
+      theaibetSport: "nrl",
+      theaibetCtaLabel: "See AI-modelled NRL finals probabilities",
+      masterStoryId: "MS-2026-0821-NRL-LADDER",
+      faq: [
+        { q: "Who is on top of the NRL ladder in 2026?", a: "Penrith and the Roosters are level on 38 points with three rounds remaining, separated by points differential \u2014 Penrith +294 to the Roosters\u2019 +163." },
+        { q: "When does the 2026 NRL regular season end?", a: "Sunday 6 September 2026, at the end of Round 27." },
+        { q: "How does the NRL finals system work?", a: "A top-eight over four weeks. Week one: 1st hosts 4th and 2nd hosts 3rd in qualifying finals, 5th hosts 8th and 6th hosts 7th in elimination finals. Qualifying final winners go straight to a home preliminary final; qualifying final losers host semi-finals." },
+        { q: "When is the 2026 NRL Grand Final?", a: "Sunday 4 October 2026 at Accor Stadium in Sydney, on the same day as the NRLW Grand Final." }
+      ],
+    },
+    {
+      id: "spo-006",
+      slug: "australian-sport-calendar-september-november-2026",
+      title: "What\u2019s On: The Australian Sport Calendar, September to November 2026",
+      excerpt:
+        "Two finals series, the NFL\u2019s first regular-season game at the MCG, Brazil at Lang Park and a spring carnival that has moved its biggest race.",
+      bodyHtml:
+        p(
+          "The next ten weeks are the densest stretch of the Australian sporting year. Both football codes reach their finals, the spring carnival runs its full course, and two genuine firsts land inside a fortnight of each other.",
+          "Every date below is as published by the relevant governing body or venue."
+        ) +
+        h2("Football codes") +
+        p(
+          "<strong>AFL Wildcard Round</strong> \u2014 the weekend after Round 24, in the old pre-finals bye slot. New for 2026: 7th v 10th and 8th v 9th, with the winners joining the top six in a ten-team, five-week finals series. <strong>AFL Grand Final: Saturday 26 September, MCG, 2:30pm AEST.</strong>",
+          "<strong>NRL regular season ends Sunday 6 September</strong> after Round 27, followed by a four-week top-eight finals series. <strong>NRL Grand Final: Sunday 4 October, Accor Stadium</strong>, shared with the NRLW decider."
+        ) +
+        h2("The firsts") +
+        p(
+          "<strong>NFL at the MCG</strong> \u2014 the Los Angeles Rams play the San Francisco 49ers on <strong>Friday 11 September, 10:35am AEST</strong>. It is the first NFL regular-season game ever staged in Australia.",
+          "<strong>The Cox Plate at Flemington</strong> \u2014 Saturday 24 October. The first time in the race\u2019s history it has been run anywhere other than Moonee Valley, which is closed for redevelopment."
+        ) +
+        h2("Racing") +
+        p(
+          "Memsie Stakes 29 August (Caulfield) \u00b7 Moir Stakes 5 September (Sandown) \u00b7 Makybe Diva Stakes 12 September (Flemington) \u00b7 Golden Rose 26 September (Rosehill) \u00b7 Turnbull Stakes 3 October (Flemington) \u00b7 Epsom Day 3 October (Randwick).",
+          "<strong>The Everest</strong> 17 October (Randwick, $20 million, 1200m) \u00b7 Caulfield Cup 17 October \u00b7 <strong>Cox Plate 24 October (Flemington)</strong> \u00b7 Victoria Derby and Golden Eagle 31 October \u00b7 <strong>Melbourne Cup Tuesday 3 November</strong> \u00b7 Crown Oaks 5 November \u00b7 Champions Day 7 November."
+        ) +
+        h2("Cricket, rugby and football") +
+        p(
+          "<strong>Cricket:</strong> the second Test between Australia and Bangladesh runs <strong>22\u201326 August at Great Barrier Reef Arena, Mackay</strong>. Bangladesh won the first Test in Darwin by nine wickets \u2014 their first Test victory in Australia.",
+          "<strong>Rugby:</strong> the Wallabies tour Argentina for Tests on <strong>29 August and 5 September</strong>, then host South Africa on 27 September before the Bledisloe Cup on 10 October (away) and 17 October at Accor Stadium.",
+          "<strong>Football:</strong> the Socceroos host <strong>Brazil</strong> at Lang Park in Brisbane on <strong>25 September</strong> and again in Townsville on 29 September. The A-League Men season opens <strong>Friday 16 October</strong> with a Sydney Derby at Allianz Stadium."
+        ) +
+        h2("Basketball and tennis") +
+        p(
+          "<strong>Boomers</strong> FIBA World Cup qualifiers in Manila: v Syria Friday 28 August and v Jordan Sunday 30 August, both 7:00pm AEST. Australia are unbeaten through six qualifiers.",
+          "<strong>NBL27</strong> tips off Saturday 19 September. The <strong>NBA</strong> 2026-27 season starts Tuesday 20 October US time \u2014 Wednesday 21 October AEDT. The <strong>US Open</strong> main draw begins Sunday 30 August."
+        ),
+      featuredImage: {
+        url: "/art/sportinformation/australian-sport-calendar-september-november-2026.svg",
+        alt: "Abstract data artwork representing the Australian sporting calendar",
+        width: 1600,
+        height: 900,
+        credit: "Sport Information editorial artwork",
+        license: "owned",
+        source: "generated",
+      },
+      categorySlug: "explainers",
+      tags: ["Calendar", "AFL", "NRL", "Racing", "NFL", "Cricket"],
+      author: AUTHORS.zacChristie,
+      publishedAt: "2026-08-21T08:00:00Z",
+      updatedAt: "2026-08-21T08:00:00Z",
+      theaibetSport: "general",
+      theaibetCtaLabel: "See AI analysis across every sport on the calendar",
+      masterStoryId: "MS-2026-0821-SPORT-CALENDAR",
+      faq: [
+        { q: "When is the 2026 AFL Grand Final?", a: "Saturday 26 September 2026 at the MCG, 2:30pm AEST." },
+        { q: "When is the 2026 NRL Grand Final?", a: "Sunday 4 October 2026 at Accor Stadium in Sydney." },
+        { q: "Is the NFL playing a game in Australia in 2026?", a: "Yes. The Los Angeles Rams play the San Francisco 49ers at the MCG on Friday 11 September 2026 at 10:35am AEST \u2014 the first NFL regular-season game held in Australia." },
+        { q: "When is the 2026 Melbourne Cup?", a: "Tuesday 3 November 2026 at Flemington." },
+        { q: "When do the Socceroos play Brazil?", a: "Friday 25 September 2026 at Lang Park in Brisbane, and again on 29 September in Townsville." }
+      ],
+    },
+    {
+      id: "spo-001",
+      slug: "afl-finals-system-explained",
+      title: "AFL Finals 2026 Explained: How the New Wildcard Round Works",
+      excerpt:
+        "The AFL has changed its finals system for the first time in 25 years. Ten teams, five weeks, and a new Wildcard Round \u2014 here is exactly how it works.",
+      bodyHtml:
+        p(
+          "For the first time since 2000, the AFL has changed the shape of its finals series. From 2026 the competition runs a <strong>five-week, ten-team finals campaign</strong>, opening with a new <strong>Wildcard Round</strong> played on what used to be the pre-finals bye weekend.",
+          "The old top-eight McIntyre system is gone. Two extra clubs now get a September, and two of the clubs who finish inside the eight have to survive an extra week before the finals proper begin."
+        ) +
+        h2("Wildcard Round: 7th v 10th, 8th v 9th") +
+        p(
+          "The four clubs finishing seventh to tenth play off across one weekend. <strong>Seventh hosts tenth</strong> and <strong>eighth hosts ninth</strong>. The two winners advance; the two losers are done for the year.",
+          "The top six do not play. They get the weekend off and enter the finals proper fresh \u2014 which is the single biggest reason finishing sixth is now worth so much more than finishing seventh."
+        ) +
+        h2("How the winners are re-seeded") +
+        p(
+          "This is the part most people get wrong. The two Wildcard winners are not simply slotted into 7th and 8th based on who they beat. They are <strong>re-seeded by ladder position</strong> \u2014 the AFL describes it as a rankings system the competition has not used since 1999.",
+          "In the AFL\u2019s own words: \u201Cfifth will play the lowest-ranked Wildcard winner and sixth will play the highest-ranked Wildcard winner.\u201D So if seventh and eighth both win, seventh becomes the higher seed and meets sixth, while eighth meets fifth. If tenth causes an upset, tenth becomes the lowest-ranked winner and travels to fifth."
+        ) +
+        h2("Weeks two to five are unchanged") +
+        p(
+          "Once the Wildcard survivors join the top six, the bracket is the familiar one: <strong>1 v 4</strong> and <strong>2 v 3</strong> in the qualifying finals, <strong>5 v 8</strong> and <strong>6 v 7</strong> in the elimination finals.",
+          "Qualifying final winners get the week off and a home preliminary final. Qualifying final losers drop into home semi-finals against the elimination final winners. Elimination final losers are out. Preliminary final winners meet in the Grand Final."
+        ) +
+        h2("What it costs to come from the bottom") +
+        p(
+          "A club finishing seventh or eighth must now win <strong>five straight finals</strong> to win the flag. A club finishing ninth or tenth must win five straight finals <strong>all away from home</strong>. No side has ever done anything close to that.",
+          "AFL chief executive Andrew Dillon has confirmed the home-ground principle holds throughout: \u201Call teams who finish in the top eight of ten will host a home final.\u201D That means seventh and eighth host their Wildcard games."
+        ) +
+        h2("The 2026 dates") +
+        p(
+          "Round 24, played 20\u201323 August, was the final home-and-away round. The Wildcard Round takes the following weekend \u2014 the old pre-finals bye \u2014 with the fixture confirmed once the ladder is final.",
+          "The <strong>2026 Grand Final is Saturday 26 September at the MCG</strong>, first bounce 2:30pm AEST."
+        ),
+      featuredImage: {
+        url: "/photos/afl-pack-mark.jpg",
+        alt: "Players contest a pack mark in an AFL match",
+        width: 1058,
+        height: 500,
         credit: "Supplied",
         license: "user-supplied",
         source: "publisher-upload",
       },
       categorySlug: "explainers",
-      tags: ["AFL", "Finals", "Explainer"],
+      tags: ["AFL", "Finals", "Wildcard Round", "Explainer", "Format"],
       author: AUTHORS.zacChristie,
-      publishedAt: "2026-08-15T02:00:00Z",
-      updatedAt: "2026-08-15T02:00:00Z",
-      theaibetCtaLabel: "See AI-modelled finals probabilities for the 2026 season",
-      masterStoryId: "MS-2026-0815-AFL-EXPLAINER",
+      publishedAt: "2026-08-21T02:00:00Z",
+      updatedAt: "2026-08-21T02:00:00Z",
+      theaibetSport: "afl",
+      theaibetCtaLabel: "See AI-modelled premiership probabilities for all ten finalists",
+      masterStoryId: "MS-2026-0821-WILDCARD-EXPLAINER",
       faq: [
-        { q: "How many teams make the AFL finals?", a: "Eight \u2014 the top eight teams on the ladder after the home-and-away season." },
-        { q: "What is the double chance in AFL finals?", a: "Teams finishing in the top four can lose their first final and stay alive; teams fifth to eighth are eliminated with any loss." },
-        { q: "Where is the AFL Grand Final played?", a: "Traditionally at the Melbourne Cricket Ground (MCG)." },
+        { q: "How does the AFL Wildcard Round work?", a: "Teams finishing 7th to 10th play off over one weekend: 7th hosts 10th and 8th hosts 9th. The two winners advance to the finals proper and the two losers are eliminated. The top six clubs have the weekend off." },
+        { q: "How many teams make the AFL finals in 2026?", a: "Ten. The AFL expanded from an eight-team to a ten-team finals series in 2026, run across five weeks instead of four." },
+        { q: "Who do the Wildcard Round winners play?", a: "The two winners are re-seeded by ladder position. Fifth plays the lowest-ranked Wildcard winner and sixth plays the highest-ranked Wildcard winner, forming the usual 5 v 8 and 6 v 7 elimination finals." },
+        { q: "Has the qualifying final format changed?", a: "No. The top four still contest qualifying finals \u2014 1st v 4th and 2nd v 3rd \u2014 with the double chance intact. Winners advance straight to a home preliminary final." },
+        { q: "How many finals must a team win from 10th?", a: "Five, all away from home. A side finishing 7th or 8th also needs five straight wins but hosts its Wildcard game." },
+        { q: "When is the 2026 AFL Grand Final?", a: "Saturday 26 September 2026 at the MCG, with a 2:30pm AEST start." }
       ],
     },
     {
@@ -907,7 +1450,7 @@ const FIXTURES: Record<SiteKey, Article[]> = {
         h2("Scoring and structure") +
         p(
           "NRL scoring: a try is worth four points, conversions two, penalty goals two and field goals one. AFL scoring: a goal (between the two tall central posts) is worth six points, a behind one point.",
-          "The AFL season runs 24 home-and-away rounds into an eight-team finals series; the NRL runs 27 rounds into its own top-eight format. Both grand finals are among the most-watched television events in Australia each year."
+          "The AFL season runs 24 home-and-away rounds into a finals series that, from 2026, takes ten teams across five weeks and opens with a Wildcard Round. The NRL runs 27 rounds into a four-week, eight-team format. Both grand finals are among the most-watched television events in Australia each year."
         ),
       featuredImage: {
         url: "/photos/nrl-dragons.jpg",
@@ -925,10 +1468,71 @@ const FIXTURES: Record<SiteKey, Article[]> = {
       updatedAt: "2026-08-08T04:00:00Z",
       theaibetCtaLabel: "Explore AI sports analysis on TheAIbet",
       masterStoryId: "MS-2026-0808-CODES",
+      faq: [
+        { q: "What is the difference between NRL and AFL?", a: "Rugby league is played on a rectangular field with 13 players a side and possession structured around six tackles. Australian rules is played on a large oval with 18 a side, no offside rule and a 360-degree contest." },
+        { q: "How does scoring work in each code?", a: "In the NRL a try is four points, a conversion two, a penalty goal two and a field goal one. In the AFL a goal between the two tall central posts is six points and a behind is one." },
+        { q: "How many rounds does each season run?", a: "The AFL plays 24 home-and-away rounds and from 2026 runs a ten-team, five-week finals series that opens with a Wildcard Round. The NRL plays 27 rounds into a four-week, eight-team finals series." },
+        { q: "When are the 2026 grand finals?", a: "The AFL Grand Final is Saturday 26 September 2026 at the MCG. The NRL Grand Final is Sunday 4 October 2026 at Accor Stadium." },
+      ],
     },
   ],
 
   punterstory: [
+    {
+      id: "sto-005",
+      slug: "bangladesh-darwin-first-test-win-in-australia",
+      title: "Nine Wickets in Darwin: The Morning Australia Stopped Being Unbeatable at Home",
+      excerpt:
+        "Bangladesh had never won a Test in Australia. On a Sunday in Darwin they chased 57 for the loss of one wicket and the whole country had to sit with it.",
+      bodyHtml:
+        p(
+          "There is a particular kind of quiet that settles over Australian sport when something happens that was not supposed to be possible. Not anger. Not even disappointment, at first. Just the sound of a lot of people recalibrating at once.",
+          "On <strong>16 August 2026</strong>, at Marrara in Darwin, <strong>Bangladesh beat Australia by nine wickets</strong> \u2014 their first Test win on Australian soil, in their first ever attempt at a series here."
+        ) +
+        h2("How it happened") +
+        p(
+          "Australia made <strong>198</strong> in the first innings. <strong>Hasan Mahmud</strong> took the game by the throat and did not let go, finishing with <strong>9/111</strong> for the match and Player of the Match. <strong>Mehidy Hasan Miraz</strong> took a five-wicket haul and made 65 with the bat, which is the sort of all-round performance that decides Tests.",
+          "<strong>Cameron Green</strong> made a century in Australia\u2019s second innings of 284 \u2014 a genuinely fine hundred that ended up being a footnote, which is the cruellest thing that can happen to a batsman. It left Bangladesh 57 to win. They lost one wicket getting them."
+        ) +
+        h2("What it actually means") +
+        p(
+          "Australia has lost Tests at home before. Australia has not often lost Tests at home to a side ranked where Bangladesh are ranked, in conditions that were supposed to be a formality, in a match scheduled partly because it looked like a comfortable start to a summer.",
+          "That is the part worth sitting with. Not the scoreline \u2014 the assumption underneath it. Darwin in August was supposed to be a warm-up."
+        ) +
+        h2("The bit punters will recognise") +
+        p(
+          "Every market has a price at which a result stops being priced as a real possibility and starts being priced as a formality. Somewhere in the first innings of that Test, a lot of people found out where that line sits.",
+          "The honest lesson is not \u201Cback the underdog.\u201D It is that the gap between a 5 per cent chance and a 0 per cent chance is the entire game, and that most of us round the first one down to the second without noticing we\u2019ve done it."
+        ) +
+        h2("What comes next") +
+        p(
+          "The second Test starts <strong>22 August at Great Barrier Reef Arena in Mackay</strong>, 10am local. Australia have a series to save and a fortnight of questions to answer.",
+          "Bangladesh have something they cannot lose no matter what happens in Mackay. That is the thing about firsts."
+        ),
+      featuredImage: {
+        url: "/photos/afl-goal-celebration.jpg",
+        alt: "Athletes celebrate a moment of victory",
+        width: 914,
+        height: 712,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
+      categorySlug: "moments",
+      tags: ["Cricket", "Bangladesh", "Darwin", "Upset", "Test Cricket"],
+      author: AUTHORS.zacChristie,
+      publishedAt: "2026-08-21T08:30:00Z",
+      updatedAt: "2026-08-21T08:30:00Z",
+      theaibetSport: "general",
+      theaibetCtaLabel: "See how AI models price the games nobody expects",
+      masterStoryId: "MS-2026-0821-BANGLADESH-DARWIN",
+      faq: [
+        { q: "When did Bangladesh beat Australia in Darwin?", a: "16 August 2026, on day four of the first Test at Marrara in Darwin. Bangladesh won by nine wickets \u2014 their first Test victory in Australia." },
+        { q: "Who was player of the match?", a: "Hasan Mahmud, who took 9/111 for the match. Mehidy Hasan Miraz also took a five-wicket haul and scored 65." },
+        { q: "What were the scores?", a: "Australia 198 and 284, with Cameron Green making a century in the second innings. Bangladesh chased the target of 57 for the loss of one wicket." },
+        { q: "When is the second Test?", a: "22-26 August 2026 at Great Barrier Reef Arena in Mackay, starting at 10am local time." }
+      ],
+    },
     {
       id: "sto-001",
       slug: "the-day-the-tab-went-quiet",
@@ -950,6 +1554,15 @@ const FIXTURES: Record<SiteKey, Article[]> = {
         p(
           "Every punter in that room has told the story since, and in every telling the horse's margin gets shorter and Ray gets calmer. That's the thing about punting stories: the money is never really the point. The point is that for four minutes on a Tuesday, a suburban TAB held its breath together."
         ),
+      featuredImage: {
+        url: "/art/punterstory/the-day-the-tab-went-quiet.svg",
+        alt: "Abstract editorial artwork of oversized quotation marks",
+        width: 1600,
+        height: 900,
+        credit: "Punter Story editorial artwork",
+        license: "owned",
+        source: "generated",
+      },
       categorySlug: "big-wins",
       tags: ["TAB", "Multi", "Big Wins"],
       author: AUTHORS.zacChristie,
@@ -1008,13 +1621,13 @@ const FIXTURES: Record<SiteKey, Article[]> = {
         ) +
         h2("The dream with a mountain in it") +
         p(
-          "What makes the story bigger than one race is where it's pointed: The Everest at Randwick in October, the world's richest race on turf \u2014 and the domain of Ka Ying Rising, Hong Kong's champion, the world's top-ranked sprinter and the horse many are already calling the best they've seen.",
-          "\u201CHopefully this mare might attract an Everest slot, we'll see what happens,\u201D Edmonds said after the Stradbroke \u2014 the sound of a man trying not to dream too loudly."
+          "What makes the story bigger than one race is where it's pointed: The Everest at Randwick on 17 October, $20 million over 1200 metres \u2014 and the domain of Ka Ying Rising, Hong Kong's champion, who won it in 2025 and is being readied to come back for it.",
+          "\u201CHopefully this mare might attract an Everest slot, we'll see what happens,\u201D Edmonds said after the Stradbroke \u2014 the sound of a man trying not to dream too loudly. She still doesn't have one. Twelve slots, twelve owners, and a mare who has to go and take one off somebody. Her spring reportedly starts in The Shorts."
         ) +
         h2("Why we barrack for her") +
         p(
           "Racing's economics are brutal and its aristocracy is expensive. That's exactly why stories like this one carry a whole spring: because every so often, the sales-ring leftover turns out to be the best horse someone ever bought.",
-          "Whether or not a slot comes, and whether or not anything alive can beat Ka Ying Rising down the Randwick straight, Australia has its horse for the spring. She cost eight grand. That's the whole point."
+          "Whether a slot comes, and whether anything alive can beat Ka Ying Rising down the Randwick straight, are two separate questions and neither is answered yet. Australia has its horse for the spring regardless. She cost eight grand. That's the whole point."
         ),
       categorySlug: "moments",
       tags: ["Spicy Martini", "The Everest", "Racing Culture", "Underdog"],
@@ -1032,6 +1645,11 @@ const FIXTURES: Record<SiteKey, Article[]> = {
       },
       theaibetCtaLabel: "See what the AI models make of the Everest picture",
       masterStoryId: "MS-2026-0818-SPICY-STORY",
+      faq: [
+        { q: "How much did Spicy Martini cost?", a: "$8,000. Her career earnings now exceed $2.7 million \u2014 more than three hundred times her purchase price." },
+        { q: "Who trains and rides Spicy Martini?", a: "She is trained by Toby Edmonds on the Gold Coast. Taylor Marshall rode her to a first Group 1 in the 2026 Stradbroke Handicap." },
+        { q: "Is Spicy Martini running in The Everest?", a: "Not as things stand. She has no slot. Her connections are chasing one, with a spring campaign reported to begin in The Shorts." },
+      ],
     },
     {
       id: "sto-004",

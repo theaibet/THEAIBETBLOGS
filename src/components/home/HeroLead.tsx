@@ -18,22 +18,26 @@ export function HeroLead({
       href={`/${article.categorySlug}/${article.slug}`}
       className="group relative block overflow-hidden rounded-brand border border-edge"
     >
-      <div className={`relative ${compact ? "aspect-[21/8]" : "aspect-[16/9] sm:aspect-[16/8]"}`}>
+      {/* The caption block sits in normal flow inside a min-height box rather
+          than absolutely at the bottom. An absolutely-positioned overlay grows
+          upward and gets clipped by overflow-hidden the moment a headline runs
+          long — which is exactly what happened with the Wildcard Round story.
+          This way the hero grows to fit the text instead of cropping it. */}
+      <div className={`relative ${compact ? "min-h-[240px] sm:min-h-[300px]" : "min-h-[340px] sm:min-h-[440px]"}`}>
         <ArtImage
           image={article.featuredImage}
           alt={article.featuredImage?.alt ?? article.title}
           className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.02]"
           eager
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-transparent" />
-      </div>
-      <div className="absolute inset-x-0 bottom-0 p-5 sm:p-8">
-        <span className="rounded-brand bg-accent px-3 py-1 text-[11px] font-bold uppercase tracking-[0.1em] text-accent-contrast">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent" />
+      <div className={`relative flex ${compact ? "min-h-[240px] sm:min-h-[300px]" : "min-h-[340px] sm:min-h-[440px]"} flex-col justify-end p-5 sm:p-8`}>
+        <span className="w-fit self-start rounded-brand bg-accent px-3 py-1 text-[11px] font-bold uppercase tracking-[0.1em] text-accent-contrast">
           {category?.name ?? article.categorySlug}
         </span>
         <h2
-          className={`font-heading mt-3 max-w-4xl leading-[1.05] text-white drop-shadow ${
-            compact ? "text-2xl sm:text-4xl" : "text-2xl sm:text-5xl"
+          className={`font-heading mt-3 line-clamp-3 max-w-4xl leading-[1.08] text-white drop-shadow ${
+            compact ? "text-2xl sm:text-3xl" : "text-2xl sm:text-[2.75rem]"
           }`}
         >
           {article.title}
@@ -43,11 +47,12 @@ export function HeroLead({
             {article.excerpt}
           </p>
         )}
-        <div className="mt-4 flex items-center gap-2 text-xs font-medium text-white/75">
+        <div className="mt-4 flex flex-wrap items-center gap-2 text-xs font-medium text-white/75">
           <span>{article.author.name}</span>
           <span aria-hidden>·</span>
           <time dateTime={article.publishedAt}>{formatDate(article.publishedAt)}</time>
         </div>
+      </div>
       </div>
     </Link>
   );

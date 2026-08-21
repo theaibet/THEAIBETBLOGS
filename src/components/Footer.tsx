@@ -1,9 +1,11 @@
 import Link from "next/link";
 import { getSite, THEAIBET_BASE_URL } from "@/config/site";
 import { BRANDS } from "@/config/brands";
+import { getPopulatedCategories } from "@/lib/content";
 
-export function Footer() {
+export async function Footer() {
   const site = getSite();
+  const categories = await getPopulatedCategories();
   const network = Object.values(BRANDS).filter((b) => b.key !== site.key);
   return (
     <footer className="mt-16 bg-chrome text-chrome-text border-t border-edge/40">
@@ -21,7 +23,7 @@ export function Footer() {
           <div>
             <h3 className="font-heading text-sm tracking-wide opacity-90">Sections</h3>
             <ul className="mt-3 space-y-2 text-sm">
-              {site.categories.map((c) => (
+              {categories.map((c) => (
                 <li key={c.slug}>
                   <Link href={`/category/${c.slug}`} className="opacity-70 transition hover:opacity-100">
                     {c.name}
