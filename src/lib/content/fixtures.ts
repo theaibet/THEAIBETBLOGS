@@ -31,6 +31,85 @@ function h2(text: string): string {
 const FIXTURES: Record<SiteKey, Article[]> = {
   aflreviews: [
     {
+      id: "afl-108",
+      slug: "brisbane-159-collingwood-96-round-24-review-pendlebury-injury",
+      title: "Brisbane Run Over Collingwood — But Pendlebury Injury Could Be the Bigger Story",
+      excerpt:
+        "Logan Morris kicked a career-high eight as the Lions piled on 159 at the MCG — but Collingwood's wildcard week now hinges on Scott Pendlebury's knee.",
+      bodyHtml:
+        p(
+          "Brisbane has sent Collingwood into the wildcard round with plenty to think about after running away with a huge 159–96 victory at the MCG.",
+          "The final margin was 63 points, but the scoreboard only tells part of the story.",
+          "Collingwood showed patches of good football, particularly early. They were prepared to use the handball to create space and tried to open Brisbane up through the middle, but Brisbane's ball use and efficiency going forward were simply on another level.",
+          "And the biggest problem Collingwood couldn't solve was Logan Morris.",
+          "The 21-year-old was outstanding. Morris had four goals by halftime and could easily have had five. By the end of the night he had kicked a career-high eight goals and was the dominant forward on the ground.",
+          "Brisbane led 63–41 at halftime before completely taking control after the break."
+        ) +
+        h2("Pendlebury injury the major concern") +
+        p(
+          "The biggest concern for Collingwood now surrounds Scott Pendlebury.",
+          "Pendlebury started the game brilliantly, collecting eight disposals in the opening quarter and looking composed around the contest. But he left the ground late in the first quarter and didn't return.",
+          "Early reports pointed towards an issue around the back of the knee, with a knee bursa problem being reported after the match. Until scans and further assessment are completed, Collingwood won't know exactly what they're dealing with.",
+          "And the timing couldn't be worse. Collingwood now heads into the wildcard round, meaning every injury suddenly becomes significant.",
+          "If the issue settles quickly, Pendlebury could potentially be available. If it proves more serious, though, Collingwood could be heading into its biggest game of the season without one of the most experienced finals players in AFL history.",
+          "There is another layer to the story. Pendlebury's playing future beyond this season remains uncertain, with reports linking rival clubs — including Gold Coast — with interest in using the veteran in a playing and leadership role.",
+          "That makes the injury situation even more intriguing. Nobody knows yet what Pendlebury will decide about 2027, but every game from here carries a little more weight."
+        ) +
+        h2("Swadling continues to impress") +
+        p(
+          "One major positive for Collingwood was Sam Swadling.",
+          "Fresh off receiving an AFL Rising Star nomination following his breakout performance against Hawthorn, the youngster backed it up with another impressive game.",
+          "For a Collingwood side beginning to transition towards its next generation, Swadling is quickly becoming one of the most exciting parts of that future.",
+          "Jordan De Goey was another strong contributor, finishing with around 30 disposals and hitting the scoreboard with two goals."
+        ) +
+        h2("Six straight goals — but Brisbane had already done the damage") +
+        p(
+          "Collingwood did produce one final burst. The Magpies kicked six unanswered goals during the final quarter and briefly gave their supporters something to get excited about.",
+          "But the damage had already been done. Brisbane responded and finished the night with 25 goals and 159 points — an enormous score against a Collingwood side heading into finals football.",
+          "The Lions looked faster, cleaner and far more dangerous when they went forward. Morris' eight-goal performance will grab the headlines, but Brisbane's ability to continually create quality scoring opportunities was arguably even more impressive."
+        ) +
+        h2("What does it mean for Collingwood?") +
+        p(
+          "That's now the question. A 63-point defeat immediately before wildcard football isn't the preparation Collingwood would have wanted.",
+          "There were positives. Swadling continues to emerge. De Goey found plenty of the football. Collingwood showed in the final quarter that they can still score quickly when they move the ball aggressively.",
+          "But conceding 25 goals is the concern. Finals football doesn't give you much room to fix problems.",
+          "Collingwood now has a week to work out what went wrong defensively, get players back into the side and, most importantly, find out whether Scott Pendlebury will be available.",
+          "Brisbane walks away looking every bit like a genuine premiership threat. Collingwood walks away with questions.",
+          "And heading into wildcard week, we're about to find out very quickly whether they have the answers."
+        ),
+      featuredImage: {
+        url: "/photos/lions-morris-celebrates.jpg",
+        alt: "Logan Morris celebrates one of his career-high eight goals as Brisbane ran over Collingwood at the MCG",
+        width: 486,
+        height: 496,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
+      inlineImage: {
+        url: "/photos/collingwood-degoey.jpg",
+        alt: "Jordan De Goey takes stock — around 30 disposals and two goals on a night when little else went Collingwood's way",
+        width: 464,
+        height: 523,
+        credit: "Supplied",
+        license: "user-supplied",
+        source: "publisher-upload",
+      },
+      categorySlug: "reviews",
+      tags: ["Collingwood", "Brisbane Lions", "Logan Morris", "Scott Pendlebury", "Round 24", "Match Review"],
+      author: AUTHORS.zacChristie,
+      publishedAt: "2026-08-21T12:30:00Z",
+      updatedAt: "2026-08-21T12:30:00Z",
+      theaibetPath: "/sports?sport=aussierules_afl",
+      theaibetCtaLabel: "See the AI's wildcard-round probabilities for Collingwood and Brisbane",
+      masterStoryId: "MS-2026-0821-PIES-LIONS-REVIEW",
+      faq: [
+        { q: "What was the final score in Collingwood v Brisbane in Round 24, 2026?", a: "Brisbane defeated Collingwood 159–96 at the MCG — a 63-point margin, with the Lions kicking 25 goals." },
+        { q: "How many goals did Logan Morris kick against Collingwood?", a: "A career-high eight goals — four of them by halftime — making him the dominant forward on the ground." },
+        { q: "What is Scott Pendlebury's injury?", a: "He left the ground late in the first quarter and did not return, with a knee bursa problem reported after the match. Scans will determine his availability for Collingwood's wildcard-round final." },
+      ],
+    },
+    {
       id: "afl-107",
       slug: "afl-wildcard-round-2026-what-it-means",
       title: "Wildcard Round: Why Sixth Just Became the Most Valuable Place on the Ladder",
@@ -67,8 +146,8 @@ const FIXTURES: Record<SiteKey, Article[]> = {
           "The <strong>Grand Final is Saturday 26 September at the MCG</strong>, 2:30pm AEST."
         ),
       featuredImage: {
-        url: "/photos/afl-marking-contest.jpg",
-        alt: "A pack flies in a marking contest in an AFL match",
+        url: "/photos/afl-pack-mark.jpg",
+        alt: "Geelong players celebrate a goal — the Cats are one of the sides jostling for position as the wildcard era begins",
         width: 1058,
         height: 500,
         credit: "Supplied",
@@ -320,15 +399,6 @@ const FIXTURES: Record<SiteKey, Article[]> = {
         license: "user-supplied",
         source: "publisher-upload",
       },
-      inlineImage: {
-        url: "/photos/afl-tackle-contest.jpg",
-        alt: "A tackle is laid in heavy traffic during an AFL match",
-        width: 1062,
-        height: 626,
-        credit: "Supplied",
-        license: "user-supplied",
-        source: "publisher-upload",
-      },
       categorySlug: "reviews",
       tags: ["Round 23", "Hawthorn", "Collingwood", "Melbourne", "Draw"],
       author: AUTHORS.zacChristie,
@@ -418,10 +488,10 @@ const FIXTURES: Record<SiteKey, Article[]> = {
           "The only question left is the one the numbers can't answer: whether a dominant home-and-away season converts. Sydney on 68 and the 60-point trio of Brisbane, Hawthorn and Melbourne will have their say. The resume, though, is the strongest in the competition."
         ),
       featuredImage: {
-        url: "/photos/afl-goal-celebration.jpg",
-        alt: "An AFL forward celebrates a goal in front of the crowd",
-        width: 914,
-        height: 712,
+        url: "/photos/fremantle-longmuir.jpg",
+        alt: "Fremantle coach Justin Longmuir with his players after another win — the Dockers sealed the minor premiership with a league-best defence",
+        width: 1072,
+        height: 664,
         credit: "Supplied",
         license: "user-supplied",
         source: "publisher-upload",
@@ -524,13 +594,13 @@ const FIXTURES: Record<SiteKey, Article[]> = {
           "Kai Asakura, Alex Perez, Sumudaerji, Jack Jenkins and former strawweight champion Xiong Jingnan also feature on the card."
         ),
       featuredImage: {
-        url: "/photos/fighter-training.jpg",
-        alt: "A mixed martial artist training",
-        width: 1200,
-        height: 800,
-        credit: "Supplied",
-        license: "user-supplied",
-        source: "publisher-upload",
+        url: "/art/ufcreview/umar-nurmagomedov-fighter-profile-2026.svg",
+        alt: "Abstract octagon artwork for the Umar Nurmagomedov fighter profile",
+        width: 1600,
+        height: 900,
+        credit: "UFC Review editorial artwork",
+        license: "owned",
+        source: "generated",
       },
       categorySlug: "fighters",
       tags: ["Umar Nurmagomedov", "Song Yadong", "Bantamweight", "Shanghai", "Fighter Profile"],
@@ -580,13 +650,13 @@ const FIXTURES: Record<SiteKey, Article[]> = {
       publishedAt: "2026-08-20T06:00:00Z",
       updatedAt: "2026-08-20T06:00:00Z",
       featuredImage: {
-        url: "/photos/ufc-ground-strike.jpg",
-        alt: "Ground-and-pound in the Octagon \u2014 control positions decide bantamweight title eliminators",
-        width: 1540,
-        height: 896,
-        credit: "Supplied",
-        license: "user-supplied",
-        source: "publisher-upload",
+        url: "/art/ufcreview/umar-nurmagomedov-song-yadong-shanghai-preview.svg",
+        alt: "Abstract octagon artwork for the Nurmagomedov v Song title eliminator in Shanghai",
+        width: 1600,
+        height: 900,
+        credit: "UFC Review editorial artwork",
+        license: "owned",
+        source: "generated",
       },
       theaibetSport: "ufc",
       theaibetEventId: "ufc-shanghai-2026",
@@ -630,13 +700,13 @@ const FIXTURES: Record<SiteKey, Article[]> = {
       publishedAt: "2026-08-20T07:00:00Z",
       updatedAt: "2026-08-20T07:00:00Z",
       featuredImage: {
-        url: "/photos/ufc-fighter-celebrates.jpg",
-        alt: "A fighter celebrates in the Octagon \u2014 UFC 331 puts the flyweight title back on the line",
-        width: 1040,
-        height: 730,
-        credit: "Supplied",
-        license: "user-supplied",
-        source: "publisher-upload",
+        url: "/art/ufcreview/ufc-331-van-pantoja-2-preview.svg",
+        alt: "Abstract octagon artwork for the UFC 331 flyweight title rematch between Joshua Van and Alexandre Pantoja",
+        width: 1600,
+        height: 900,
+        credit: "UFC Review editorial artwork",
+        license: "owned",
+        source: "generated",
       },
       theaibetSport: "ufc",
       theaibetEventId: "ufc-331",
@@ -1329,7 +1399,7 @@ const FIXTURES: Record<SiteKey, Article[]> = {
         ),
       featuredImage: {
         url: "/photos/afl-pack-mark.jpg",
-        alt: "Players contest a pack mark in an AFL match",
+        alt: "Geelong players celebrate a goal — September football is where the new wildcard format begins",
         width: 1058,
         height: 500,
         credit: "Supplied",
@@ -1510,13 +1580,13 @@ const FIXTURES: Record<SiteKey, Article[]> = {
           "Bangladesh have something they cannot lose no matter what happens in Mackay. That is the thing about firsts."
         ),
       featuredImage: {
-        url: "/photos/afl-goal-celebration.jpg",
-        alt: "Athletes celebrate a moment of victory",
-        width: 914,
-        height: 712,
-        credit: "Supplied",
-        license: "user-supplied",
-        source: "publisher-upload",
+        url: "/art/punterstory/bangladesh-darwin-first-test-win-in-australia.svg",
+        alt: "Editorial artwork of a cricket ball — the morning Bangladesh took nine wickets in Darwin",
+        width: 1600,
+        height: 900,
+        credit: "Punter Story editorial artwork",
+        license: "owned",
+        source: "generated",
       },
       categorySlug: "moments",
       tags: ["Cricket", "Bangladesh", "Darwin", "Upset", "Test Cricket"],
